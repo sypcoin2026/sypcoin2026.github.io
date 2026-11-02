@@ -1147,3 +1147,77 @@ button { font: inherit; }
   .emission-facts { grid-template-columns: 1fr; }
   .footer-bottom { gap: 16px; flex-wrap: wrap; padding: 18px 0; }
 }
+
+/* SYPcoin official visual identity, approved artwork (v0.2). */
+.chain-card-brand {
+  min-height: 540px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  isolation: isolate;
+  background: radial-gradient(circle at 50% 40%, rgba(28, 119, 215, 0.19), transparent 65%), #050d16;
+  overflow: hidden;
+}
+.chain-card-brand::before {
+  background-size: 38px 38px;
+  opacity: 0.55;
+}
+.brand-art-halo {
+  position: absolute;
+  z-index: -1;
+  inset: 9% 5%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(8,112,212,.17), transparent 70%);
+}
+.official-hero-logo {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 530px);
+  height: auto;
+  max-height: 490px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 22px rgba(0,153,255,.1));
+}
+.brand-card-caption {
+  position: absolute;
+  bottom: 18px;
+  left: 20px;
+  display: inline-flex;
+  gap: 13px;
+  align-items: center;
+  color: #8ebfe9;
+  font: 700 .64rem/1.2 "SFMono-Regular", Consolas, monospace;
+  letter-spacing: .14em;
+}
+.emission-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, .58fr);
+  align-items: center;
+  gap: 34px;
+}
+.emission-intro .section-heading { min-width: 0; }
+.coin-art {
+  display: grid;
+  place-items: center;
+}
+.coin-art img {
+  width: min(100%, 310px);
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 32px rgba(21,129,241,.18));
+}
+@media (max-width: 1040px) {
+  .chain-card-brand { max-width: 700px; min-height: 470px; }
+  .official-hero-logo { max-height: 425px; width: min(100%, 480px); }
+}
+@media (max-width: 760px) {
+  .chain-card-brand { min-height: 395px; }
+  .official-hero-logo { max-height: 360px; width: min(95%, 385px); }
+  .emission-intro { grid-template-columns: 1fr; gap: 18px; }
+  .coin-art img { width: min(100%, 295px); }
+}
+@media (max-width: 390px) {
+  .chain-card-brand { min-height: 325px; }
+  .official-hero-logo { max-height: 295px; }
+  .brand-card-caption { bottom: 11px; left: 12px; font-size: .55rem; }
+}
