@@ -1150,7 +1150,10 @@ button { font: inherit; }
 
 /* SYPcoin official visual identity, approved artwork (v0.2). */
 .chain-card-brand {
-  min-height: 540px;
+  min-height: 0;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  padding: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1172,22 +1175,13 @@ button { font: inherit; }
 .official-hero-logo {
   position: relative;
   z-index: 1;
-  width: min(100%, 530px);
-  height: auto;
-  max-height: 490px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
   filter: drop-shadow(0 0 22px rgba(0,153,255,.1));
-}
-.brand-card-caption {
-  position: absolute;
-  bottom: 18px;
-  left: 20px;
-  display: inline-flex;
-  gap: 13px;
-  align-items: center;
-  color: #8ebfe9;
-  font: 700 .64rem/1.2 "SFMono-Regular", Consolas, monospace;
-  letter-spacing: .14em;
 }
 .emission-intro {
   display: grid;
@@ -1207,17 +1201,13 @@ button { font: inherit; }
   filter: drop-shadow(0 0 32px rgba(21,129,241,.18));
 }
 @media (max-width: 1040px) {
-  .chain-card-brand { max-width: 700px; min-height: 470px; }
-  .official-hero-logo { max-height: 425px; width: min(100%, 480px); }
+  .chain-card-brand { max-width: 520px; min-height: 0; }
 }
 @media (max-width: 760px) {
-  .chain-card-brand { min-height: 395px; }
-  .official-hero-logo { max-height: 360px; width: min(95%, 385px); }
+  .chain-card-brand { min-height: 0; max-width: 100%; padding: 8px; }
   .emission-intro { grid-template-columns: 1fr; gap: 18px; }
   .coin-art img { width: min(100%, 295px); }
 }
 @media (max-width: 390px) {
-  .chain-card-brand { min-height: 325px; }
-  .official-hero-logo { max-height: 295px; }
-  .brand-card-caption { bottom: 11px; left: 12px; font-size: .55rem; }
+  .chain-card-brand { min-height: 0; }
 }
