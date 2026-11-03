@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#080c12">
-  <meta name="description" content="SYPcoin (SYP): criptomoneda independiente Proof-of-Work, minable por GPU, con emisión verificable y una iniciativa solidaria transparente.">
+  <meta name="description" content="SYPcoin (SYP): criptomoneda independiente Proof-of-Work, minería GPU abierta, emisión verificable, seguridad por diseño y transparencia solidaria.">
   <meta name="color-scheme" content="dark">
   <title>SYPcoin — Proof of Work. Minería abierta. Emisión verificable.</title>
   <meta property="og:type" content="website">
@@ -13,7 +13,7 @@
   <meta property="og:image" content="https://sypcoin2026.github.io/assets/brand/logo-principal.webp">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="/assets/brand/favicon.webp?v=4" type="image/webp">
-  <link rel="stylesheet" href="/styles.css?v=6">
+  <link rel="stylesheet" href="/styles.css?v=7">
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -33,6 +33,7 @@
       <nav id="nav" class="nav" aria-label="Navegación principal" data-nav>
         <a href="#red">Red</a>
         <a href="#mineria">Minería</a>
+        <a class="nav-security" href="#seguridad">Seguridad</a>
         <a href="#emision">Emisión</a>
         <a href="#solidaria">SYP Solidaria</a>
         <a href="#hoja-ruta">Roadmap</a>
@@ -45,9 +46,9 @@
     <section class="hero" id="inicio">
       <div class="hero-grid shell">
         <div class="hero-copy reveal">
-          <div class="status-pill" aria-label="Estado del proyecto">
+          <div class="status-pill status-pill-primary" data-project-status data-stage="development" role="status" aria-label="Estado del proyecto: en desarrollo">
             <span class="status-dot" aria-hidden="true"></span>
-            EN DESARROLLO
+            <span data-stage-label>EN DESARROLLO</span>
           </div>
 
           <p class="eyebrow">SYP · CRIPTOMONEDA INDEPENDIENTE</p>
@@ -139,6 +140,50 @@
           <p>Supply, recompensas y calendario monetario quedan definidos por reglas técnicas verificables.</p>
           <div class="feature-tag">TRANSPARENCIA</div>
         </article>
+      </div>
+    </section>
+
+
+    <section class="section security-feature" id="seguridad" aria-labelledby="security-title">
+      <div class="shell security-feature-grid">
+        <div class="security-story reveal">
+          <p class="eyebrow">SEGURIDAD DEL PROTOCOLO</p>
+          <h2 id="security-title">La seguridad no será una promesa. <span>Será una prioridad verificable.</span></h2>
+          <p>
+            Estamos diseñando SYPcoin para resistir errores de consenso, abuso de red
+            y vulnerabilidades en sus componentes. Cada defensa tendrá que superar pruebas
+            reproducibles y revisión antes del lanzamiento público.
+          </p>
+          <div class="security-story-actions">
+            <a class="button button-primary" href="/seguridad/">Ver plan de seguridad</a>
+            <span class="security-phase">Diseño y validación en curso</span>
+          </div>
+        </div>
+
+        <div class="security-display reveal reveal-delay" aria-label="Áreas de protección previstas">
+          <div class="security-display-header">
+            <span class="security-icon" aria-hidden="true">◆</span>
+            <span>SECURITY / ENGINEERING</span>
+            <span class="security-mark">SYP</span>
+          </div>
+          <div class="security-shield" aria-hidden="true">
+            <div class="shield-ring shield-ring-outer"></div>
+            <div class="shield-ring shield-ring-inner"></div>
+            <span>◆</span>
+          </div>
+          <div class="security-controls">
+            <div><span>01</span><strong>Consenso y bloques</strong><small>En diseño / validación</small></div>
+            <div><span>02</span><strong>Transacciones y UTXO</strong><small>En diseño / validación</small></div>
+            <div><span>03</span><strong>Nodos y red P2P</strong><small>Pruebas pendientes</small></div>
+            <div><span>04</span><strong>Actualizaciones y código</strong><small>Revisión continua prevista</small></div>
+          </div>
+          <p class="security-display-note">Sin auditoría externa concluida ni certificación de seguridad declarada.</p>
+        </div>
+      </div>
+      <div class="shell security-principles reveal">
+        <div><strong>Defensa en profundidad</strong><span>Múltiples controles, no una sola barrera</span></div>
+        <div><strong>Pruebas reproducibles</strong><span>Evidencia antes de proclamar seguridad</span></div>
+        <div><strong>Divulgación responsable</strong><span>Corrección antes de revelar detalles explotables</span></div>
       </div>
     </section>
 
@@ -364,6 +409,7 @@
       <div class="footer-links">
         <a href="#red">Red</a>
         <a href="#mineria">Minería</a>
+        <a href="/seguridad/">Seguridad</a>
         <a href="#solidaria">SYP Solidaria</a>
         <a href="/transparencia/">Transparencia</a>
         <a href="#documentacion">Docs</a>
@@ -379,6 +425,6 @@
     </div>
   </footer>
 
-  <script src="/app.js?v=2" defer></script>
+  <script src="/app.js?v=7" defer></script>
 </body>
 </html>

@@ -51,3 +51,16 @@ El diseño principal se preserva y los archivos se sirven desde este repositorio
 - El libro se estructura por fondos diferenciados, con TX en cadena y comprobantes documentales de recepción.
 - La privacidad de menores, pacientes y terceros se protegerá en las copias públicas de los justificantes.
 - Página pública: `/transparencia/`; datos iniciales `data/solidaria-ledger.json`, sin movimientos ni cifras ficticias.
+
+## Estado visual y seguridad pública v0.4
+
+El estado visible de la web se gobierna con una única constante: `PROJECT_RELEASE_STAGE` en `app.js`.
+
+- `development`: rojo, **EN DESARROLLO** (actual).
+- `advanced`: naranja, **EN PRUEBAS AVANZADAS**, tras las verificaciones que lo justifiquen.
+- `ready`: verde, **LISTA PARA LANZAMIENTO**, solo cuando se hayan completado los requisitos de lanzamiento.
+
+La etiqueta visual no garantiza que el protocolo sea seguro ni sustituye la auditoría técnica.
+
+La página `/seguridad/` describe la arquitectura defensiva prevista, pruebas pendientes, criterios de evidencia y divulgación responsable. No debe publicitar resultados ni auditorías que no puedan acreditarse. Ninguna cifra de ranking o promesa de invulnerabilidad se publica.
+

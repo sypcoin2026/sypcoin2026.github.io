@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080c12">
+  <meta name="description" content="Seguridad de SYPcoin: prioridades de diseño, amenazas, controles previstos, pruebas reproducibles y estado real de validación.">
+  <title>Seguridad de la red — SYPcoin</title>
+  <meta property="og:title" content="Seguridad — SYPcoin">
+  <meta property="og:description" content="Arquitectura, controles y pruebas de seguridad de SYPcoin, con separación clara entre lo previsto y lo verificado.">
+  <link rel="icon" href="/assets/brand/favicon.webp?v=4" type="image/webp">
+  <link rel="stylesheet" href="/styles.css?v=7">
+</head>
+<body class="security-page">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header" data-header>
+    <div class="shell nav-shell">
+      <a class="brand" href="/" aria-label="SYPcoin, inicio">
+        <img src="/assets/brand/favicon.webp?v=4" alt="" width="34" height="34">
+        <span>SYP<span class="brand-soft">coin</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" data-nav-toggle>
+        <span class="sr-only">Abrir menú</span><span></span><span></span><span></span>
+      </button>
+      <nav id="nav" class="nav" aria-label="Navegación principal" data-nav>
+        <a href="/">Inicio</a>
+        <a href="/#red">Red</a>
+        <a href="/#mineria">Minería</a>
+        <a class="nav-security" href="/seguridad/" aria-current="page">Seguridad</a>
+        <a href="/#emision">Emisión</a>
+        <a href="/transparencia/">Transparencia</a>
+        <a href="/#documentacion">Docs</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="security-page-hero">
+      <div class="shell">
+        <p class="eyebrow">SYPcoin / SEGURIDAD DEL PROTOCOLO</p>
+        <div class="status-pill" data-project-status data-stage="development" role="status" aria-label="Estado del proyecto: en desarrollo">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span data-stage-label>EN DESARROLLO</span>
+        </div>
+        <h1>Diseñar seguridad.<br><span>Demostrarla con pruebas.</span></h1>
+        <p>
+          Aspiramos a construir una criptomoneda con defensas sólidas, auditables y mantenibles.
+          Esta página distingue el trabajo previsto de lo realmente validado. La seguridad absoluta
+          no existe y ninguna característica se dará por demostrada sin evidencia.
+        </p>
+        <div class="security-mini-nav">
+          <a href="#pilares">Áreas prioritarias</a>
+          <a href="#evidencias">Estado de validación</a>
+          <a href="#responsable">Divulgación responsable</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="shell security-page-section" id="pilares">
+      <p class="eyebrow">DEFENSA EN PROFUNDIDAD</p>
+      <h2>Las capas de seguridad que estamos construyendo.</h2>
+      <p>
+        No basta con un algoritmo de minería. La seguridad depende también de la validación
+        de bloques y transacciones, la comunicación entre nodos, la ejecución de software
+        y la respuesta ante incidentes.
+      </p>
+      <div class="security-page-grid">
+        <article class="security-page-card">
+          <span class="mono">01 / CONSENSO</span>
+          <h3>Integridad de la cadena</h3>
+          <p>Verificación de bloques, dificultad, recompensas, reorganizaciones y límites de consenso. Pruebas con entradas adversarias y escenarios de bifurcación.</p>
+        </article>
+        <article class="security-page-card">
+          <span class="mono">02 / TRANSACCIONES</span>
+          <h3>Validación y doble gasto</h3>
+          <p>Invariantes monetarios, validez UTXO, firmas, contratos de emisión y comportamiento ante transacciones malformadas o conflictivas.</p>
+        </article>
+        <article class="security-page-card">
+          <span class="mono">03 / RED</span>
+          <h3>Nodos y comunicaciones P2P</h3>
+          <p>Protección frente a tráfico abusivo, conexiones maliciosas, aislamiento de nodos, saturación y problemas de propagación, sujeto a pruebas de estrés reales.</p>
+        </article>
+        <article class="security-page-card">
+          <span class="mono">04 / DISTRIBUCIÓN</span>
+          <h3>Descargas y cadena de suministro</h3>
+          <p>Versiones trazables, sumas de verificación, procedimientos de compilación y actualizaciones controladas para reducir riesgos de software adulterado.</p>
+        </article>
+        <article class="security-page-card">
+          <span class="mono">05 / CLAVES</span>
+          <h3>Wallets y custodia</h3>
+          <p>Separación entre nodo y gestión de claves, protección de secretos, recuperación y minimización de superficies expuestas antes de distribuir herramientas públicas.</p>
+        </article>
+        <article class="security-page-card">
+          <span class="mono">06 / RESPUESTA</span>
+          <h3>Revisión y corrección continua</h3>
+          <p>Pruebas automatizadas, fuzzing cuando corresponda, revisiones de dependencias, parches reproducibles y respuesta coordinada ante vulnerabilidades.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="shell security-page-section" id="evidencias">
+      <p class="eyebrow">ESTADO DE VERIFICACIÓN</p>
+      <h2>Lo que falta por demostrar también se muestra.</h2>
+      <p>
+        Los informes de seguridad, versiones afectadas, auditorías y pruebas reproducibles
+        se enlazarán aquí cuando estén disponibles y sea seguro publicarlos.
+      </p>
+      <div class="security-evidence-list">
+        <article><div><strong>Especificación de amenazas y controles</strong><p>Documento técnico versionado y trazable.</p></div><span class="evidence-state">EN PREPARACIÓN</span></article>
+        <article><div><strong>Pruebas de consenso y transacciones</strong><p>Casos adversarios, regresiones y resultados vinculados a commits.</p></div><span class="evidence-state">PUBLICACIÓN PENDIENTE</span></article>
+        <article><div><strong>Pruebas de red y resistencia</strong><p>Testnet, carga y fallos de nodos bajo condiciones medibles.</p></div><span class="evidence-state">PENDIENTE DE TESTNET</span></article>
+        <article><div><strong>Auditoría externa independiente</strong><p>Alcance, hallazgos, remediación y versión revisada.</p></div><span class="evidence-state">NO REALIZADA</span></article>
+        <article><div><strong>Historial de incidentes y correcciones</strong><p>Registro público cuando existan incidentes divulgables.</p></div><span class="evidence-state">SIN REGISTRO PÚBLICO</span></article>
+      </div>
+      <p class="security-caveat">
+        <strong>Información importante:</strong> en esta fase SYPcoin no afirma ser invulnerable,
+        haber recibido certificación de seguridad ni encontrarse entre las criptomonedas más seguras.
+        Cualquier afirmación comparativa futura deberá apoyarse en criterios medibles
+        y auditorías contrastables.
+      </p>
+    </section>
+
+    <section class="shell security-page-section" id="responsable">
+      <p class="eyebrow">DIVULGACIÓN RESPONSABLE</p>
+      <h2>Corregir antes de exponer a la red.</h2>
+      <p>
+        Cuando habilitemos el canal confidencial de seguridad, las vulnerabilidades
+        críticas se comunicarán allí de forma privada, con detalles para reproducirlas,
+        versiones afectadas e impacto. No se deben publicar claves, secretos ni
+        instrucciones de explotación de un fallo activo en debates públicos.
+      </p>
+      <p>
+        Después de corregir y coordinar la divulgación, publicaremos avisos con
+        versión afectada, mitigación y comprobaciones, preservando información sensible.
+        <strong>El canal privado para reportes todavía no está publicado.</strong>
+      </p>
+      <a class="button button-ghost" href="/">Volver a la portada</a>
+    </section>
+
+    <section class="closing">
+      <div class="shell closing-inner">
+        <img src="/assets/brand/favicon.webp?v=4" alt="" width="48" height="48">
+        <p class="eyebrow">SYPcoin / SECURITY</p>
+        <h2>La confianza se gana con resultados verificables.</h2>
+        <p>La seguridad evoluciona con el protocolo, las pruebas y la revisión independiente.</p>
+        <a class="button button-ghost" href="/#seguridad">Volver a Seguridad</a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div><a class="brand" href="/"><img src="/assets/brand/favicon.webp?v=4" width="28" height="28" alt=""><span>SYP<span class="brand-soft">coin</span></span></a><p>Criptomoneda independiente en desarrollo.</p></div>
+      <div class="footer-links"><a href="/">Inicio</a><a href="/#mineria">Minería</a><a href="/seguridad/">Seguridad</a><a href="/transparencia/">Transparencia</a></div>
+      <p class="footer-legal">Información técnica en desarrollo: no equivale a certificación, auditoría de seguridad ni garantía de ausencia de vulnerabilidades.</p>
+    </div>
+    <div class="shell footer-bottom"><span>© <span data-year></span> SYPcoin</span><span class="mono">SECURITY / BUILDING</span></div>
+  </footer>
+  <script src="/app.js?v=7" defer></script>
+</body>
+</html>
