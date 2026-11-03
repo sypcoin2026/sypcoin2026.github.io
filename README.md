@@ -73,3 +73,7 @@ La página `/seguridad/` describe la arquitectura defensiva prevista, pruebas pe
 - Los recursos estáticos se publican desde la raíz con `.nojekyll`.
 - El resultado **success** de GitHub Actions confirma el proceso de despliegue, no sustituye la comprobación HTTP de la dirección pública.
 - Ante un 404, revisar **Settings → Pages**: URL activa y origen de publicación; inspeccionar también el estado del dominio y la respuesta HTTP pública.
+
+## Estadísticas web — Cloudflare Web Analytics
+
+Web Analytics se instala mediante la etiqueta `beacon.min.js` al final de las páginas `index.html`, `seguridad/index.html` y `transparencia/index.html`. Las estadísticas empiezan cuando Cloudflare recibe eventos del sitio y no son retroactivas. El identificador público de sitio no es una credencial secreta. Los datos se revisan desde la cuenta de Cloudflare del proyecto.
