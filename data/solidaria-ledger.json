@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "project": "SYPcoin",
+  "status": "policy_defined_no_verified_public_movements",
+  "unit": "percent",
+  "policy": {
+    "former_mining_contribution_percent": 1,
+    "revised_mining_contribution_percent": 0.5,
+    "treasury_matching_contribution_percent": 0.5,
+    "combined_objective_percent": 1,
+    "interpretation": "Treasury replaces the 0.5 percentage points removed from the mining contribution. Exact calculation basis and on-chain implementation are pending public technical specification.",
+    "donation_integrity": "100 percent of the amount explicitly declared and committed as a donation must reach the beneficiary. Costs and gross proceeds are accounted for separately.",
+    "verified_on_chain": false
+  },
+  "funds": [
+    {
+      "id": "solidarity_mining",
+      "name": "Fondo solidario de mineria",
+      "balance": null,
+      "income": null,
+      "expenses": null,
+      "currency": null
+    },
+    {
+      "id": "solidarity_treasury",
+      "name": "Fondo solidario de tesoreria",
+      "balance": null,
+      "income": null,
+      "expenses": null,
+      "currency": null
+    },
+    {
+      "id": "general_treasury",
+      "name": "Tesoreria general",
+      "balance": null,
+      "income": null,
+      "expenses": null,
+      "currency": null
+    },
+    {
+      "id": "solidarity_lots",
+      "name": "SYP Solidaria — lotes",
+      "balance": null,
+      "income": null,
+      "expenses": null,
+      "currency": null
+    }
+  ],
+  "movements": [],
+  "donation_receipts": [],
+  "last_verified_at": null,
+  "notes": "Empty lists and null balances mean no verified public records are available. They do not mean a confirmed zero balance."
+}

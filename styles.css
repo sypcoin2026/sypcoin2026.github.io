@@ -1211,3 +1211,153 @@ button { font: inherit; }
 @media (max-width: 390px) {
   .chain-card-brand { min-height: 0; }
 }
+
+/* SYPcoin solidarity policy and public accounting — v0.3 */
+.solidarity-intro {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  gap: clamp(28px, 5vw, 76px);
+  align-items: center;
+}
+.solidarity-intro .section-heading h2 {
+  font-size: clamp(2.15rem, 4vw, 3.75rem);
+}
+.button-solidarity {
+  margin-top: 28px;
+  color: #241403;
+  background: linear-gradient(180deg, #ffcf8c, #f0a84d);
+  box-shadow: 0 12px 34px rgba(255, 174, 76, .13);
+}
+.solidarity-allocation {
+  padding: clamp(22px, 3vw, 38px);
+  border: 1px solid rgba(255, 189, 97, .25);
+  border-radius: 24px;
+  background: linear-gradient(155deg, rgba(255,189,97,.075), rgba(9,15,23,.75));
+}
+.solidarity-allocation-head, .allocation-numbers, .allocation-history {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+}
+.solidarity-allocation-head {
+  font: 750 .67rem/1.5 ui-monospace, Consolas, monospace;
+  letter-spacing: .08em;
+  color: #c2a781;
+}
+.allocation-total { color: var(--warm); text-align: right; }
+.allocation-bar {
+  display: flex;
+  gap: 5px;
+  height: 11px;
+  margin: 26px 0 20px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+.allocation-bar span { width: 50%; background: #f5ad50; }
+.allocation-bar span:last-child { background: #6fa9f6; }
+.allocation-numbers > div { flex: 1; min-width: 0; }
+.allocation-value { display: block; color: #f8c587; font-size: clamp(2.1rem, 3vw, 3.15rem); font-weight: 850; line-height: 1.15; letter-spacing: -.05em; }
+.allocation-numbers > div:last-child .allocation-value { color: #88bbff; }
+.allocation-numbers strong { display: block; margin-top: 5px; font-size: 1rem; }
+.allocation-numbers small { display: block; color: #a39789; font-size: .75rem; line-height: 1.45; }
+.allocation-history {
+  flex-direction: column;
+  margin-top: 26px;
+  padding: 16px 0;
+  border-top: 1px solid rgba(255,189,97,.16);
+  border-bottom: 1px solid rgba(255,189,97,.16);
+  font: 700 .72rem/1.7 ui-monospace, Consolas, monospace;
+  letter-spacing: .025em;
+}
+.allocation-history span { color: #9b8e7c; text-decoration: line-through; }
+.allocation-history strong { color: #f8cf9f; }
+.allocation-footnote { margin: 18px 0 0; color: #9e958a; font-size: .82rem; line-height: 1.6; }
+.solidarity-promise {
+  margin-top: 75px;
+  display: grid;
+  grid-template-columns: minmax(100px, .25fr) 1fr;
+  gap: 30px;
+  padding: clamp(25px, 4vw, 44px);
+  border: 1px solid rgba(255,189,97,.24);
+  border-radius: 22px;
+  background: rgba(255,189,97,.055);
+}
+.promise-symbol { align-self: start; color: #ffcd86; font-size: clamp(2.5rem,5vw,4.5rem); font-weight: 850; letter-spacing: -.055em; line-height: 1; white-space: nowrap; }
+.solidarity-promise .eyebrow { margin: 0 0 10px; }
+.solidarity-promise h3 { font-size: clamp(1.22rem,2.6vw,1.9rem); line-height: 1.25; margin: 0; }
+.solidarity-promise p:last-child { color: #a99c8c; margin: 14px 0 0; font-size: .91rem; }
+.solidarity-ledger-preview {
+  margin-top: 18px;
+  padding: clamp(25px,4vw,42px);
+  border: 1px solid rgba(255,189,97,.17);
+  border-radius: 22px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 24px 45px;
+  align-items: center;
+  background: rgba(13,18,24,.7);
+}
+.solidarity-ledger-preview .eyebrow { margin-top: 0; }
+.solidarity-ledger-preview h3 { margin: 0; font-size: 1.35rem; }
+.solidarity-ledger-preview p { max-width: 680px; margin: 12px 0 0; color: #998f84; font-size: .88rem; }
+.solidarity-ledger-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.solidarity-ledger-chips span { border: 1px solid rgba(255,189,97,.19); border-radius: 30px; padding: 7px 12px; color: #c9b59c; font-size: .75rem; }
+.solidarity-ledger-preview .button { justify-self: start; }
+.solidarity-lots-note { margin-top: 26px; display: flex; gap: 20px; align-items: start; }
+.solidarity-lots-note strong { flex: 0 0 220px; color: #e9cba7; }
+.solidarity-lots-note p { margin: 0; color: #8c8175; font-size: .84rem; }
+@media(max-width: 1000px) {
+  .solidarity-intro { grid-template-columns: 1fr; gap: 36px; }
+}
+@media(max-width: 760px) {
+  .solidarity-promise { grid-template-columns: 1fr; }
+  .solidarity-ledger-preview { grid-template-columns: 1fr; }
+  .solidarity-lots-note { flex-direction: column; gap: 6px; }
+  .solidarity-lots-note strong { flex: auto; }
+  .allocation-numbers { gap: 16px; }
+  .solidarity-allocation-head { flex-wrap: wrap; }
+}
+
+/* Public transparency page */
+.accounting-page { background: #080c12; }
+.accounting-hero { padding: 148px 0 62px; border-bottom: 1px solid var(--line); background: radial-gradient(circle at 70% 35%, rgba(255,180,92,.075), transparent 40%); }
+.accounting-hero h1 { max-width: 900px; font-size: clamp(2.6rem, 6vw, 5.2rem); line-height: 1.05; letter-spacing: -.06em; margin: 0; }
+.accounting-hero h1 span { color: #ffca83; }
+.accounting-hero .intro { max-width: 860px; color: #a8acb2; font-size: 1.1rem; margin: 25px 0; }
+.accounting-status { display: inline-flex; padding: 9px 13px; border-radius: 20px; border: 1px solid rgba(255,189,97,.27); color: #ffca83; background: rgba(255,189,97,.06); font-size: .8rem; font-weight: 750; }
+.accounting-section { padding-top: 88px; padding-bottom: 20px; scroll-margin-top: 88px; }
+.accounting-section h2 { margin: 0 0 18px; letter-spacing: -.045em; font-size: clamp(1.7rem, 3vw, 2.6rem); }
+.accounting-section > p, .accounting-section .section-prose { color: #a0aab6; max-width: 900px; }
+.accounting-section p { line-height: 1.65; }
+.accounting-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 15px; margin-top: 30px; }
+.account-card { padding: clamp(20px,3vw,30px); background: #0e1721; border: 1px solid var(--line); border-radius: 19px; }
+.account-card .eyebrow { margin-top: 0; }
+.account-card h3 { font-size: 1.3rem; margin: 0 0 12px; }
+.account-card p { color: #9babbc; margin: 0 0 20px; font-size: .86rem; }
+.account-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; border-top: 1px solid var(--line); padding-top: 20px; }
+.account-stats div { display: flex; flex-direction: column; gap: 5px; }
+.account-stats dt { color: #7a90a3; font-size: .71rem; }
+.account-stats dd { margin: 0; font-size: 1rem; font-weight: 750; }
+.accounting-note { padding: 21px 25px; border: 1px solid rgba(255,189,97,.2); background: rgba(255,189,97,.04); border-radius: 16px; color: #c2ac90; margin: 27px 0 0; }
+.accounting-history { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 30px; }
+.accounting-history div { border-left: 3px solid #789bbb; padding-left: 22px; }
+.accounting-history div:last-child { border-color: #ffbd61; }
+.accounting-history strong { display: block; font-size: clamp(1.45rem,2.5vw,2.4rem); }
+.accounting-history span { color: #9cacc0; font-size: .87rem; }
+.audit-table-wrap { margin-top: 26px; border: 1px solid var(--line); border-radius: 15px; overflow-x: auto; }
+.audit-table { border-collapse: collapse; width: 100%; min-width: 690px; font-size: .85rem; }
+.audit-table th, .audit-table td { padding: 16px 15px; text-align: left; border-bottom: 1px solid var(--line); }
+.audit-table th { color: #a2b0c0; background: #111c28; font-weight: 700; white-space: nowrap; }
+.audit-table td { color: #cad5df; }
+.audit-table .empty-row td { text-align: center; color: #8c9aab; padding: 36px 20px; }
+.evidence-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 15px; margin-top: 26px; }
+.evidence-grid article { padding: 24px; border: 1px solid var(--line); border-radius: 17px; background: rgba(15,24,35,.65); }
+.evidence-grid strong { display: block; font-size: 1rem; }
+.evidence-grid p { color: #91a0ae; font-size: .85rem; }
+.accounting-page .closing { padding: 90px 0; }
+.accounting-footnote { color: #93a4b5; font-size: .84rem; margin-top: 22px; }
+@media(max-width: 760px) {
+  .accounting-hero { padding-top: 115px; }
+  .accounting-grid, .evidence-grid, .accounting-history { grid-template-columns: 1fr; }
+  .account-stats { gap: 8px; }
+}

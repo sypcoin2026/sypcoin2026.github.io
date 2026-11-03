@@ -13,7 +13,7 @@
   <meta property="og:image" content="https://sypcoin2026.github.io/assets/brand/logo-principal.webp">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="/assets/brand/favicon.webp?v=4" type="image/webp">
-  <link rel="stylesheet" href="/styles.css?v=5">
+  <link rel="stylesheet" href="/styles.css?v=6">
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -213,45 +213,73 @@
     </section>
 
     <section class="section solidarity" id="solidaria">
-      <div class="shell solidarity-grid">
+      <div class="shell solidarity-intro">
         <div class="section-heading reveal">
-          <p class="eyebrow warm">SYP SOLIDARIA</p>
-          <h2>Monedas minadas.<br><span class="warm-text">Ayuda trazable.</span></h2>
+          <p class="eyebrow warm">COMPROMISO SOLIDARIO DE SYPcoin</p>
+          <h2>La minería contribuye.<br><span class="warm-text">La tesorería comparte el esfuerzo.</span></h2>
           <p>
-            SYP Solidaria será una iniciativa diferenciada de la red y del mercado libre de SYPcoin:
-            lotes de SYP legítimamente minados, con precio publicado y trazabilidad económica.
+            SYPcoin establece un modelo solidario financiado entre la minería y la tesorería.
+            El objetivo es mantener el compromiso benéfico inicial con una menor carga
+            sobre las recompensas de los mineros.
+          </p>
+          <a class="button button-solidarity" href="/transparencia/">Ver fondos y transparencia</a>
+        </div>
+        <div class="solidarity-allocation reveal reveal-delay" aria-label="Reparto solidario previsto">
+          <div class="solidarity-allocation-head">
+            <span>MODELO SOLIDARIO</span><span class="allocation-total">1 % TOTAL EQUIVALENTE</span>
+          </div>
+          <div class="allocation-bar" aria-hidden="true"><span></span><span></span></div>
+          <div class="allocation-numbers">
+            <div><span class="allocation-value">0,5 %</span><strong>Minería</strong><small>Parte prevista de la emisión minera</small></div>
+            <div><span class="allocation-value">0,5 %</span><strong>Tesorería</strong><small>Aportación equivalente que asume la tesorería</small></div>
+          </div>
+          <div class="allocation-history">
+            <span>ANTES: 1 % SOPORTADO POR LA MINERÍA</span>
+            <strong>AHORA: 0,5 % MINERÍA + 0,5 % TESORERÍA</strong>
+          </div>
+          <p class="allocation-footnote">
+            La tesorería asume el 0,5 % retirado de la carga minera para que
+            minar SYP sea más rentable sin reducir el objetivo solidario total.
+            Base exacta de cálculo e implementación: pendientes de validación pública antes de mainnet.
           </p>
         </div>
-
-        <div class="solidarity-flow reveal reveal-delay">
-          <div class="flow-item"><span>1</span><strong>Minar SYP</strong><small>Origen verificable</small></div>
-          <div class="flow-arrow">→</div>
-          <div class="flow-item"><span>2</span><strong>Publicar lote</strong><small>Precio anunciado</small></div>
-          <div class="flow-arrow">→</div>
-          <div class="flow-item"><span>3</span><strong>Transferir SYP</strong><small>TX pública</small></div>
-          <div class="flow-arrow">→</div>
-          <div class="flow-item"><span>4</span><strong>Destinar neto</strong><small>Justificación pública</small></div>
+      </div>
+      <div class="shell solidarity-promise reveal">
+        <span class="promise-symbol" aria-hidden="true">100 %</span>
+        <div>
+          <p class="eyebrow warm">COMPROMISO DE ENTREGA ÍNTEGRA</p>
+          <h3>El importe comprometido como donación llegará íntegro a la entidad beneficiaria.</h3>
+          <p>
+            Si se anuncia una donación de una cantidad concreta, esa misma cantidad deberá
+            figurar como recibida por la entidad. Comisiones, conversiones, impuestos y gastos
+            se identificarán y contabilizarán por separado; no se ocultarán ni disminuirán
+            el importe anunciado como donación. No se declarará una entrega completada sin
+            evidencia suficiente de recepción.
+          </p>
         </div>
       </div>
-
-      <div class="shell transparency-card reveal">
+      <div class="shell solidarity-ledger-preview reveal">
         <div>
-          <p class="eyebrow warm">TRANSPARENCIA</p>
-          <h3>Cada lote deberá poder reconstruirse de principio a fin.</h3>
+          <p class="eyebrow warm">TESORERÍA Y SOLIDARIDAD: AUDITORÍA ABIERTA</p>
+          <h3>Una contabilidad separada para cada fondo.</h3>
+          <p>Saldo, entradas, salidas, conversión a euros, comisión, destinatario y justificante. Los registros de cadena y las pruebas documentales se publicarán como evidencias distintas.</p>
         </div>
-        <div class="transparency-list">
-          <span>TX de origen</span>
-          <span>SYP transferidos</span>
-          <span>Euros recibidos</span>
-          <span>Costes justificados</span>
-          <span>Importe neto</span>
+        <div class="solidarity-ledger-chips" aria-label="Registros que se publicarán">
+          <span>Transacción on-chain</span>
+          <span>Facturas y recibos</span>
+          <span>Importe recibido</span>
           <span>Entidad beneficiaria</span>
+          <span>Datos sensibles protegidos</span>
         </div>
-        <div class="soon-chip">PRÓXIMAMENTE</div>
+        <a class="button button-ghost" href="/transparencia/">Consultar el libro de fondos</a>
+      </div>
+      <div class="shell solidarity-lots-note reveal">
+        <strong>SYP Solidaria — lotes voluntarios</strong>
+        <p>Las ventas solidarias de SYP legítimamente minados son una iniciativa adicional e independiente del reparto recurrente 0,5 % + 0,5 %. También tendrán registros, transacciones y justificantes propios.</p>
       </div>
     </section>
 
-    <section class="section shell" id="hoja-ruta">
+        <section class="section shell" id="hoja-ruta">
       <div class="section-heading reveal">
         <p class="eyebrow">ROADMAP</p>
         <h2>Primero protocolo.<br><span>Después ecosistema.</span></h2>
@@ -337,6 +365,7 @@
         <a href="#red">Red</a>
         <a href="#mineria">Minería</a>
         <a href="#solidaria">SYP Solidaria</a>
+        <a href="/transparencia/">Transparencia</a>
         <a href="#documentacion">Docs</a>
       </div>
       <p class="footer-legal">
