@@ -64,3 +64,12 @@ La etiqueta visual no garantiza que el protocolo sea seguro ni sustituye la audi
 
 La página `/seguridad/` describe la arquitectura defensiva prevista, pruebas pendientes, criterios de evidencia y divulgación responsable. No debe publicitar resultados ni auditorías que no puedan acreditarse. Ninguna cifra de ranking o promesa de invulnerabilidad se publica.
 
+
+## Publicación y comprobación de GitHub Pages
+
+- Sitio de usuario: `https://sypcoin2026.github.io/`.
+- Rama de trabajo: `main`.
+- Entrada web: `index.html` situada en la raíz del repositorio.
+- Los recursos estáticos se publican desde la raíz con `.nojekyll`.
+- El resultado **success** de GitHub Actions confirma el proceso de despliegue, no sustituye la comprobación HTTP de la dirección pública.
+- Ante un 404, revisar **Settings → Pages**: URL activa y origen de publicación; inspeccionar también el estado del dominio y la respuesta HTTP pública.
