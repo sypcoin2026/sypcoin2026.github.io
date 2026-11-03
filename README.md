@@ -77,3 +77,15 @@ La página `/seguridad/` describe la arquitectura defensiva prevista, pruebas pe
 ## Estadísticas web — Cloudflare Web Analytics
 
 Web Analytics se instala mediante la etiqueta `beacon.min.js` al final de las páginas `index.html`, `seguridad/index.html` y `transparencia/index.html`. Las estadísticas empiezan cuando Cloudflare recibe eventos del sitio y no son retroactivas. El identificador público de sitio no es una credencial secreta. Los datos se revisan desde la cuenta de Cloudflare del proyecto.
+
+## Hitos del desarrollo — publicación web v0.5
+
+- Portada: `#hitos` con tres resultados destacados.
+- Historial completo: `/hitos/`.
+- Datos públicos estructurados: `/data/hitos.json`, que debe mantenerse sincronizado con las tarjetas HTML.
+- Campos: `date` (fecha de consecución), `title`, `summary`, `details`, `status` (`en desarrollo`, `en pruebas`, `verificado`), `scope`, `checks` y `evidence` (solo enlaces públicos comprobados).
+- `verificado` describe pruebas exitosas en laboratorio, no certificación externa ni consenso activado.
+- Sin enlaces públicos disponibles: mostrar `Evidencia pública pendiente`. No publicar rutas locales, datos privados ni enlaces a repos privados.
+- La prueba de dos nodos es **Ergo devnet local con consenso heredado** y **no** la red o testnet propia de SYPcoin.
+- La etiqueta de proyecto `EN DESARROLLO` permanece roja: `PROJECT_RELEASE_STAGE = 'development'` en `app.js`.
+- La conversación de web solo modifica el repositorio `sypcoin2026.github.io`, nunca el núcleo de la moneda.

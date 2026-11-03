@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080c12">
+  <meta name="description" content="Hitos del desarrollo de SYPcoin: fechas, pruebas verificadas de laboratorio, estados y evidencias públicas cuando estén disponibles.">
+  <title>Hitos del desarrollo — SYPcoin</title>
+  <link rel="icon" href="/assets/brand/favicon.webp?v=4" type="image/webp">
+  <link rel="stylesheet" href="/styles.css?v=8">
+</head>
+<body class="milestones-page">
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="site-header" data-header>
+  <div class="shell nav-shell">
+    <a class="brand" href="/" aria-label="SYPcoin, inicio">
+      <img src="/assets/brand/favicon.webp?v=4" alt="" width="34" height="34">
+      <span>SYP<span class="brand-soft">coin</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" data-nav-toggle>
+      <span class="sr-only">Abrir menú</span><span></span><span></span><span></span>
+    </button>
+    <nav id="nav" class="nav" aria-label="Navegación principal" data-nav>
+      <a href="/">Inicio</a>
+      <a href="/#seguridad">Seguridad</a>
+      <a href="/#mineria">Minería</a>
+      <a href="/hitos/" aria-current="page">Hitos del desarrollo</a>
+      <a href="/#hoja-ruta">Roadmap</a>
+      <a href="/transparencia/">Transparencia</a>
+    </nav>
+  </div>
+</header>
+<main id="contenido">
+  <section class="milestone-page-hero">
+    <div class="shell">
+      <p class="eyebrow">SYPcoin · EVOLUCIÓN DOCUMENTADA</p>
+      <div class="status-pill" data-project-status data-stage="development" role="status" aria-label="Estado del proyecto: en desarrollo">
+        <span class="status-dot" aria-hidden="true"></span><span data-stage-label>EN DESARROLLO</span>
+      </div>
+      <h1>Hitos del <span>desarrollo.</span></h1>
+      <p>Registro de avances comunicados por el equipo técnico, con fechas y resultados de laboratorio. «Verificado» significa que las pruebas indicadas han terminado correctamente en su entorno de ensayo; no equivale a una auditoría externa ni a un lanzamiento público.</p>
+      <p>Los resultados identificados como <strong>Ergo devnet</strong> pertenecen a una red de laboratorio basada en Ergo, no a una red operativa ni a una testnet propia de SYPcoin.</p>
+    </div>
+  </section>
+
+  <section class="section shell milestone-page-intro" aria-labelledby="milestones-ledger-heading">
+    <div class="section-heading">
+      <p class="eyebrow">CRONOLOGÍA TÉCNICA</p>
+      <h2 id="milestones-ledger-heading">Resultados con <span>alcance explícito.</span></h2>
+      <p>Los estados posibles son «en desarrollo», «en pruebas» y «verificado». Cada hito mantiene su fecha de consecución y, cuando se publique, un enlace a su evidencia pública comprobable.</p>
+    </div>
+    <div class="milestone-ledger">
+      
+      <article class="milestone-entry" id="syp-lab-005">
+        <div class="milestone-entry-meta">
+          <time datetime="2026-11-03">3 de noviembre de 2026</time>
+          <span class="milestone-id">SYP-LAB-005</span>
+          <span class="milestone-scope">Ergo devnet local · consenso heredado, NO red SYPcoin</span>
+        </div>
+        <div class="milestone-entry-body">
+          <span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN LABORATORIO</span>
+          <h2>Dos nodos conectados y sincronización de bloques</h2>
+          <p>En una red local de laboratorio basada en Ergo devnet, dos nodos intercambiaron bloques y se comprobó la sincronización, incluida la identidad de un bloque compartido, el génesis y la raíz de estado.</p>
+          <p class="milestone-details">Los ensayos confirmaron un peer por nodo y bloques coincidentes; también se observaron pruebas de producción de bloques hasta altura 60. Se utilizó el consenso heredado de Ergo. Esto no demuestra una testnet de SYPcoin, su génesis o su consenso propio.</p>
+          <span class="milestone-checks">2 nodos · 1 peer por nodo · sincronización PASS</span>
+          <span class="milestone-evidence-pending">Evidencia pública pendiente · informe de laboratorio no publicado</span>
+        </div>
+      </article>
+
+      <article class="milestone-entry" id="syp-lab-004">
+        <div class="milestone-entry-meta">
+          <time datetime="2026-11-03">3 de noviembre de 2026</time>
+          <span class="milestone-id">SYP-LAB-004</span>
+          <span class="milestone-scope">Modelos experimentales · sin activación de consenso</span>
+        </div>
+        <div class="milestone-entry-body">
+          <span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN LABORATORIO</span>
+          <h2>Modelos experimentales de FRM, tesorería y transparencia</h2>
+          <p>Compilación correcta y 25 de 25 pruebas superadas: 9 del Fondo de Recompensas Mineras, 11 de tesorería y 5 de transparencia.</p>
+          <p class="milestone-details">Validación de modelos experimentales. Los contratos, la política monetaria y estos mecanismos no se declaran activados ni obligatorios en el consenso de una red SYPcoin.</p>
+          <span class="milestone-checks">25/25 PASS: FRM 9 · tesorería 11 · transparencia 5</span>
+          <span class="milestone-evidence-pending">Evidencia pública pendiente · informe de laboratorio no publicado</span>
+        </div>
+      </article>
+
+      <article class="milestone-entry" id="syp-lab-003">
+        <div class="milestone-entry-meta">
+          <time datetime="2026-11-02">2 de noviembre de 2026</time>
+          <span class="milestone-id">SYP-LAB-003</span>
+          <span class="milestone-scope">Laboratorio local · emisión experimental</span>
+        </div>
+        <div class="milestone-entry-body">
+          <span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN LABORATORIO</span>
+          <h2>Construcción y seguimiento de la emisión UTXO</h2>
+          <p>Las pruebas del constructor de transacciones v0.7 (5/5), CandidateGenerator v0.8 (5/5) y seguimiento UTXO v0.9 (6/6) terminaron en PASS.</p>
+          <p class="milestone-details">Los ensayos comprueban componentes de emisión en laboratorio; no constituyen todavía la integración completa de las reglas definitivas de SYPcoin en su red.</p>
+          <span class="milestone-checks">v0.7: 5/5 · v0.8: 5/5 · v0.9: 6/6 PASS</span>
+          <span class="milestone-evidence-pending">Evidencia pública pendiente · informe de laboratorio no publicado</span>
+        </div>
+      </article>
+
+      <article class="milestone-entry" id="syp-lab-002">
+        <div class="milestone-entry-meta">
+          <time datetime="2026-11-02">2 de noviembre de 2026</time>
+          <span class="milestone-id">SYP-LAB-002</span>
+          <span class="milestone-scope">ErgoTree experimental · sin activación de consenso</span>
+        </div>
+        <div class="milestone-entry-body">
+          <span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN LABORATORIO</span>
+          <h2>Contrato de emisión ErgoTree e intérprete</h2>
+          <p>El contrato experimental v0.5 superó 5 de 5 pruebas y la ejecución con intérprete v0.6 superó 8 de 8.</p>
+          <p class="milestone-details">Se validaron casos de gasto aceptados y rechazados en pruebas del contrato. No representa una activación en consenso ni una auditoría independiente del contrato.</p>
+          <span class="milestone-checks">v0.5: 5/5 PASS · v0.6: 8/8 PASS</span>
+          <span class="milestone-evidence-pending">Evidencia pública pendiente · informe de laboratorio no publicado</span>
+        </div>
+      </article>
+
+      <article class="milestone-entry" id="syp-lab-001">
+        <div class="milestone-entry-meta">
+          <time datetime="2026-11-02">2 de noviembre de 2026</time>
+          <span class="milestone-id">SYP-LAB-001</span>
+          <span class="milestone-scope">Laboratorio local · componentes experimentales</span>
+        </div>
+        <div class="milestone-entry-body">
+          <span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN LABORATORIO</span>
+          <h2>Núcleo monetario y génesis experimental</h2>
+          <p>La contabilidad monetaria v0.3 superó 9 de 9 pruebas; la integración experimental del génesis v0.4.2 también obtuvo PASS.</p>
+          <p class="milestone-details">Validación de reglas contables y construcción de un génesis experimental en laboratorio. Estos resultados no acreditan la activación del génesis definitivo ni la emisión de una red SYPcoin.</p>
+          <span class="milestone-checks">v0.3: 9/9 PASS · v0.4.2: PASS</span>
+          <span class="milestone-evidence-pending">Evidencia pública pendiente · informe de laboratorio no publicado</span>
+        </div>
+      </article>
+    </div>
+    <div class="milestone-disclaimer">
+      <p><strong>Alcance de estas pruebas:</strong> el código de consenso definitivo, la política monetaria, el génesis propio, la seguridad de la red y el lanzamiento de una testnet SYPcoin requieren verificaciones adicionales. No hay enlaces inventados a informes locales o repositorios privados.</p>
+    </div>
+    <p class="accounting-footnote">Archivo estructurado de hitos: <a href="/data/hitos.json">consultar JSON público</a>.</p>
+  </section>
+  <section class="closing">
+    <div class="shell closing-inner">
+      <img src="/assets/brand/favicon.webp?v=4" alt="" width="48" height="48">
+      <h2>Cada avance, con sus pruebas y sus límites.</h2>
+      <p>Publicaremos nuevas evidencias cuando existan enlaces verificables y aptos para difusión pública.</p>
+      <a class="button button-ghost" href="/">Volver a SYPcoin</a>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="shell footer-bottom">
+    <span>© <span data-year></span> SYPcoin</span><a href="/seguridad/">Seguridad</a><span class="mono">HITOS / EN DESARROLLO</span>
+  </div>
+</footer>
+<script src="/app.js?v=7" defer></script>
+<!-- Cloudflare Web Analytics -->
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"0fa19af8000e4a5b804729c3998c7813"}'></script>
+</body>
+</html>

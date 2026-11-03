@@ -13,7 +13,7 @@
   <meta property="og:image" content="https://sypcoin2026.github.io/assets/brand/logo-principal.webp">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="/assets/brand/favicon.webp?v=4" type="image/webp">
-  <link rel="stylesheet" href="/styles.css?v=7">
+  <link rel="stylesheet" href="/styles.css?v=8">
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -37,6 +37,7 @@
         <a href="#emision">Emisión</a>
         <a href="#solidaria">SYP Solidaria</a>
         <a href="#hoja-ruta">Roadmap</a>
+        <a href="#hitos">Hitos del desarrollo</a>
         <a href="#documentacion">Docs</a>
       </nav>
     </div>
@@ -324,7 +325,40 @@
       </div>
     </section>
 
-        <section class="section shell" id="hoja-ruta">
+    
+    <section class="section shell milestones-home" id="hitos" aria-labelledby="milestones-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">HITOS DEL DESARROLLO</p>
+        <h2 id="milestones-title">Avances reales. <span>Pruebas identificables.</span></h2>
+        <p>Resultados conseguidos en laboratorio, con fecha y alcance explícitos. Los ensayos sobre Ergo devnet no son una red SYPcoin ya operativa.</p>
+      </div>
+      <div class="milestones-grid">
+        <article class="milestone-card reveal">
+          <div class="milestone-card-top"><time datetime="2026-11-03">03 nov 2026</time><span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN LABORATORIO</span></div>
+          <h3>Dos nodos conectados y sincronización de bloques</h3>
+          <p>En una red local de laboratorio basada en Ergo devnet, dos nodos intercambiaron bloques y se comprobó la sincronización, incluida la identidad de un bloque compartido, el génesis y la raíz de estado.</p>
+          <span class="milestone-scope">Ergo devnet local · consenso heredado, NO red SYPcoin</span>
+          <span class="milestone-evidence-pending">Evidencia pública pendiente · informe de laboratorio no publicado</span>
+        </article>
+        <article class="milestone-card reveal">
+          <div class="milestone-card-top"><time datetime="2026-11-03">03 nov 2026</time><span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN LABORATORIO</span></div>
+          <h3>Modelos experimentales de FRM, tesorería y transparencia</h3>
+          <p>Compilación correcta y 25 de 25 pruebas superadas: 9 del Fondo de Recompensas Mineras, 11 de tesorería y 5 de transparencia.</p>
+          <span class="milestone-scope">Modelos experimentales · sin activación de consenso</span>
+          <span class="milestone-evidence-pending">Evidencia pública pendiente · informe de laboratorio no publicado</span>
+        </article>
+        <article class="milestone-card reveal">
+          <div class="milestone-card-top"><time datetime="2026-11-02">02 nov 2026</time><span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN LABORATORIO</span></div>
+          <h3>Núcleo monetario y génesis experimental</h3>
+          <p>La contabilidad monetaria v0.3 superó 9 de 9 pruebas; la integración experimental del génesis v0.4.2 también obtuvo PASS.</p>
+          <span class="milestone-scope">Laboratorio local · componentes experimentales</span>
+          <span class="milestone-evidence-pending">Evidencia pública pendiente · informe de laboratorio no publicado</span>
+        </article>
+      </div>
+      <a class="button button-ghost milestones-more" href="/hitos/">Ver todos los hitos del desarrollo</a>
+    </section>
+
+    <section class="section shell" id="hoja-ruta">
       <div class="section-heading reveal">
         <p class="eyebrow">ROADMAP</p>
         <h2>Primero protocolo.<br><span>Después ecosistema.</span></h2>
@@ -410,6 +444,7 @@
         <a href="#red">Red</a>
         <a href="#mineria">Minería</a>
         <a href="/seguridad/">Seguridad</a>
+        <a href="#hitos">Hitos del desarrollo</a>
         <a href="#solidaria">SYP Solidaria</a>
         <a href="/transparencia/">Transparencia</a>
         <a href="#documentacion">Docs</a>

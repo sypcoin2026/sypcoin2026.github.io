@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0.0",
+  "project": "SYPcoin",
+  "register": "development_milestones",
+  "current_project_stage": "development",
+  "disclaimer": "Verificado indica prueba completada en entorno de laboratorio, no auditoria independiente ni red SYPcoin operativa. Ergo devnet local no es la testnet propia de SYPcoin.",
+  "milestones": [
+    {
+      "id": "SYP-LAB-001",
+      "achieved_date": "2026-11-02",
+      "title": "Núcleo monetario y génesis experimental",
+      "description": "La contabilidad monetaria v0.3 superó 9 de 9 pruebas; la integración experimental del génesis v0.4.2 también obtuvo PASS.",
+      "details": "Validación de reglas contables y construcción de un génesis experimental en laboratorio. Estos resultados no acreditan la activación del génesis definitivo ni la emisión de una red SYPcoin.",
+      "status": "verificado",
+      "scope": "Laboratorio local · componentes experimentales",
+      "test_result": "v0.3: 9/9 PASS · v0.4.2: PASS",
+      "public_evidence": []
+    },
+    {
+      "id": "SYP-LAB-002",
+      "achieved_date": "2026-11-02",
+      "title": "Contrato de emisión ErgoTree e intérprete",
+      "description": "El contrato experimental v0.5 superó 5 de 5 pruebas y la ejecución con intérprete v0.6 superó 8 de 8.",
+      "details": "Se validaron casos de gasto aceptados y rechazados en pruebas del contrato. No representa una activación en consenso ni una auditoría independiente del contrato.",
+      "status": "verificado",
+      "scope": "ErgoTree experimental · sin activación de consenso",
+      "test_result": "v0.5: 5/5 PASS · v0.6: 8/8 PASS",
+      "public_evidence": []
+    },
+    {
+      "id": "SYP-LAB-003",
+      "achieved_date": "2026-11-02",
+      "title": "Construcción y seguimiento de la emisión UTXO",
+      "description": "Las pruebas del constructor de transacciones v0.7 (5/5), CandidateGenerator v0.8 (5/5) y seguimiento UTXO v0.9 (6/6) terminaron en PASS.",
+      "details": "Los ensayos comprueban componentes de emisión en laboratorio; no constituyen todavía la integración completa de las reglas definitivas de SYPcoin en su red.",
+      "status": "verificado",
+      "scope": "Laboratorio local · emisión experimental",
+      "test_result": "v0.7: 5/5 · v0.8: 5/5 · v0.9: 6/6 PASS",
+      "public_evidence": []
+    },
+    {
+      "id": "SYP-LAB-004",
+      "achieved_date": "2026-11-03",
+      "title": "Modelos experimentales de FRM, tesorería y transparencia",
+      "description": "Compilación correcta y 25 de 25 pruebas superadas: 9 del Fondo de Recompensas Mineras, 11 de tesorería y 5 de transparencia.",
+      "details": "Validación de modelos experimentales. Los contratos, la política monetaria y estos mecanismos no se declaran activados ni obligatorios en el consenso de una red SYPcoin.",
+      "status": "verificado",
+      "scope": "Modelos experimentales · sin activación de consenso",
+      "test_result": "25/25 PASS: FRM 9 · tesorería 11 · transparencia 5",
+      "public_evidence": []
+    },
+    {
+      "id": "SYP-LAB-005",
+      "achieved_date": "2026-11-03",
+      "title": "Dos nodos conectados y sincronización de bloques",
+      "description": "En una red local de laboratorio basada en Ergo devnet, dos nodos intercambiaron bloques y se comprobó la sincronización, incluida la identidad de un bloque compartido, el génesis y la raíz de estado.",
+      "details": "Los ensayos confirmaron un peer por nodo y bloques coincidentes; también se observaron pruebas de producción de bloques hasta altura 60. Se utilizó el consenso heredado de Ergo. Esto no demuestra una testnet de SYPcoin, su génesis o su consenso propio.",
+      "status": "verificado",
+      "scope": "Ergo devnet local · consenso heredado, NO red SYPcoin",
+      "test_result": "2 nodos · 1 peer por nodo · sincronización PASS",
+      "public_evidence": []
+    }
+  ]
+}
