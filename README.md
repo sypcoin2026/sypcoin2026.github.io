@@ -101,3 +101,10 @@ Web Analytics se instala mediante la etiqueta `beacon.min.js` al final de las p�
 - Enlaces internos, anclas y recursos sometidos a validación estática antes de publicar.
 - Canal de errores de contenido: GitHub Issues del **repositorio de la web**, nunca del núcleo. No usarlo para información sensible.
 - Estado rojo `EN DESARROLLO` y Cloudflare Web Analytics conservados.
+
+## Validación estática de publicación (2026-11-04)
+
+- 192 referencias internas HTML y archivos revisadas con correspondencia en el repositorio y anclas existentes: **0 referencias rotas**.
+- 7 páginas HTML, sin etiquetas o identificadores duplicados detectados.
+- Cloudflare Web Analytics: un script por página; estado de proyecto rojo y sin datos privados en enlaces públicos.
+- Las comprobaciones son **estáticas**; el acceso HTTP público y los servicios externos deben verificarse además en navegador. Un despliegue GitHub Pages con resultado `success` no sustituye esa comprobación.
