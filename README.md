@@ -156,3 +156,11 @@ The home and ES/EN network summaries now reflect the verified two-JVM native P2P
 ## Mining, security and roadmap editorial sync — 2026-11-05
 
 Spanish/English Mining, Security and Roadmap pages now distinguish real P2P connectivity between two native JVM processes (without blocks), offline signed issuance, partial consensus cases and read-only GPU sensor CI from pending native mining. No new visual styles, images, site status changes or private core material were introduced.
+
+## Testnet launch email opt-in (2026-11-05)
+- Optional ES/EN launch-alert form at /participa/#testnet and /en/participa/#testnet, reachable from the homepage.
+- FormSubmit POST forwards a single-purpose email opt-in to the designated project mailbox. Initial email activation and an end-to-end test must be performed by the mailbox owner before considering the form operational; subscriber email ownership is not verified.
+- No subscribers are stored in this GitHub repository. Hidden honeypot and FormSubmit's default captcha limit automated abuse; no passwords, wallet keys or payments are accepted.
+- Consent is unchecked by default, contains the one-notification purpose, privacy notice, manual unsubscribe contact, controller contact and planned retention.
+- Custom ES/EN submission feedback pages retain the site's brand/design and release stage; site CSS only gained additive form rules.
+- When sending manually, use BCC, honor unsubscribes, preserve consent evidence and delete subscriber records according to the published retention commitment.

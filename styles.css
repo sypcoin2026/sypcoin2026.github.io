@@ -1862,3 +1862,22 @@ a:focus-visible,button:focus-visible,summary:focus-visible {outline:2px solid #8
 /* Milestone date precision and pending goal state; original layout preserved. */
 .milestone-date-label{color:#9fb3c7;font:700 .74rem/1.45 ui-monospace,Consolas,monospace}
 .milestone-state[data-milestone-state="en desarrollo"]{background:rgba(130,144,157,.09);border-color:rgba(153,173,189,.24);color:#c0cad4}
+
+/* Testnet launch alert: opt-in form follows existing site palette and spacing. */
+.waitlist-section{scroll-margin-top:92px}
+.waitlist-panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.12fr);gap:clamp(22px,4vw,56px);align-items:start;padding:clamp(22px,4vw,44px);border:1px solid var(--line-strong);border-radius:22px;background:linear-gradient(130deg,rgba(30,84,134,.12),rgba(9,17,27,.96))}
+.waitlist-copy h3{font-size:clamp(1.3rem,2.6vw,1.75rem);letter-spacing:-.03em;margin:16px 0}
+.waitlist-copy p{color:#b1c1d2;line-height:1.7}
+.waitlist-copy .waitlist-caveat{font-size:.84rem;color:#95aabc}
+.waitlist-form{display:flex;flex-direction:column;gap:12px}
+.waitlist-form>label:not(.waitlist-consent){font-weight:750;color:#e8f3ff}
+.waitlist-form>input[type=email]{width:100%;max-width:100%;min-width:0;padding:13px 15px;border:1px solid rgba(127,179,219,.4);border-radius:12px;background:#101d2d;color:#f5faff;font:inherit;font-size:1rem}
+.waitlist-form>input[type=email]:focus-visible{outline:2px solid #81c8ff;outline-offset:2px}
+.waitlist-form>input[type=email]::placeholder{color:#9aafc4}
+.waitlist-consent{display:flex;gap:12px;align-items:flex-start;color:#cfdaea;line-height:1.55;font-size:.9rem;cursor:pointer}
+.waitlist-consent>input{flex:none;width:19px;height:19px;margin-top:3px;accent-color:#5fb0ff}
+.waitlist-form a{color:#a9d6ff;text-decoration:underline;text-underline-offset:3px}
+.waitlist-form .waitlist-small{color:#9fb1c4;font-size:.79rem;line-height:1.6;margin:0}
+.waitlist-submit{width:100%;justify-content:center;cursor:pointer;margin-top:4px}
+.waitlist-honey{display:none!important}
+@media(max-width:760px){.waitlist-panel{grid-template-columns:1fr}.waitlist-section{scroll-margin-top:74px}}
