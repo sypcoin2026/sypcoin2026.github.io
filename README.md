@@ -145,3 +145,6 @@ No se publican claves, rutas locales, puertos internos, datos bancarios, informe
 
 ## Editorial update (2026-11-04)
 Added milestone H14 and summarized the approved 24-hour solidarity-sales donation/evidence commitment, exclusively attributable costs and taxes, fiscal reconciliation, no designated beneficiary, separation from development funds and pending implementation. Both languages updated; no transactions added. No private coordination document or private links published.
+
+## Experimental monetary disclosure clarification (2026-11-04)
+The laboratory genesis includes initial solidarity, development and mining reward funds, so blanket claims of zero pre-created units were corrected. A personal founder reserve is not planned. Approximate 35-year emission, 240-second blocks and FRM contributions from year eight remain experimental and unratified. Private CI 42/42 results are not external audits or live native-network tests. No current site layouts or brand assets were changed.
