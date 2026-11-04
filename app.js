@@ -14,12 +14,19 @@ const PROJECT_RELEASE_STAGES = Object.freeze({
   ready: { label: 'LISTA PARA LANZAMIENTO', aria: 'Lista para lanzamiento' }
 });
 const release = PROJECT_RELEASE_STAGES[PROJECT_RELEASE_STAGE];
+const isEnglishPage = document.documentElement.lang.toLowerCase().startsWith('en');
+const EnglishStageLabels = Object.freeze({
+  development: { label: 'IN DEVELOPMENT', aria: 'In development' },
+  advanced: { label: 'ADVANCED TESTING', aria: 'Advanced testing' },
+  ready: { label: 'READY FOR LAUNCH', aria: 'Ready for launch' }
+});
 if (release) {
+  const localized = isEnglishPage ? EnglishStageLabels[PROJECT_RELEASE_STAGE] : release;
   document.querySelectorAll('[data-project-status]').forEach((el) => {
     el.setAttribute('data-stage', PROJECT_RELEASE_STAGE);
-    el.setAttribute('aria-label', 'Estado del proyecto: ' + release.aria);
+    el.setAttribute('aria-label', (isEnglishPage ? 'Project status: ' : 'Estado del proyecto: ') + localized.aria);
     const label = el.querySelector('[data-stage-label]');
-    if (label) label.textContent = release.label;
+    if (label) label.textContent = localized.label;
   });
 }
 

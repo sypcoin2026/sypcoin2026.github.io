@@ -125,3 +125,11 @@ La portada conserva el arte oficial de dragón y moneda, el tema visual y el ind
 - `/privacidad/`: alojamiento, analítica y datos sensibles.
 
 No se publican claves, rutas locales, puertos internos, datos bancarios, informes privados ni código del núcleo. Ergo devnet local es laboratorio, nunca una testnet SYPcoin. Todos los enlaces de portada deben llevar a capítulos concretos.
+
+## Bilingual public website (2026-11-04)
+
+- Spanish and English are maintained as separate static pages with canonical and hreflang pairs.
+- The release stage remains red; the English status is IN DEVELOPMENT.
+- Primary evidence is not yet public; posted milestone cards are summaries, not independent audits.
+- English documentation also covers FAQ, participation, privacy and evidence summaries.
+- Independent visual/browser audit is not verified due public-site DNS access limitations in this environment.

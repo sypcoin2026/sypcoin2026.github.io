@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://sypcoin2026.github.io/</loc></url>
-  <url><loc>https://sypcoin2026.github.io/red/</loc></url>
-  <url><loc>https://sypcoin2026.github.io/mineria/</loc></url>
-  <url><loc>https://sypcoin2026.github.io/emision/</loc></url>
-  <url><loc>https://sypcoin2026.github.io/seguridad/</loc></url>
-  <url><loc>https://sypcoin2026.github.io/hitos/</loc></url>
-  <url><loc>https://sypcoin2026.github.io/solidaria/</loc></url>
-  <url><loc>https://sypcoin2026.github.io/transparencia/</loc></url>
-  <url><loc>https://sypcoin2026.github.io/roadmap/</loc></url>
-  <url><loc>https://sypcoin2026.github.io/documentacion/</loc></url>
-  <url><loc>https://sypcoin2026.github.io/privacidad/</loc></url>
+<url><loc>https://sypcoin2026.github.io/</loc></url>
+<url><loc>https://sypcoin2026.github.io/en/</loc></url>
+<url><loc>https://sypcoin2026.github.io/red/</loc></url>
+<url><loc>https://sypcoin2026.github.io/en/red/</loc></url>
+<url><loc>https://sypcoin2026.github.io/mineria/</loc></url>
+<url><loc>https://sypcoin2026.github.io/en/mineria/</loc></url>
+<url><loc>https://sypcoin2026.github.io/emision/</loc></url>
+<url><loc>https://sypcoin2026.github.io/en/emision/</loc></url>
+<url><loc>https://sypcoin2026.github.io/seguridad/</loc></url>
+<url><loc>https://sypcoin2026.github.io/en/seguridad/</loc></url>
+<url><loc>https://sypcoin2026.github.io/hitos/</loc></url>
+<url><loc>https://sypcoin2026.github.io/en/hitos/</loc></url>
+<url><loc>https://sypcoin2026.github.io/solidaria/</loc></url>
+<url><loc>https://sypcoin2026.github.io/en/solidaria/</loc></url>
+<url><loc>https://sypcoin2026.github.io/transparencia/</loc></url>
+<url><loc>https://sypcoin2026.github.io/en/transparencia/</loc></url>
+<url><loc>https://sypcoin2026.github.io/roadmap/</loc></url>
+<url><loc>https://sypcoin2026.github.io/en/roadmap/</loc></url>
+<url><loc>https://sypcoin2026.github.io/documentacion/</loc></url>
+<url><loc>https://sypcoin2026.github.io/en/documentacion/</loc></url>
+<url><loc>https://sypcoin2026.github.io/documentacion/evidencias/</loc></url>
+<url><loc>https://sypcoin2026.github.io/en/documentacion/evidencias/</loc></url>
+<url><loc>https://sypcoin2026.github.io/participa/</loc></url>
+<url><loc>https://sypcoin2026.github.io/en/participa/</loc></url>
+<url><loc>https://sypcoin2026.github.io/privacidad/</loc></url>
+<url><loc>https://sypcoin2026.github.io/en/privacidad/</loc></url>
 </urlset>

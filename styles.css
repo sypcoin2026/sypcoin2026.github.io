@@ -1853,3 +1853,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible {outline:2px solid #8
 .diagram-caption{margin:20px 0 0;color:#8fa4b8;font-size:.83rem}
 .diagram-shell{margin-top:62px;margin-bottom:28px}
 @media(max-width:760px){.overview-now-grid{grid-template-columns:1fr}.overview-now-grid>div{padding:13px 0}.diagram-flow{flex-direction:column}.diagram-arrow{justify-content:center;transform:rotate(90deg)}}
+
+/* Official ES/EN language control */
+.nav .lang-switch{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;min-width:38px;padding:7px 10px;border:1px solid rgba(131,192,241,.4);border-radius:10px;color:#b4defe;font-weight:850;letter-spacing:.06em;background:rgba(36,107,173,.1)}
+.nav .lang-switch:hover,.nav .lang-switch:focus-visible{color:#fff;background:rgba(45,124,199,.22);border-color:rgba(132,198,248,.7)}
+@media(max-width:1360px){.nav .lang-switch{justify-content:flex-start;min-width:0;padding:12px 13px}}
