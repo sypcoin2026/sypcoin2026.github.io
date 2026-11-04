@@ -1793,3 +1793,30 @@ button { font: inherit; }
 a:focus-visible,button:focus-visible,summary:focus-visible {outline:2px solid #80bcfc;outline-offset:3px}
 @media(max-width:1120px){.info-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){.info-hero{padding:110px 0 60px}.info-card-grid,.info-state-grid{grid-template-columns:1fr}.docs-cards a.doc-resource{grid-template-columns:28px minmax(0,1fr);gap:12px}.docs-cards a.doc-resource .doc-state{grid-column:2;white-space:normal}.info-quicklinks a{padding:9px 11px}}
+
+/* SYPcoin long-form technical pages v1.0 - same palette, assets and design language. */
+.deep-hero{padding-top:144px}
+.deep-hero .info-quicklinks{max-width:900px}
+.deep-section{padding-top:92px;padding-bottom:32px;scroll-margin-top:88px}
+.deep-section .section-heading>p{max-width:860px;color:#9fb0c3;line-height:1.7}
+.deep-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;margin-top:35px}
+.deep-card{display:flex;flex-direction:column;min-width:0;padding:27px;border:1px solid var(--line);border-radius:19px;background:linear-gradient(145deg,rgba(22,37,56,.86),rgba(10,18,28,.92))}
+.deep-card h3{font-size:1.18rem;line-height:1.35;margin:18px 0 10px;letter-spacing:-.02em}
+.deep-card p{color:#9aadc0;font-size:.88rem;line-height:1.7;margin:0}
+.deep-card a{color:#abd9ff;text-decoration:underline;text-underline-offset:3px;font-size:.83rem;margin-top:auto;padding-top:18px}
+.deep-tag{color:#7fb8eb;font-size:.68rem;font-weight:800;line-height:1.6}
+.deep-steps{margin-top:35px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.deep-step{display:grid;grid-template-columns:65px minmax(0,1fr);gap:18px;border:1px solid var(--line);padding:23px;border-radius:16px;background:rgba(16,28,42,.65)}
+.deep-step>.mono{color:#86bfee;font-weight:750;font-size:.71rem;padding-top:3px}
+.deep-step h3{font-size:1.04rem;margin:0 0 8px}
+.deep-step p{color:#96a8bb;margin:0;font-size:.86rem;line-height:1.7}
+.deep-notice{margin:42px auto 20px;max-width:1120px;border-left:3px solid #e5ad6b;background:rgba(218,156,76,.065);padding:23px 27px;color:#e5bd88;line-height:1.7}
+.deep-notice p{margin:8px 0 0;color:#ad9e8a;font-size:.9rem}
+.deep-links{display:flex;flex-wrap:wrap;gap:14px;margin:28px auto 0;max-width:1200px}
+.deep-page .closing{padding:105px 0}
+.deep-page .status-pill-primary{margin-bottom:20px}
+.deep-page .info-quicklinks a{font-size:.85rem}
+.nav a[aria-current="page"]{color:#d9f0ff}
+@media(max-width:1360px){.nav-toggle{display:block;flex-shrink:0}.nav{position:absolute;top:74px;left:20px;right:20px;display:none;flex-direction:column;align-items:stretch;gap:0;max-width:640px;margin-left:auto;padding:8px;border:1px solid var(--line);border-radius:16px;background:#0c131d;box-shadow:var(--shadow)}.nav.open{display:flex}.nav a{padding:12px 13px;border-radius:10px}.nav a:hover{background:rgba(255,255,255,.03)}}
+@media(max-width:1060px){.deep-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.deep-hero{padding-top:110px}.deep-grid,.deep-steps{grid-template-columns:1fr}.deep-section{padding-top:62px}.deep-step{grid-template-columns:44px minmax(0,1fr);gap:12px}.nav{top:66px;left:14px;right:14px;max-width:none}.deep-links .button{max-width:100%}}
