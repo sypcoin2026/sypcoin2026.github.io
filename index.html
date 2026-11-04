@@ -13,7 +13,7 @@
   <meta property="og:image" content="https://sypcoin2026.github.io/assets/brand/logo-principal.webp">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="/assets/brand/favicon.webp?v=4" type="image/webp">
-  <link rel="stylesheet" href="/styles.css?v=9">
+  <link rel="stylesheet" href="/styles.css?v=10">
   <link rel="canonical" href="https://sypcoin2026.github.io/">
   <meta property="og:url" content="https://sypcoin2026.github.io/">
   <meta property="og:locale" content="es_ES">
@@ -35,16 +35,7 @@
         <span></span><span></span><span></span>
       </button>
 
-      <nav id="nav" class="nav" aria-label="Navegación principal" data-nav>
-        <a href="#red">Red</a>
-        <a href="#mineria">Minería</a>
-        <a class="nav-security" href="#seguridad">Seguridad</a>
-        <a href="#emision">Emisión</a>
-        <a href="#solidaria">SYP Solidaria</a>
-        <a href="#hoja-ruta">Roadmap</a>
-        <a href="#hitos">Hitos del desarrollo</a>
-        <a href="/documentacion/">Docs</a>
-      </nav>
+      <nav id="nav" class="nav" aria-label="Navegación principal" data-nav><a href="/">Inicio</a><a href="/red/">Red</a><a href="/mineria/">Minería</a><a href="/emision/">Emisión</a><a href="/seguridad/" class="nav-security">Seguridad</a><a href="/hitos/">Hitos</a><a href="/transparencia/">Transparencia</a><a href="/documentacion/">Docs</a></nav>
     </div>
   </header>
 
@@ -60,13 +51,13 @@
           <p class="eyebrow">SYP · CRIPTOMONEDA INDEPENDIENTE</p>
           <h1>Proof of Work.<br><span>Minería abierta.</span><br>Emisión verificable.</h1>
           <p class="hero-lead">
-            SYPcoin es un proyecto de criptomoneda independiente en desarrollo, orientado a una futura red PoW de minería GPU pública,
+            SYPcoin es un proyecto de criptomoneda independiente en desarrollo, orientado a una red PoW de minería GPU pública,
             reglas monetarias comprobables y desarrollo abierto por etapas.
           </p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#red">Conocer la red</a>
-            <a class="button button-ghost" href="#mineria">Prepararse para minar</a>
+            <a class="button button-primary" href="/red/">Conocer la red</a>
+            <a class="button button-ghost" href="/mineria/">Explorar la minería</a>
           </div>
 
           <div class="trust-row" aria-label="Principios de SYPcoin">
@@ -115,116 +106,56 @@
       </div>
     </section>
 
+    
     <section class="section shell" id="red">
       <div class="section-heading reveal">
         <p class="eyebrow">LA RED</p>
-        <h2>Una blockchain que se puede <span>comprobar</span>.</h2>
-        <p>
-          Las propiedades importantes de SYPcoin no dependen de promesas comerciales:
-          deben existir en el protocolo, en el código y en el historial público de la cadena.
-        </p>
+        <h2>Una blockchain que se pueda <span>comprobar.</span></h2>
+        <p>Red Proof-of-Work independiente, validación mediante nodos y arquitectura UTXO. Los primeros ensayos se han realizado en Ergo devnet local: no hay todavía una red pública propia de SYPcoin.</p>
       </div>
-
       <div class="feature-grid">
-        <article class="feature-card reveal">
-          <span class="feature-index">01</span>
-          <h3>Proof of Work</h3>
-          <p>Consenso basado en trabajo computacional verificable y participación pública de mineros.</p>
-          <div class="feature-tag">CONSENSO</div>
-        </article>
-
-        <article class="feature-card reveal">
-          <span class="feature-index">02</span>
-          <h3>Minería GPU</h3>
-          <p>Diseñada para que la seguridad de la red pueda sostenerse mediante hardware gráfico accesible.</p>
-          <div class="feature-tag">MINERÍA ABIERTA</div>
-        </article>
-
-        <article class="feature-card reveal">
-          <span class="feature-index">03</span>
-          <h3>Emisión auditable</h3>
-          <p>Supply, recompensas y calendario monetario quedan definidos por reglas técnicas verificables.</p>
-          <div class="feature-tag">TRANSPARENCIA</div>
-        </article>
+        <article class="feature-card reveal"><span class="feature-index">01</span><h3>Proof-of-Work</h3><p>Consenso verificable por nodos independientes.</p><div class="feature-tag">CONSENSO</div></article>
+        <article class="feature-card reveal"><span class="feature-index">02</span><h3>Transacciones UTXO</h3><p>Condiciones de gasto y estado monetario controlables.</p><div class="feature-tag">VALIDACIÓN</div></article>
+        <article class="feature-card reveal"><span class="feature-index">03</span><h3>Red P2P</h3><p>Propagación y sincronización bajo pruebas controladas.</p><div class="feature-tag">NODOS</div></article>
       </div>
+      <div class="overview-cta"><a class="button button-ghost" href="/red/">Descubrir cómo funcionará la red</a></div>
     </section>
-
 
     <section class="section security-feature" id="seguridad" aria-labelledby="security-title">
       <div class="shell security-feature-grid">
         <div class="security-story reveal">
-          <p class="eyebrow">SEGURIDAD DEL PROTOCOLO</p>
-          <h2 id="security-title">La seguridad no será una promesa. <span>Será una prioridad verificable.</span></h2>
-          <p>
-            Estamos diseñando SYPcoin para resistir errores de consenso, abuso de red
-            y vulnerabilidades en sus componentes. Cada defensa tendrá que superar pruebas
-            reproducibles y revisión antes del lanzamiento público.
-          </p>
-          <div class="security-story-actions">
-            <a class="button button-primary" href="/seguridad/">Ver plan de seguridad</a>
-            <span class="security-phase">Diseño y validación en curso</span>
-          </div>
+          <p class="eyebrow">SEGURIDAD</p>
+          <h2 id="security-title">La seguridad se demuestra <span>con pruebas.</span></h2>
+          <p>Consenso, transacciones, nodos, distribución y custodia: una visión de las prioridades de seguridad y lo que todavía debemos verificar.</p>
+          <div class="security-story-actions"><a class="button button-ghost" href="/seguridad/">Ver el plan de seguridad</a><span class="security-phase">Diseño y validación en curso</span></div>
         </div>
-
         <div class="security-display reveal reveal-delay" aria-label="Áreas de protección previstas">
-          <div class="security-display-header">
-            <span class="security-icon" aria-hidden="true">◆</span>
-            <span>SECURITY / ENGINEERING</span>
-            <span class="security-mark">SYP</span>
-          </div>
-          <div class="security-shield" aria-hidden="true">
-            <div class="shield-ring shield-ring-outer"></div>
-            <div class="shield-ring shield-ring-inner"></div>
-            <span>◆</span>
-          </div>
+          <div class="security-display-header"><span class="security-icon" aria-hidden="true">◆</span><span>SECURITY / ENGINEERING</span><span class="security-mark">SYP</span></div>
+          <div class="security-shield" aria-hidden="true"><div class="shield-ring shield-ring-outer"></div><div class="shield-ring shield-ring-inner"></div><span>◆</span></div>
           <div class="security-controls">
-            <div><span>01</span><strong>Consenso y bloques</strong><small>En diseño / validación</small></div>
-            <div><span>02</span><strong>Transacciones y UTXO</strong><small>En diseño / validación</small></div>
-            <div><span>03</span><strong>Nodos y red P2P</strong><small>Pruebas pendientes</small></div>
-            <div><span>04</span><strong>Actualizaciones y código</strong><small>Revisión continua prevista</small></div>
+            <div><span>01</span><strong>Consenso</strong><small>En validación</small></div>
+            <div><span>02</span><strong>UTXO</strong><small>Pruebas parciales</small></div>
+            <div><span>03</span><strong>Red P2P</strong><small>Pruebas pendientes</small></div>
+            <div><span>04</span><strong>Software</strong><small>Revisión continua</small></div>
           </div>
-          <p class="security-display-note">Sin auditoría externa concluida ni certificación de seguridad declarada.</p>
+          <p class="security-display-note">Sin auditoría externa concluida ni certificación declarada.</p>
         </div>
-      </div>
-      <div class="shell security-principles reveal">
-        <div><strong>Defensa en profundidad</strong><span>Múltiples controles, no una sola barrera</span></div>
-        <div><strong>Pruebas reproducibles</strong><span>Evidencia antes de proclamar seguridad</span></div>
-        <div><strong>Divulgación responsable</strong><span>Corrección antes de revelar detalles explotables</span></div>
       </div>
     </section>
 
     <section class="section section-split" id="mineria">
       <div class="shell split-grid">
         <div class="section-heading reveal">
-          <p class="eyebrow">MINERÍA</p>
-          <h2>Preparando la red.<br><span>Minería GPU futura.</span></h2>
-          <p>
-            Cuando la testnet pública de SYPcoin esté disponible publicaremos binarios oficiales, configuración y pruebas reproducibles
-            para empezar sin depender de configuraciones opacas.
-          </p>
-
-          <div class="platforms" aria-label="Plataformas previstas">
-            <span>AMD</span><span>NVIDIA</span><span>Linux</span><span>Windows</span>
-          </div>
+          <p class="eyebrow">MINERÍA GPU</p>
+          <h2>Eficiencia bajo prueba.<br><span>Minería abierta en el futuro.</span></h2>
+          <p>Investigamos el algoritmo, los consumos y la validación de bloques. Todavía no hay minero público de SYPcoin, pool ni testnet disponible.</p>
+          <div class="platforms" aria-label="Plataformas que se estudian"><span>GPU</span><span>Vulkan</span><span>Linux</span><span>Windows: objetivo</span></div>
+          <div class="overview-cta"><a class="button button-ghost" href="/mineria/">Explorar la minería GPU</a></div>
         </div>
-
         <div class="steps reveal reveal-delay">
-          <article>
-            <span>01</span>
-            <div><h3>Descarga verificada</h3><p>Binarios versionados, hashes y procedencia clara.</p></div>
-          </article>
-          <article>
-            <span>02</span>
-            <div><h3>Configura</h3><p>Nodo, wallet y parámetros de minería documentados paso a paso.</p></div>
-          </article>
-          <article>
-            <span>03</span>
-            <div><h3>Conecta</h3><p>Participación en la red pública una vez abierta la testnet.</p></div>
-          </article>
-          <article>
-            <span>04</span>
-            <div><h3>Verifica</h3><p>Bloques, recompensas y transacciones visibles en el Explorer.</p></div>
-          </article>
+          <article><span>01</span><div><h3>Medir</h3><p>Consumo, trabajo validado y estabilidad de la GPU.</p></div></article>
+          <article><span>02</span><div><h3>Verificar</h3><p>Bloques nuevos aceptados por nodos de ensayo.</p></div></article>
+          <article><span>03</span><div><h3>Publicar</h3><p>Solo distribuir software cuando esté validado.</p></div></article>
         </div>
       </div>
     </section>
@@ -232,185 +163,96 @@
     <section class="section shell" id="emision">
       <div class="emission-panel reveal">
         <div class="emission-intro">
-        <div class="section-heading compact">
-          <p class="eyebrow">POLÍTICA MONETARIA</p>
-          <h2>Sin monedas escondidas.</h2>
-          <p>
-            El objetivo es que la distribución inicial sea consecuencia de la minería y que las reglas
-            de emisión puedan auditarse antes de mainnet.
-          </p>
+          <div class="section-heading compact">
+            <p class="eyebrow">EMISIÓN MONETARIA</p>
+            <h2>Sin premine. <span>Reglas verificables.</span></h2>
+            <p>La emisión se diseña sin reserva del fundador, mediante minería y reglas monetarias auditables. Los parámetros definitivos aún están en validación.</p>
+            <div class="overview-cta"><a class="button button-ghost" href="/emision/">Entender la emisión y sus pruebas</a></div>
+          </div>
+          <div class="coin-art"><img src="/assets/brand/moneda.webp?v=4" alt="Representación oficial de la moneda SYP con el dragón azul" width="570" height="508" loading="lazy"></div>
         </div>
-        <div class="coin-art">
-          <img src="/assets/brand/moneda.webp?v=4" alt="Representación oficial de la moneda SYP con el dragón azul" width="570" height="508" loading="lazy">
-        </div>
-        </div>
-
         <div class="emission-facts">
-          <article><span>PREMINE</span><strong>0 SYP</strong></article>
-          <article><span>FUNDADOR</span><strong>0 SYP</strong></article>
-          <article><span>MÉTODO</span><strong>PoW</strong></article>
-          <article><span>REGLAS</span><strong>En código</strong></article>
+          <article><span>PREMINE PREVISTO</span><strong>0 SYP</strong></article>
+          <article><span>RESERVA FUNDADOR</span><strong>0 SYP</strong></article>
+          <article><span>MÉTODO PREVISTO</span><strong>PoW</strong></article>
+          <article><span>REGLAS FINALES</span><strong>Pendientes</strong></article>
         </div>
-
-        <div class="emission-line" aria-hidden="true">
-          <span></span><span></span><span></span><span></span><span></span><span></span>
-        </div>
-
-        <p class="fineprint">
-          Los parámetros monetarios definitivos se publicarán con su especificación y código verificable
-          antes del lanzamiento de mainnet.
-        </p>
+        <p class="fineprint">Compromisos de diseño, no circulación monetaria activa ni reglas de consenso ya certificadas.</p>
       </div>
     </section>
 
     <section class="section solidarity" id="solidaria">
       <div class="shell solidarity-intro">
         <div class="section-heading reveal">
-          <p class="eyebrow warm">COMPROMISO SOLIDARIO DE SYPcoin</p>
-          <h2>La minería contribuye.<br><span class="warm-text">La tesorería comparte el esfuerzo.</span></h2>
-          <p>
-            SYPcoin establece un modelo solidario financiado entre la minería y la tesorería.
-            El objetivo es mantener el compromiso benéfico inicial con una menor carga
-            sobre las recompensas de los mineros.
-          </p>
-          <a class="button button-solidarity" href="/transparencia/">Ver fondos y transparencia</a>
+          <p class="eyebrow warm">SYP SOLIDARIA</p>
+          <h2>El compromiso benéfico, <span class="warm-text">con trazabilidad.</span></h2>
+          <p>Modelo previsto: 0,5 % asociado a minería y aportación equivalente del 0,5 % de tesorería. Las futuras donaciones deberán acreditarse mediante documentos y movimientos verificables.</p>
+          <div class="overview-buttons"><a class="button button-ghost" href="/solidaria/">Conocer SYP Solidaria</a><a class="button button-ghost" href="/transparencia/">Ver transparencia</a></div>
         </div>
         <div class="solidarity-allocation reveal reveal-delay" aria-label="Reparto solidario previsto">
-          <div class="solidarity-allocation-head">
-            <span>MODELO SOLIDARIO</span><span class="allocation-total">1 % TOTAL EQUIVALENTE</span>
-          </div>
+          <div class="solidarity-allocation-head"><span>MODELO EN DESARROLLO</span><span class="allocation-total">1 % TOTAL EQUIVALENTE</span></div>
           <div class="allocation-bar" aria-hidden="true"><span></span><span></span></div>
           <div class="allocation-numbers">
-            <div><span class="allocation-value">0,5 %</span><strong>Minería</strong><small>Parte prevista de la emisión minera</small></div>
-            <div><span class="allocation-value">0,5 %</span><strong>Tesorería</strong><small>Aportación equivalente que asume la tesorería</small></div>
+            <div><span class="allocation-value">0,5 %</span><strong>Minería</strong><small>Modelo previsto</small></div>
+            <div><span class="allocation-value">0,5 %</span><strong>Tesorería</strong><small>Aportación equivalente prevista</small></div>
           </div>
-          <div class="allocation-history">
-            <span>ANTES: 1 % SOPORTADO POR LA MINERÍA</span>
-            <strong>AHORA: 0,5 % MINERÍA + 0,5 % TESORERÍA</strong>
-          </div>
-          <p class="allocation-footnote">
-            La tesorería asume el 0,5 % retirado de la carga minera para que
-            minar SYP sea más rentable sin reducir el objetivo solidario total.
-            Base exacta de cálculo e implementación: pendientes de validación pública antes de mainnet.
-          </p>
+          <p class="allocation-footnote">La base exacta y la implementación en cadena siguen pendientes. No se han publicado donaciones completadas.</p>
         </div>
-      </div>
-      <div class="shell solidarity-promise reveal">
-        <span class="promise-symbol" aria-hidden="true">100 %</span>
-        <div>
-          <p class="eyebrow warm">COMPROMISO DE ENTREGA ÍNTEGRA</p>
-          <h3>El importe comprometido como donación llegará íntegro a la entidad beneficiaria.</h3>
-          <p>
-            Si se anuncia una donación de una cantidad concreta, esa misma cantidad deberá
-            figurar como recibida por la entidad. Comisiones, conversiones, impuestos y gastos
-            se identificarán y contabilizarán por separado; no se ocultarán ni disminuirán
-            el importe anunciado como donación. No se declarará una entrega completada sin
-            evidencia suficiente de recepción.
-          </p>
-        </div>
-      </div>
-      <div class="shell solidarity-ledger-preview reveal">
-        <div>
-          <p class="eyebrow warm">TESORERÍA Y SOLIDARIDAD: AUDITORÍA ABIERTA</p>
-          <h3>Una contabilidad separada para cada fondo.</h3>
-          <p>Saldo, entradas, salidas, conversión a euros, comisión, destinatario y justificante. Los registros de cadena y las pruebas documentales se publicarán como evidencias distintas.</p>
-        </div>
-        <div class="solidarity-ledger-chips" aria-label="Registros que se publicarán">
-          <span>Transacción on-chain</span>
-          <span>Facturas y recibos</span>
-          <span>Importe recibido</span>
-          <span>Entidad beneficiaria</span>
-          <span>Datos sensibles protegidos</span>
-        </div>
-        <a class="button button-ghost" href="/transparencia/">Consultar el libro de fondos</a>
-      </div>
-      <div class="shell solidarity-lots-note reveal">
-        <strong>SYP Solidaria — lotes voluntarios</strong>
-        <p>Las ventas solidarias de SYP legítimamente minados son una iniciativa adicional e independiente del reparto recurrente 0,5 % + 0,5 %. También tendrán registros, transacciones y justificantes propios.</p>
       </div>
     </section>
 
-    
+    <section class="section shell overview-section" id="transparencia">
+      <div class="section-heading reveal">
+        <p class="eyebrow">TRANSPARENCIA</p>
+        <h2>Fondos y movimientos <span>sin cifras inventadas.</span></h2>
+        <p>La contabilidad pública distinguirá saldos, ingresos, gastos, transacciones y justificantes. Hoy existe el esquema de registro, pero no movimientos públicos contrastados.</p>
+      </div>
+      <div class="overview-cta"><a class="button button-ghost" href="/transparencia/">Abrir la contabilidad y las evidencias</a></div>
+    </section>
+
     <section class="section shell milestones-home" id="hitos" aria-labelledby="milestones-title">
       <div class="section-heading reveal">
         <p class="eyebrow">HITOS DEL DESARROLLO</p>
-        <h2 id="milestones-title">Avances reales. <span>Pruebas identificables.</span></h2>
-        <p>Resultados conseguidos en laboratorio, con fecha y alcance explícitos. Los ensayos sobre Ergo devnet no son una red SYPcoin ya operativa.</p>
+        <h2 id="milestones-title">Avances <span>con fecha y alcance.</span></h2>
+        <p>Los resultados de laboratorio están documentados por etapa. «Verificado» significa que la prueba indicada pasó; no que exista una red pública SYPcoin.</p>
       </div>
       <div class="milestones-grid">
-        <article class="milestone-card reveal">
-          <div class="milestone-card-top"><time datetime="2026-11-03">03 nov 2026</time><span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN LABORATORIO</span></div>
-          <h3>Dos nodos conectados y sincronización de bloques</h3>
-          <p>En una red local de laboratorio basada en Ergo devnet, dos nodos intercambiaron bloques y se comprobó la sincronización, incluida la identidad de un bloque compartido, el génesis y la raíz de estado.</p>
-          <span class="milestone-scope">Ergo devnet local · consenso heredado, NO red SYPcoin</span>
-          <span class="milestone-evidence-pending">Evidencia pública pendiente · informe de laboratorio no publicado</span>
-        </article>
-        <article class="milestone-card reveal">
-          <div class="milestone-card-top"><time datetime="2026-11-03">03 nov 2026</time><span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN LABORATORIO</span></div>
-          <h3>Modelos experimentales de FRM, tesorería y transparencia</h3>
-          <p>Compilación correcta y 25 de 25 pruebas superadas: 9 del Fondo de Recompensas Mineras, 11 de tesorería y 5 de transparencia.</p>
-          <span class="milestone-scope">Modelos experimentales · sin activación de consenso</span>
-          <span class="milestone-evidence-pending">Evidencia pública pendiente · informe de laboratorio no publicado</span>
-        </article>
-        <article class="milestone-card reveal">
-          <div class="milestone-card-top"><time datetime="2026-11-02">02 nov 2026</time><span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN LABORATORIO</span></div>
-          <h3>Núcleo monetario y génesis experimental</h3>
-          <p>La contabilidad monetaria v0.3 superó 9 de 9 pruebas; la integración experimental del génesis v0.4.2 también obtuvo PASS.</p>
-          <span class="milestone-scope">Laboratorio local · componentes experimentales</span>
-          <span class="milestone-evidence-pending">Evidencia pública pendiente · informe de laboratorio no publicado</span>
-        </article>
+        <article class="milestone-card reveal"><div class="milestone-card-top"><time datetime="2026-11-03">03 nov 2026</time><span class="milestone-state" data-milestone-state="verificado">LABORATORIO</span></div><h3>Dos nodos sincronizados</h3><p>Comunicación y bloques coincidentes en Ergo devnet local.</p><a class="milestone-evidence-link" href="/hitos/#syp-lab-005">Leer resultados y límites</a></article>
+        <article class="milestone-card reveal"><div class="milestone-card-top"><time datetime="2026-11-03">03 nov 2026</time><span class="milestone-state" data-milestone-state="verificado">LABORATORIO</span></div><h3>FRM, tesorería y transparencia</h3><p>25/25 pruebas superadas para modelos experimentales.</p><a class="milestone-evidence-link" href="/hitos/#syp-lab-004">Leer resultados y límites</a></article>
+        <article class="milestone-card reveal"><div class="milestone-card-top"><time datetime="2026-11-02">02 nov 2026</time><span class="milestone-state" data-milestone-state="verificado">LABORATORIO</span></div><h3>Núcleo monetario</h3><p>Pruebas de contabilidad y génesis experimental.</p><a class="milestone-evidence-link" href="/hitos/#syp-lab-001">Leer resultados y límites</a></article>
       </div>
-      <a class="button button-ghost milestones-more" href="/hitos/">Ver todos los hitos del desarrollo</a>
+      <div class="overview-cta"><a class="button button-ghost" href="/hitos/">Consultar todos los hitos</a></div>
     </section>
 
     <section class="section shell" id="hoja-ruta">
-      <div class="section-heading reveal">
-        <p class="eyebrow">ROADMAP</p>
-        <h2>Primero protocolo.<br><span>Después ecosistema.</span></h2>
-      </div>
-
+      <div class="section-heading reveal"><p class="eyebrow">ROADMAP</p><h2>Primero protocolo. <span>Después ecosistema.</span></h2><p>Cuatro fases sometidas a criterios técnicos. La testnet pública y mainnet no tienen fecha de lanzamiento confirmada.</p></div>
       <div class="timeline reveal">
-        <article class="done">
-          <span class="timeline-dot"></span>
-          <div><small>FASE 01</small><h3>Core monetario</h3><p>Contabilidad, emisión y validación de los componentes fundamentales.</p></div>
-        </article>
-        <article class="active">
-          <span class="timeline-dot"></span>
-          <div><small>FASE 02 · ACTUAL</small><h3>Integración del protocolo</h3><p>Emisión canónica, consenso, génesis y comportamiento completo del nodo.</p></div>
-        </article>
-        <article>
-          <span class="timeline-dot"></span>
-          <div><small>FASE 03</small><h3>Testnet pública</h3><p>Nodos externos, minería, Explorer, wallet y pruebas bajo condiciones reales.</p></div>
-        </article>
-        <article>
-          <span class="timeline-dot"></span>
-          <div><small>FASE 04</small><h3>Mainnet</h3><p>Lanzamiento únicamente cuando las reglas y herramientas estén suficientemente validadas.</p></div>
-        </article>
+        <article class="done"><span class="timeline-dot"></span><div><small>FASE 01</small><h3>Componentes en laboratorio</h3><p>Pruebas experimentales superadas.</p></div></article>
+        <article class="active"><span class="timeline-dot"></span><div><small>FASE 02 · ACTUAL</small><h3>Integración de SYPcoin</h3><p>Protocolo, génesis y consenso propios pendientes.</p></div></article>
+        <article><span class="timeline-dot"></span><div><small>FASE 03</small><h3>Testnet pública</h3><p>Nodos y minería verificables por terceros.</p></div></article>
+        <article><span class="timeline-dot"></span><div><small>FASE 04</small><h3>Mainnet</h3><p>Solo tras cumplir los criterios de seguridad.</p></div></article>
       </div>
+      <div class="overview-cta"><a class="button button-ghost" href="/roadmap/">Consultar el plan y los criterios de lanzamiento</a></div>
     </section>
 
     <section class="section docs-section" id="documentacion">
       <div class="shell docs-grid">
         <div class="section-heading reveal">
           <p class="eyebrow">DOCUMENTACIÓN</p>
-          <h2>No confíes.<br><span>Comprueba.</span></h2>
-          <p>
-            Consulta los documentos disponibles y el estado de nodos, minería,
-            consenso, Explorer y herramientas que aún no se han publicado.
-          </p>
-          <a class="button button-ghost docs-start" href="/documentacion/">Abrir documentación y preguntas frecuentes</a>
+          <h2>Para entender. <span>Para comprobar.</span></h2>
+          <p>Guías técnicas, preguntas frecuentes, glosario, estado real de herramientas y datos públicos disponibles.</p>
+          <div class="overview-cta"><a class="button button-ghost" href="/documentacion/">Abrir toda la documentación</a></div>
         </div>
-
         <div class="docs-cards reveal reveal-delay">
-          <a class="doc-resource" href="/documentacion/#nodos"><span class="mono">01</span><div><h3>Ejecutar un nodo</h3><p>Requisitos, instalación y conectividad.</p></div><span class="doc-state">Aún no disponible</span></a>
-          <a class="doc-resource" href="/documentacion/#mineria"><span class="mono">02</span><div><h3>Minería</h3><p>Hardware, minero y pruebas verificables.</p></div><span class="doc-state">En pruebas</span></a>
-          <a class="doc-resource" href="/documentacion/#consenso"><span class="mono">03</span><div><h3>Consenso y emisión</h3><p>Reglas previstas y pruebas de laboratorio.</p></div><span class="doc-state">En desarrollo</span></a>
-          <a class="doc-resource" href="/documentacion/#explorer"><span class="mono">04</span><div><h3>Explorer y API</h3><p>Consulta de cadena y servicios de red.</p></div><span class="doc-state">Aún no disponible</span></a>
+          <a class="doc-resource" href="/documentacion/#nodos"><span class="mono">01</span><div><h3>Nodos</h3><p>Estado y requisitos de publicación.</p></div><span class="doc-state">No disponible</span></a>
+          <a class="doc-resource" href="/documentacion/#mineria"><span class="mono">02</span><div><h3>Minería GPU</h3><p>Objetivos y pruebas actuales.</p></div><span class="doc-state">En pruebas</span></a>
+          <a class="doc-resource" href="/documentacion/#consenso"><span class="mono">03</span><div><h3>Consenso y emisión</h3><p>Reglas previstas y límites.</p></div><span class="doc-state">En desarrollo</span></a>
+          <a class="doc-resource" href="/documentacion/#explorer"><span class="mono">04</span><div><h3>Wallet, Explorer y API</h3><p>Herramientas públicas previstas.</p></div><span class="doc-state">No disponible</span></a>
         </div>
       </div>
     </section>
 
-    <section class="closing">
+<section class="closing">
       <div class="shell closing-inner reveal">
         <img src="/assets/brand/favicon.webp?v=4" alt="" width="48" height="48">
         <p class="eyebrow">SYPcoin</p>
@@ -430,16 +272,7 @@
         </a>
         <p>Software y protocolo de criptomoneda en desarrollo.</p>
       </div>
-      <div class="footer-links">
-        <a href="#red">Red</a>
-        <a href="#mineria">Minería</a>
-        <a href="/seguridad/">Seguridad</a>
-        <a href="#hitos">Hitos del desarrollo</a>
-        <a href="#solidaria">SYP Solidaria</a>
-        <a href="/transparencia/">Transparencia</a>
-        <a href="/documentacion/">Docs</a>
-              <a href="/privacidad/">Privacidad</a>
-      </div>
+      <div class="footer-links"><a href="/red/">Red</a><a href="/mineria/">Minería</a><a href="/emision/">Emisión</a><a href="/seguridad/">Seguridad</a><a href="/hitos/">Hitos</a><a href="/roadmap/">Roadmap</a><a href="/solidaria/">SYP Solidaria</a><a href="/transparencia/">Transparencia</a><a href="/documentacion/">Docs</a><a href="/privacidad/">Privacidad</a></div>
       <p class="footer-legal">
         Esta web describe un proyecto tecnológico en desarrollo y no constituye asesoramiento financiero
         ni una promesa de rentabilidad.

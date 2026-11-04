@@ -108,3 +108,20 @@ Web Analytics se instala mediante la etiqueta `beacon.min.js` al final de las p�
 - 7 páginas HTML, sin etiquetas o identificadores duplicados detectados.
 - Cloudflare Web Analytics: un script por página; estado de proyecto rojo y sin datos privados en enlaces públicos.
 - Las comprobaciones son **estáticas**; el acceso HTTP público y los servicios externos deben verificarse además en navegador. Un despliegue GitHub Pages con resultado `success` no sustituye esa comprobación.
+
+## Arquitectura editorial v1.0 — 2026-11-04
+
+La portada conserva el arte oficial de dragón y moneda, el tema visual y el indicador general rojo, pero resume cada área y dirige a páginas monográficas completas:
+
+- `/red/`: red y modelo P2P/UTXO/PoW.
+- `/mineria/`: minería GPU, mediciones y disponibilidad.
+- `/emision/`: reglas monetarias, premine y pruebas ErgoTree.
+- `/seguridad/`: modelo de amenazas, pruebas y divulgación.
+- `/hitos/`: cronología, estados y criterios de evidencia pública.
+- `/solidaria/`: política 0,5 % + 0,5 % y lotes voluntarios.
+- `/transparencia/`: fondos, reconciliación, movimientos y privacidad.
+- `/roadmap/`: fases y gates para testnet/mainnet.
+- `/documentacion/`: referencias, guías, FAQ y glosario.
+- `/privacidad/`: alojamiento, analítica y datos sensibles.
+
+No se publican claves, rutas locales, puertos internos, datos bancarios, informes privados ni código del núcleo. Ergo devnet local es laboratorio, nunca una testnet SYPcoin. Todos los enlaces de portada deben llevar a capítulos concretos.
