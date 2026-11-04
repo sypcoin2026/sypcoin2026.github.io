@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "project": "SYPcoin",
   "register": "development_milestones",
   "current_project_stage": "development",
@@ -203,6 +203,20 @@
       "status": "en desarrollo",
       "scope": "Objetivo futuro · testnet pública",
       "test_result": "Pendiente de validación y lanzamiento",
+      "public_evidence": []
+    },
+    {
+      "id": "H14",
+      "achieved_date": null,
+      "approved_date": "2026-11-04",
+      "date_label": "Compromiso aprobado · 4 de noviembre de 2026",
+      "date_precision": "decision_date",
+      "title": "Compromiso solidario y transparencia definidos",
+      "description": "Los ingresos de futuras ventas solidarias se destinarán exclusivamente a costes inevitables de conversión, impuestos legalmente atribuibles a esas ventas y donaciones para ayudar a niños. Todo el remanente se donará.",
+      "details": "Cada conversión confirmada a euros iniciará un plazo máximo de 24 horas naturales para realizar la donación y publicar las evidencias disponibles. Estimaciones y reservas fiscales serán diferenciadas de impuestos definitivos y pagados. No hay beneficiarios designados, donaciones ni automatizaciones activas.",
+      "status": "en desarrollo",
+      "scope": "Compromiso aprobado · implementación y operaciones pendientes",
+      "test_result": "Política aprobada 04/11/2026 · no implementada",
       "public_evidence": []
     }
   ],

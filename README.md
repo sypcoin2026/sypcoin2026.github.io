@@ -142,3 +142,6 @@ No se publican claves, rutas locales, puertos internos, datos bancarios, informe
 - Solo se muestran enlaces a evidencias públicas cuando se hayan verificado como públicamente accesibles. No se han añadido enlaces privados.
 - Las páginas española e inglesa presentan los nuevos avances manteniendo el diseño y la identidad visual actuales.
 - El documento original de traspaso es local y **no se incorpora ni se sube a GitHub**. El registro `data/hitos.json` contiene exclusivamente resúmenes editoriales públicos.
+
+## Editorial update (2026-11-04)
+Added milestone H14 and summarized the approved 24-hour solidarity-sales donation/evidence commitment, exclusively attributable costs and taxes, fiscal reconciliation, no designated beneficiary, separation from development funds and pending implementation. Both languages updated; no transactions added. No private coordination document or private links published.

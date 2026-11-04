@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "project": "SYPcoin",
   "status": "policy_defined_no_verified_public_movements",
   "unit": "percent",
@@ -10,7 +10,31 @@
     "combined_objective_percent": 1,
     "interpretation": "Treasury replaces the 0.5 percentage points removed from the mining contribution. Exact calculation basis and on-chain implementation are pending public technical specification.",
     "donation_integrity": "100 percent of the amount explicitly declared and committed as a donation must reach the beneficiary. Costs and gross proceeds are accounted for separately.",
-    "verified_on_chain": false
+    "verified_on_chain": false,
+    "approved_solidarity_sales": {
+      "approved_at": "2026-11-04",
+      "status": "policy_approved_not_implemented",
+      "allocation": "100 percent of solidarity sale proceeds restricted to unavoidable conversion fees, taxes legally attributable to those sales and child-focused donations; all remainder donated.",
+      "max_hours_after_confirmed_eur_conversion": 24,
+      "required_reporting": "Confirmation and deadline timestamps, conversion and donation details, provisional tax estimate/reserve, final assessed and paid taxes, reconciled surplus, receipts, and delays.",
+      "beneficiary_designated": false,
+      "automation_implemented": false,
+      "verified_donations": false,
+      "no_use_for": [
+        "personal expenses",
+        "development",
+        "servers",
+        "infrastructure",
+        "advertising",
+        "unrelated personal taxes"
+      ]
+    },
+    "development_fund": {
+      "status": "approved_policy_pending_implementation",
+      "purpose": "Documented creation, infrastructure, tools and maintenance",
+      "separate_from_solidarity": true,
+      "retrospective_personal_pay": false
+    }
   },
   "funds": [
     {
@@ -49,5 +73,31 @@
   "movements": [],
   "donation_receipts": [],
   "last_verified_at": null,
-  "notes": "Empty lists and null balances mean no verified public records are available. They do not mean a confirmed zero balance."
+  "notes": "Empty lists and null balances mean no verified public records are available. They do not mean a confirmed zero balance.",
+  "proposed_solidarity_sales_fields": [
+    "id",
+    "syp_vendidos",
+    "tx_onchain",
+    "conversion_confirmada_at",
+    "eur_brutos",
+    "comisiones_eur",
+    "eur_tras_comisiones",
+    "impuestos_estimados_atribuibles_eur",
+    "estimacion_fiscal_at",
+    "impuestos_liquidados_atribuibles_eur",
+    "impuestos_pagados_atribuibles_eur",
+    "reserva_fiscal_pendiente_eur",
+    "ajuste_reserva_fiscal_eur",
+    "eur_disponibles_donacion",
+    "limite_donacion_at",
+    "donacion_importe_eur",
+    "donacion_ejecutada_at",
+    "ong",
+    "finalidad",
+    "publicacion_evidencia_at",
+    "justificante_publico_redactado",
+    "recepcion_confirmada_at",
+    "estado"
+  ],
+  "solidarity_sales": []
 }
