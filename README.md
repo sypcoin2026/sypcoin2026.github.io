@@ -148,3 +148,7 @@ Added milestone H14 and summarized the approved 24-hour solidarity-sales donatio
 
 ## Experimental monetary disclosure clarification (2026-11-04)
 The laboratory genesis includes initial solidarity, development and mining reward funds, so blanket claims of zero pre-created units were corrected. A personal founder reserve is not planned. Approximate 35-year emission, 240-second blocks and FRM contributions from year eight remain experimental and unratified. Private CI 42/42 results are not external audits or live native-network tests. No current site layouts or brand assets were changed.
+
+## Publication sync: native P2P, offline signing and GPU-monitoring tests (2026-11-05)
+
+The home and ES/EN network summaries now reflect the verified two-JVM native P2P handshake without blocks, distinct from historical Ergo devnet synchronization. Home milestone previews preserve the existing three-card layout and link to H23, H25 and H26. No native PoW block or GPU mining is claimed. Private coordination material and private evidence links are not published.

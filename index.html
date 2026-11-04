@@ -107,12 +107,12 @@
     </section>
 
     
-    <section class="shell overview-now" aria-labelledby="estado-actual-titulo"><div class="overview-now-top"><p class="eyebrow">ESTADO DOCUMENTADO DEL DESARROLLO</p><span class="mono">4 NOV 2026</span></div><h2 id="estado-actual-titulo">Resultados de laboratorio. <span>Objetivos claros.</span></h2><div class="overview-now-grid"><div><strong>5</strong><span>Hitos de laboratorio documentados</span></div><div><strong>Ergo devnet</strong><span>Dos nodos locales sincronizados; consenso heredado</span></div><div><strong>Siguiente objetivo</strong><span>Integración y validación del protocolo propio</span></div></div><p class="overview-now-note">No existe una testnet pública SYPcoin. Estos datos no representan métricas de cadena activa.</p><a href="/hitos/">Consultar todos los hitos y sus límites →</a></section>
+    <section class="shell overview-now" aria-labelledby="estado-actual-titulo"><div class="overview-now-top"><p class="eyebrow">ESTADO DOCUMENTADO DEL DESARROLLO</p><span class="mono">4 NOV 2026</span></div><h2 id="estado-actual-titulo">Resultados de laboratorio. <span>Objetivos claros.</span></h2><div class="overview-now-grid"><div><strong>2 JVM</strong><span>Conexión P2P nativa en laboratorio, sin bloques</span></div><div><strong>23 casos</strong><span>Consenso parcial en pruebas; todavía sin PoW válido</span></div><div><strong>GPU SYP</strong><span>Minería nativa y doble validación pendientes</span></div></div><p class="overview-now-note">No existe una testnet pública SYPcoin. Estos datos no representan métricas de cadena activa.</p><a href="/hitos/">Consultar todos los hitos y sus límites →</a></section>
 <section class="section shell" id="red">
       <div class="section-heading reveal">
         <p class="eyebrow">LA RED</p>
         <h2>Una blockchain que se pueda <span>comprobar.</span></h2>
-        <p>Red Proof-of-Work independiente, validación mediante nodos y arquitectura UTXO. Los primeros ensayos se han realizado en Ergo devnet local: no hay todavía una red pública propia de SYPcoin.</p>
+        <p>Red Proof-of-Work independiente, validación mediante nodos y arquitectura UTXO. Ya se logró un handshake P2P real entre dos procesos SYPcoin nativos, sin intercambiar bloques. También existen ensayos independientes en Ergo devnet. Todavía no hay consenso nativo completo ni testnet pública.</p>
       </div>
       <div class="feature-grid">
         <article class="feature-card reveal"><span class="feature-index">01</span><h3>Proof-of-Work</h3><p>Consenso verificable por nodos independientes.</p><div class="feature-tag">CONSENSO</div></article>
@@ -218,21 +218,9 @@
         <p>Los resultados de laboratorio están documentados por etapa. «Verificado» significa que la prueba indicada pasó; no que exista una red pública SYPcoin.</p>
       </div>
       <div class="milestones-grid">
-        <article class="milestone-card reveal">
-          <div class="milestone-card-top"><span class="milestone-date-label">4 de noviembre de 2026</span><span class="milestone-state" data-milestone-state="verificado">LABORATORIO</span></div>
-          <h3>42 de 42 pruebas de integración superadas</h3>
-          <p>La integración experimental del núcleo completó 42/42 pruebas de CI sin fallos, incluidas regresiones monetarias y controles P2P simulados.</p>
-          <span class="milestone-scope">SYPcoin nativa experimental · CI privada, pruebas offline/simuladas</span>
-          <a class="milestone-evidence-link" href="/hitos/#h10">Leer resultados y límites</a>
-        </article>
-        <article class="milestone-card reveal">
-          <div class="milestone-card-top"><span class="milestone-date-label">3–4 de noviembre de 2026 · día exacto por confirmar</span><span class="milestone-state" data-milestone-state="verificado">LABORATORIO</span></div>
-          <h3>Bloque nuevo minado por GPU en Ergo devnet</h3>
-          <p>Una RX 7900 XTX obtuvo un bloque nuevo de prueba, validado por dos nodos en Ergo devnet local.</p>
-          <span class="milestone-scope">Ergo devnet local · minería GPU verificada, NO SYP nativa</span>
-          <a class="milestone-evidence-link" href="/hitos/#h04">Leer resultados y límites</a>
-        </article>
-        <article class="milestone-card reveal"><div class="milestone-card-top"><span class="milestone-date-label">4 de noviembre de 2026</span><span class="milestone-state" data-milestone-state="en desarrollo">POLÍTICA APROBADA · EN DESARROLLO</span></div><h3>Nuevo compromiso solidario</h3><p>Ingresos solidarios destinados solo a costes inevitables, impuestos atribuibles y donaciones infantiles. Todo el remanente se donará, con compromiso de 24 horas desde la conversión confirmada. Implementación pendiente.</p><span class="milestone-scope">Sin beneficiarios designados ni donaciones realizadas</span><a class="milestone-evidence-link" href="/hitos/#h14">Leer el hito y sus límites</a></article>
+        <article class="milestone-card reveal"><div class="milestone-card-top"><span class="milestone-date-label">4 de noviembre de 2026</span><span class="milestone-state" data-milestone-state="verificado">LABORATORIO</span></div><h3>Primera conexión P2P nativa entre dos JVM</h3><p>Dos procesos SYPcoin nativos establecieron una sesión P2P real y superaron 30/30 pruebas focales. No intercambiaron bloques.</p><span class="milestone-scope">P2P nativo privado · 2 JVM · 0 bloques</span><a class="milestone-evidence-link" href="/hitos/#h23">Leer resultados y límites</a></article>
+        <article class="milestone-card reveal"><div class="milestone-card-top"><span class="milestone-date-label">4 de noviembre de 2026</span><span class="milestone-state" data-milestone-state="en pruebas">EN PRUEBAS · PARCIAL</span></div><h3>Validación preliminar del consenso</h3><p>23 casos únicos de validación parcial. No se ha obtenido un bloque PoW válido ni se ha demostrado consenso entre nodos.</p><span class="milestone-scope">Consenso SYPcoin experimental · sin solución PoW</span><a class="milestone-evidence-link" href="/hitos/#h25">Leer resultados y límites</a></article>
+        <article class="milestone-card reveal"><div class="milestone-card-top"><span class="milestone-date-label">4 de noviembre de 2026</span><span class="milestone-state" data-milestone-state="verificado">LABORATORIO</span></div><h3>Monitorización energética GPU preparada</h3><p>La herramienta AMDGPU de solo lectura superó 6/6 pruebas offline sin modificar parámetros ni ejecutar minería.</p><span class="milestone-scope">Sensores GPU · CI privada offline, sin minado</span><a class="milestone-evidence-link" href="/hitos/#h26">Leer resultados y límites</a></article>
       </div>
       <div class="overview-cta"><a class="button button-ghost" href="/hitos/">Consultar todos los hitos</a></div>
     </section>
