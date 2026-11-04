@@ -152,3 +152,7 @@ The laboratory genesis includes initial solidarity, development and mining rewar
 ## Publication sync: native P2P, offline signing and GPU-monitoring tests (2026-11-05)
 
 The home and ES/EN network summaries now reflect the verified two-JVM native P2P handshake without blocks, distinct from historical Ergo devnet synchronization. Home milestone previews preserve the existing three-card layout and link to H23, H25 and H26. No native PoW block or GPU mining is claimed. Private coordination material and private evidence links are not published.
+
+## Mining, security and roadmap editorial sync — 2026-11-05
+
+Spanish/English Mining, Security and Roadmap pages now distinguish real P2P connectivity between two native JVM processes (without blocks), offline signed issuance, partial consensus cases and read-only GPU sensor CI from pending native mining. No new visual styles, images, site status changes or private core material were introduced.
