@@ -28,6 +28,12 @@ const nav = document.querySelector('[data-nav]');
 const toggle = document.querySelector('[data-nav-toggle]');
 const year = document.querySelector('[data-year]');
 
+const closeMobileNav = () => {
+  if (!nav || !toggle) return;
+  nav.classList.remove('open');
+  toggle.setAttribute('aria-expanded', 'false');
+};
+
 const syncHeader = () => {
   header?.classList.toggle('scrolled', window.scrollY > 18);
 };
@@ -41,11 +47,18 @@ if (toggle && nav) {
     toggle.setAttribute('aria-expanded', String(open));
   });
 
-  nav.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-    });
+  nav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMobileNav));
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      const wasOpen = nav.classList.contains('open');
+      closeMobileNav();
+      if (wasOpen) toggle.focus();
+    }
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!nav.contains(event.target) && !toggle.contains(event.target)) closeMobileNav();
   });
 }
 

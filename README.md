@@ -89,3 +89,15 @@ Web Analytics se instala mediante la etiqueta `beacon.min.js` al final de las p�
 - La prueba de dos nodos es **Ergo devnet local con consenso heredado** y **no** la red o testnet propia de SYPcoin.
 - La etiqueta de proyecto `EN DESARROLLO` permanece roja: `PROJECT_RELEASE_STAGE = 'development'` en `app.js`.
 - La conversación de web solo modifica el repositorio `sypcoin2026.github.io`, nunca el núcleo de la moneda.
+
+## Revisión de sitio público 2026-11-04
+
+- Mantener el logo y el diseño original; no mover ni alterar imágenes oficiales.
+- Centro de documentación y preguntas frecuentes en `/documentacion/`; política de privacidad en `/privacidad/`.
+- Los cuatro elementos de Documentación en portada son enlaces reales y llevan al apartado adecuado.
+- Avisos expresos: sin red SYPcoin pública activa, minero descargable, wallet oficial, Explorer ni API.
+- Hitos Ergo devnet local descritos como pruebas internas con consenso heredado, no testnet SYPcoin.
+- `404.html`, `sitemap.xml` y `robots.txt` para rutas inexistentes y descubrimiento.
+- Enlaces internos, anclas y recursos sometidos a validación estática antes de publicar.
+- Canal de errores de contenido: GitHub Issues del **repositorio de la web**, nunca del núcleo. No usarlo para información sensible.
+- Estado rojo `EN DESARROLLO` y Cloudflare Web Analytics conservados.
