@@ -1829,3 +1829,27 @@ a:focus-visible,button:focus-visible,summary:focus-visible {outline:2px solid #8
 .overview-cta .button,.overview-buttons .button{max-width:100%}
 .milestones-home .milestone-card .milestone-evidence-link{text-decoration:underline}
 @media(max-width:760px){.overview-buttons{flex-direction:column}.overview-buttons .button{width:100%}}
+
+/* Editorial progress and responsive technical diagrams — 2026-11-04 */
+.overview-now{margin-top:30px;margin-bottom:58px;padding:clamp(22px,4vw,42px);border:1px solid var(--line-strong);border-radius:24px;background:linear-gradient(135deg,rgba(26,77,135,.19),rgba(9,17,27,.92))}
+.overview-now-top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.overview-now-top .eyebrow{margin:0}
+.overview-now-top .mono{font-size:.72rem;color:#8fa8c3}
+.overview-now h2{font-size:clamp(1.35rem,3vw,2.3rem);letter-spacing:-.04em;margin:15px 0 24px}
+.overview-now h2 span{color:#91c4ff}
+.overview-now-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.overview-now-grid>div{display:flex;flex-direction:column;gap:8px;border-top:1px solid var(--line);padding:20px 0}
+.overview-now-grid strong{color:#e5f4ff;font-size:clamp(1.25rem,2.1vw,1.7rem)}
+.overview-now-grid span,.overview-now-note{color:#a0b3c8;font-size:.86rem;line-height:1.6}
+.overview-now>a{color:#a9d6ff;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+.explainer-diagram{padding:clamp(20px,3vw,38px);border:1px solid var(--line-strong);border-radius:22px;background:radial-gradient(circle at 12% 20%,rgba(49,126,219,.13),transparent 34%),rgba(11,24,37,.9)}
+.explainer-diagram>.eyebrow{color:#90c5ed}
+.diagram-flow{display:flex;align-items:stretch;gap:12px;margin-top:25px}
+.diagram-node{flex:1;min-width:0;display:flex;flex-direction:column;gap:7px;padding:20px;border:1px solid rgba(104,163,215,.25);border-radius:15px;background:rgba(20,45,65,.45)}
+.diagram-node>.mono{font-size:.68rem;color:#88c2ff}
+.diagram-node strong{font-size:1.05rem}
+.diagram-node small{color:#a0b5c8;font-size:.81rem;line-height:1.55}
+.diagram-arrow{display:flex;align-items:center;color:#85bae7;font-weight:800;font-size:1.4rem}
+.diagram-caption{margin:20px 0 0;color:#8fa4b8;font-size:.83rem}
+.diagram-shell{margin-top:62px;margin-bottom:28px}
+@media(max-width:760px){.overview-now-grid{grid-template-columns:1fr}.overview-now-grid>div{padding:13px 0}.diagram-flow{flex-direction:column}.diagram-arrow{justify-content:center;transform:rotate(90deg)}}
