@@ -1,9 +1,9 @@
 {
-  "schema_version": "1.2.0",
+  "schema_version": "1.3.0",
   "project": "SYPcoin",
   "register": "development_milestones",
   "current_project_stage": "development",
-  "disclaimer": "Verificado describe un resultado comunicado en su entorno de pruebas (local, offline, simulación o CI privada); no es una auditoría independiente, ni una testnet pública SYPcoin. Ergo devnet no equivale a minería o nodos SYPcoin nativos reales. No se publican enlaces a evidencias privadas.",
+  "disclaimer": "Cada resultado se limita al entorno citado. El handshake P2P real entre dos JVM SYPcoin fue verificado sin bloques. No hay consenso compartido, minería GPU nativa SYPcoin, bloque PoW válido nuevo confirmado ni testnet pública. La GPU de Ergo devnet es un ensayo independiente. La evidencia original del núcleo sigue privada.",
   "milestones": [
     {
       "id": "SYP-LAB-001",
@@ -171,12 +171,12 @@
       "achieved_date": null,
       "date_label": "Pendiente · sin fecha confirmada",
       "date_precision": "pending",
-      "title": "Dos nodos SYPcoin nativos comunicándose",
-      "description": "Objetivo: dos nodos privados SYPcoin reales que intercambien y validen bloques, reinicien y recuperen el estado sin inconsistencias.",
-      "details": "Este objetivo no está conseguido. Las pruebas anteriores de dos nodos fueron sobre Ergo devnet y no sustituyen esta validación.",
+      "title": "Consenso entre dos nodos SYPcoin nativos",
+      "description": "Objetivo: que dos procesos SYPcoin nativos propaguen, validen y apliquen un mismo bloque PoW válido, manteniendo el estado tras reiniciar.",
+      "details": "H23 ya verificó el handshake real entre dos JVM SYPcoin en laboratorio, pero con cero bloques. La sincronización y el consenso de bloques entre ambos procesos no están demostrados.",
       "status": "en desarrollo",
       "scope": "Objetivo futuro · red privada SYPcoin nativa",
-      "test_result": "Pendiente de verificación real",
+      "test_result": "Conexión P2P real verificada por separado · consenso pendiente",
       "public_evidence": []
     },
     {
@@ -218,7 +218,72 @@
       "scope": "Compromiso aprobado · implementación y operaciones pendientes",
       "test_result": "Política aprobada 04/11/2026 · no implementada",
       "public_evidence": []
+    },
+    {
+      "id": "H23",
+      "achieved_date": "2026-11-04",
+      "date_label": "4 de noviembre de 2026",
+      "date_precision": "day",
+      "title": "Primera conexión P2P nativa entre dos JVM SYPcoin",
+      "description": "Dos procesos nativos SYPcoin establecieron una conexión P2P recíproca con el mismo génesis en una red privada local.",
+      "details": "En el laboratorio se verificaron dos JVM con un par conectado por nodo y 30/30 pruebas focales superadas. La ejecución tuvo cero bloques, sin minería, propagación ni consenso compartido entre los nodos.",
+      "status": "verificado",
+      "scope": "Dos JVM SYPcoin reales · P2P privado, sin bloques",
+      "test_result": "Handshake P2P recíproco · 30/30 focales PASS · 0 bloques",
+      "public_evidence": []
+    },
+    {
+      "id": "H24",
+      "achieved_date": "2026-11-04",
+      "date_label": "4 de noviembre de 2026",
+      "date_precision": "day",
+      "title": "Emisión SYPcoin firmada con custodia cifrada",
+      "description": "Una emisión Base experimental fue firmada desde custodia local cifrada y validada mediante el intérprete real, con 10/10 pruebas offline correctas.",
+      "details": "Se utilizaron cuatro identidades criptográficas independientes de ensayo. No arrancaron nodos ni mineros y no se produjo un bloque. La custodia de prueba no es una wallet pública disponible.",
+      "status": "verificado",
+      "scope": "SYPcoin experimental · firma y custodia offline",
+      "test_result": "10/10 PASS · firma Base validada offline",
+      "public_evidence": []
+    },
+    {
+      "id": "H25",
+      "achieved_date": "2026-11-04",
+      "date_label": "4 de noviembre de 2026",
+      "date_precision": "day",
+      "title": "Validación preliminar del consenso privado",
+      "description": "Pruebas parciales de PoW, dificultad, AVL+, estado UTXO y fondos, con un candidato SYPcoin nativo todavía sin solución PoW válida.",
+      "details": "Se consolidaron 23 casos únicos de diferentes ejecuciones focales con correcciones; NO corresponde a una suite única 23/23. Falta obtener un bloque con PoW válido, aceptarlo y demostrar su propagación y persistencia entre dos nodos nativos.",
+      "status": "en pruebas",
+      "scope": "Consenso nativo · validaciones parciales, sin bloque PoW válido",
+      "test_result": "23 casos únicos consolidados, no una sola suite · consenso parcial",
+      "public_evidence": []
+    },
+    {
+      "id": "H26",
+      "achieved_date": "2026-11-04",
+      "date_label": "4 de noviembre de 2026",
+      "date_precision": "day",
+      "title": "Herramienta de monitorización energética GPU preparada",
+      "description": "Una herramienta experimental de solo lectura para sensores AMDGPU superó 6/6 pruebas offline en CI privada.",
+      "details": "Consulta potencia reportada, frecuencias, temperaturas y ventilación, sin cambiar ajustes ni ejecutar minería. No demuestra todavía ahorro energético ni mejora del rendimiento en hardware real.",
+      "status": "verificado",
+      "scope": "Monitorización AMDGPU de solo lectura · CI offline",
+      "test_result": "6/6 PASS · sin ajustes de GPU ni minería",
+      "public_evidence": []
+    },
+    {
+      "id": "H27",
+      "achieved_date": null,
+      "date_label": "Pendiente · sin fecha confirmada",
+      "date_precision": "pending",
+      "title": "Puente de minería Autolykos2 para SOAT Vulkan",
+      "description": "Objetivo: integrar candidatos Autolykos2 SYPcoin con SOAT Vulkan para futuras pruebas manuales de la RX 7900 XTX.",
+      "details": "El adaptador no está acreditado como implementado, probado ni ejecutado. Falta obtener un bloque SYPcoin nuevo con PoW válido y demostrar su aceptación, propagación y persistencia por dos nodos nativos.",
+      "status": "en desarrollo",
+      "scope": "Objetivo futuro · minero GPU nativo no implementado",
+      "test_result": "Pendiente · sin GPU nativa SYPcoin acreditada",
+      "public_evidence": []
     }
   ],
-  "updated_at": "2026-11-04"
+  "updated_at": "2026-11-05"
 }
