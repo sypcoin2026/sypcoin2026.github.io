@@ -1858,3 +1858,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible {outline:2px solid #8
 .nav .lang-switch{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;min-width:38px;padding:7px 10px;border:1px solid rgba(131,192,241,.4);border-radius:10px;color:#b4defe;font-weight:850;letter-spacing:.06em;background:rgba(36,107,173,.1)}
 .nav .lang-switch:hover,.nav .lang-switch:focus-visible{color:#fff;background:rgba(45,124,199,.22);border-color:rgba(132,198,248,.7)}
 @media(max-width:1360px){.nav .lang-switch{justify-content:flex-start;min-width:0;padding:12px 13px}}
+
+/* Milestone date precision and pending goal state; original layout preserved. */
+.milestone-date-label{color:#9fb3c7;font:700 .74rem/1.45 ui-monospace,Consolas,monospace}
+.milestone-state[data-milestone-state="en desarrollo"]{background:rgba(130,144,157,.09);border-color:rgba(153,173,189,.24);color:#c0cad4}

@@ -133,3 +133,12 @@ No se publican claves, rutas locales, puertos internos, datos bancarios, informe
 - Primary evidence is not yet public; posted milestone cards are summaries, not independent audits.
 - English documentation also covers FAQ, participation, privacy and evidence summaries.
 - Independent visual/browser audit is not verified due public-site DNS access limitations in this environment.
+
+## Hitos del desarrollo — actualización editorial 2026-11-04
+
+- Se han integrado los hitos H04–H13 del puente de avances suministrado por el propietario y se han conservado los cinco registros históricos SYP-LAB existentes. H01–H03 se corresponden con SYP-LAB-001/002/003; no se duplican.
+- Se han rectificado fechas históricas no confirmadas: hasta 2026-11-02 en los primeros ensayos, mes sin día confirmado para registros históricos posteriores, intervalo 3–4 de noviembre para minería GPU sobre Ergo devnet.
+- CI experimental privada 42/42 PASS no significa dos nodos SYPcoin nativos reales, minería GPU nativa ni testnet pública. H11–H13 se distinguen como objetivos no conseguidos.
+- Solo se muestran enlaces a evidencias públicas cuando se hayan verificado como públicamente accesibles. No se han añadido enlaces privados.
+- Las páginas española e inglesa presentan los nuevos avances manteniendo el diseño y la identidad visual actuales.
+- El documento original de traspaso es local y **no se incorpora ni se sube a GitHub**. El registro `data/hitos.json` contiene exclusivamente resúmenes editoriales públicos.

@@ -37,7 +37,7 @@
       </div>
       <h1>Hitos del <span>desarrollo.</span></h1>
       <p>Registro de avances comunicados por el equipo técnico, con fechas y resultados de laboratorio. «Verificado» significa que las pruebas indicadas han terminado correctamente en su entorno de ensayo; no equivale a una auditoría externa ni a un lanzamiento público.</p>
-      <p>Los resultados identificados como <strong>Ergo devnet</strong> pertenecen a una red de laboratorio basada en Ergo, no a una red operativa ni a una testnet propia de SYPcoin.</p>
+      <p>Los resultados identificados como <strong>Ergo devnet</strong> pertenecen a una red de laboratorio basada en Ergo, no a una red operativa ni a una testnet propia de SYPcoin. La CI nativa ha superado pruebas offline y simuladas, pero <strong>todavía no se han verificado nodos SYPcoin nativos reales ni minería GPU nativa</strong>.</p>
     </div>
   </section>
 
@@ -45,94 +45,248 @@
     <div class="section-heading">
       <p class="eyebrow">CRONOLOGÍA TÉCNICA</p>
       <h2 id="milestones-ledger-heading">Resultados con <span>alcance explícito.</span></h2>
-      <p>Los estados posibles son «en desarrollo», «en pruebas» y «verificado». Cada hito mantiene su fecha de consecución y, cuando se publique, un enlace a su evidencia pública comprobable.</p>
+      <p>Los estados posibles son «en desarrollo», «en pruebas» y «verificado». Las fechas exactas se publican solo cuando están confirmadas; en los demás casos se indica un período o fecha pendiente. Los objetivos futuros aún no tienen fecha de consecución.</p>
     </div>
     <div class="milestone-ledger">
-      
-      <article class="milestone-entry" id="syp-lab-005">
-        <div class="milestone-entry-meta">
-          <time datetime="2026-11-03">3 de noviembre de 2026</time>
-          <span class="milestone-id">SYP-LAB-005</span>
-          <span class="milestone-scope">Ergo devnet local · consenso heredado, NO red SYPcoin</span>
-        </div>
-        <div class="milestone-entry-body">
-          <span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN LABORATORIO</span>
-          <h2>Dos nodos conectados y sincronización de bloques</h2>
-          <p>En una red local de laboratorio basada en Ergo devnet, dos nodos intercambiaron bloques y se comprobó la sincronización, incluida la identidad de un bloque compartido, el génesis y la raíz de estado.</p>
-          <p class="milestone-details">Los ensayos confirmaron un peer por nodo y bloques coincidentes; también se observaron pruebas de producción de bloques hasta altura 60. Se utilizó el consenso heredado de Ergo. Esto no demuestra una testnet de SYPcoin, su génesis o su consenso propio.</p>
-          <span class="milestone-checks">2 nodos · 1 peer por nodo · sincronización PASS</span>
-          <span class="milestone-evidence-pending">Evidencia pública pendiente · informe de laboratorio no publicado</span>
-        </div>
-      </article>
-
-      <article class="milestone-entry" id="syp-lab-004">
-        <div class="milestone-entry-meta">
-          <time datetime="2026-11-03">3 de noviembre de 2026</time>
-          <span class="milestone-id">SYP-LAB-004</span>
-          <span class="milestone-scope">Modelos experimentales · sin activación de consenso</span>
-        </div>
-        <div class="milestone-entry-body">
-          <span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN LABORATORIO</span>
-          <h2>Modelos experimentales de FRM, tesorería y transparencia</h2>
-          <p>Compilación correcta y 25 de 25 pruebas superadas: 9 del Fondo de Recompensas Mineras, 11 de tesorería y 5 de transparencia.</p>
-          <p class="milestone-details">Validación de modelos experimentales. Los contratos, la política monetaria y estos mecanismos no se declaran activados ni obligatorios en el consenso de una red SYPcoin.</p>
-          <span class="milestone-checks">25/25 PASS: FRM 9 · tesorería 11 · transparencia 5</span>
-          <span class="milestone-evidence-pending">Evidencia pública pendiente · informe de laboratorio no publicado</span>
-        </div>
-      </article>
-
-      <article class="milestone-entry" id="syp-lab-003">
-        <div class="milestone-entry-meta">
-          <time datetime="2026-11-02">2 de noviembre de 2026</time>
-          <span class="milestone-id">SYP-LAB-003</span>
-          <span class="milestone-scope">Laboratorio local · emisión experimental</span>
-        </div>
-        <div class="milestone-entry-body">
-          <span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN LABORATORIO</span>
-          <h2>Construcción y seguimiento de la emisión UTXO</h2>
-          <p>Las pruebas del constructor de transacciones v0.7 (5/5), CandidateGenerator v0.8 (5/5) y seguimiento UTXO v0.9 (6/6) terminaron en PASS.</p>
-          <p class="milestone-details">Los ensayos comprueban componentes de emisión en laboratorio; no constituyen todavía la integración completa de las reglas definitivas de SYPcoin en su red.</p>
-          <span class="milestone-checks">v0.7: 5/5 · v0.8: 5/5 · v0.9: 6/6 PASS</span>
-          <span class="milestone-evidence-pending">Evidencia pública pendiente · informe de laboratorio no publicado</span>
-        </div>
-      </article>
-
-      <article class="milestone-entry" id="syp-lab-002">
-        <div class="milestone-entry-meta">
-          <time datetime="2026-11-02">2 de noviembre de 2026</time>
-          <span class="milestone-id">SYP-LAB-002</span>
-          <span class="milestone-scope">ErgoTree experimental · sin activación de consenso</span>
-        </div>
-        <div class="milestone-entry-body">
-          <span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN LABORATORIO</span>
-          <h2>Contrato de emisión ErgoTree e intérprete</h2>
-          <p>El contrato experimental v0.5 superó 5 de 5 pruebas y la ejecución con intérprete v0.6 superó 8 de 8.</p>
-          <p class="milestone-details">Se validaron casos de gasto aceptados y rechazados en pruebas del contrato. No representa una activación en consenso ni una auditoría independiente del contrato.</p>
-          <span class="milestone-checks">v0.5: 5/5 PASS · v0.6: 8/8 PASS</span>
-          <span class="milestone-evidence-pending">Evidencia pública pendiente · informe de laboratorio no publicado</span>
-        </div>
-      </article>
-
-      <article class="milestone-entry" id="syp-lab-001">
-        <div class="milestone-entry-meta">
-          <time datetime="2026-11-02">2 de noviembre de 2026</time>
-          <span class="milestone-id">SYP-LAB-001</span>
-          <span class="milestone-scope">Laboratorio local · componentes experimentales</span>
-        </div>
-        <div class="milestone-entry-body">
-          <span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN LABORATORIO</span>
-          <h2>Núcleo monetario y génesis experimental</h2>
-          <p>La contabilidad monetaria v0.3 superó 9 de 9 pruebas; la integración experimental del génesis v0.4.2 también obtuvo PASS.</p>
-          <p class="milestone-details">Validación de reglas contables y construcción de un génesis experimental en laboratorio. Estos resultados no acreditan la activación del génesis definitivo ni la emisión de una red SYPcoin.</p>
-          <span class="milestone-checks">v0.3: 9/9 PASS · v0.4.2: PASS</span>
-          <span class="milestone-evidence-pending">Evidencia pública pendiente · informe de laboratorio no publicado</span>
-        </div>
-      </article>
+<article class="milestone-entry" id="h04">
+  <div class="milestone-entry-meta">
+    <span class="milestone-date-label">3–4 de noviembre de 2026 · día exacto por confirmar</span>
+    <span class="milestone-id">H04</span>
+    <span class="milestone-scope">Ergo devnet local · minería GPU verificada, NO SYP nativa</span>
+  </div>
+  <div class="milestone-entry-body">
+    <span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN SU ENTORNO</span>
+    <h2>Bloque nuevo minado por GPU en Ergo devnet</h2>
+    <p>Una RX 7900 XTX obtuvo un bloque nuevo de prueba, validado por dos nodos en Ergo devnet local.</p>
+    <p class="milestone-details">Esta prueba acredita integración de minería GPU con la base Ergo; no es minería de moneda SYPcoin nativa ni demuestra funcionamiento de su consenso propio.</p>
+    <span class="milestone-checks">Bloque nuevo · GPU RX 7900 XTX · validación de 2 nodos</span>
+    <span class="milestone-evidence-pending">Evidencia pública pendiente de publicación</span>
+  </div>
+</article>
+<article class="milestone-entry" id="h05">
+  <div class="milestone-entry-meta">
+    <time datetime="2026-11-04">4 de noviembre de 2026</time>
+    <span class="milestone-id">H05</span>
+    <span class="milestone-scope">SYPcoin nativa experimental · pruebas offline</span>
+  </div>
+  <div class="milestone-entry-body">
+    <span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN SU ENTORNO</span>
+    <h2>Validación autenticada del estado monetario</h2>
+    <p>Pruebas offline de procedencia y consistencia de reservas monetarias, bloques, pruebas de estado y recuperación del estado.</p>
+    <p class="milestone-details">Los resultados validan el componente y sus invariantes en un laboratorio offline, no la seguridad integral de una blockchain pública.</p>
+    <span class="milestone-checks">Pruebas de estado y recuperación · PASS comunicado</span>
+    <span class="milestone-evidence-pending">Evidencia pública pendiente de publicación</span>
+  </div>
+</article>
+<article class="milestone-entry" id="h06">
+  <div class="milestone-entry-meta">
+    <time datetime="2026-11-04">4 de noviembre de 2026</time>
+    <span class="milestone-id">H06</span>
+    <span class="milestone-scope">SYPcoin nativa experimental · firmado offline</span>
+  </div>
+  <div class="milestone-entry-body">
+    <span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN SU ENTORNO</span>
+    <h2>Emisión nativa firmada en dos bloques de prueba</h2>
+    <p>Se validaron transacciones de emisión firmadas correspondientes a dos bloques consecutivos en estados de ensayo.</p>
+    <p class="milestone-details">El constructor también valida las firmas criptográficas. No significa que ya exista una cadena SYPcoin nativa ejecutándose con minería GPU real.</p>
+    <span class="milestone-checks">2 bloques consecutivos de prueba · firma verificada</span>
+    <span class="milestone-evidence-pending">Evidencia pública pendiente de publicación</span>
+  </div>
+</article>
+<article class="milestone-entry" id="h07">
+  <div class="milestone-entry-meta">
+    <time datetime="2026-11-04">4 de noviembre de 2026</time>
+    <span class="milestone-id">H07</span>
+    <span class="milestone-scope">SYPcoin nativa experimental · integración offline</span>
+  </div>
+  <div class="milestone-entry-body">
+    <span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN SU ENTORNO</span>
+    <h2>Firmante integrado con el generador de candidatos</h2>
+    <p>El generador experimental admite un firmante local para construir emisiones nativas sin usar el emisor heredado de Ergo.</p>
+    <p class="milestone-details">Las pruebas comprueban que, sin firmante disponible, el proceso se detiene. Se trata de integración offline, no de nodos nativos en funcionamiento.</p>
+    <span class="milestone-checks">Firmante local requerido · pruebas superadas</span>
+    <span class="milestone-evidence-pending">Evidencia pública pendiente de publicación</span>
+  </div>
+</article>
+<article class="milestone-entry" id="h08">
+  <div class="milestone-entry-meta">
+    <time datetime="2026-11-04">4 de noviembre de 2026</time>
+    <span class="milestone-id">H08</span>
+    <span class="milestone-scope">SYPcoin nativa experimental · pruebas de integración</span>
+  </div>
+  <div class="milestone-entry-body">
+    <span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN SU ENTORNO</span>
+    <h2>Control del anuncio de bloques</h2>
+    <p>En las pruebas de integración del modo nativo, el anuncio de un bloque minado localmente se condiciona a su aplicación completa en el nodo.</p>
+    <p class="milestone-details">Es una protección probada en el entorno experimental; todavía no acredita la operación de una red pública o la resistencia frente a ataques externos.</p>
+    <span class="milestone-checks">Anuncio posterior a aplicación local · PASS</span>
+    <span class="milestone-evidence-pending">Evidencia pública pendiente de publicación</span>
+  </div>
+</article>
+<article class="milestone-entry" id="h09">
+  <div class="milestone-entry-meta">
+    <time datetime="2026-11-04">4 de noviembre de 2026</time>
+    <span class="milestone-id">H09</span>
+    <span class="milestone-scope">SYPcoin nativa experimental · P2P simulado</span>
+  </div>
+  <div class="milestone-entry-body">
+    <span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN SU ENTORNO</span>
+    <h2>Identidad de red y rechazo de pares incompatibles</h2>
+    <p>Pruebas positivas y negativas de actores P2P simulados comprueban identidad de génesis e identificador de red antes de admitir un par.</p>
+    <p class="milestone-details">Las pruebas son de simulación de actores: no demuestran un intercambio real de bloques entre dos nodos SYPcoin nativos.</p>
+    <span class="milestone-checks">Validación de identidad · rechazo de pares · PASS</span>
+    <span class="milestone-evidence-pending">Evidencia pública pendiente de publicación</span>
+  </div>
+</article>
+<article class="milestone-entry" id="h10">
+  <div class="milestone-entry-meta">
+    <time datetime="2026-11-04">4 de noviembre de 2026</time>
+    <span class="milestone-id">H10</span>
+    <span class="milestone-scope">SYPcoin nativa experimental · CI privada, pruebas offline/simuladas</span>
+  </div>
+  <div class="milestone-entry-body">
+    <span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN SU ENTORNO</span>
+    <h2>42 de 42 pruebas de integración superadas</h2>
+    <p>La integración experimental del núcleo completó 42/42 pruebas de CI sin fallos, incluidas regresiones monetarias y controles P2P simulados.</p>
+    <p class="milestone-details">Resultado comunicado de una CI privada; no es evidencia pública independiente y no demuestra minería nativa GPU, nodos nativos reales ni una testnet SYPcoin operativa.</p>
+    <span class="milestone-checks">42/42 PASS · 0 fallos · 4 de noviembre de 2026</span>
+    <span class="milestone-evidence-pending">Evidencia pública pendiente de publicación</span>
+  </div>
+</article>
+<article class="milestone-entry" id="syp-lab-004">
+  <div class="milestone-entry-meta">
+    <span class="milestone-date-label">Noviembre de 2026 · día por confirmar</span>
+    <span class="milestone-id">SYP-LAB-004</span>
+    <span class="milestone-scope">Modelos experimentales · sin activación de consenso</span>
+  </div>
+  <div class="milestone-entry-body">
+    <span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN SU ENTORNO</span>
+    <h2>Modelos experimentales de FRM, tesorería y transparencia</h2>
+    <p>Los modelos experimentales de FRM, tesorería y transparencia superaron 25/25 pruebas (9, 11 y 5 respectivamente).</p>
+    <p class="milestone-details">Batería experimental, no política de custodia ni desembolsos activados. El mecanismo de liberación progresiva y auditable de solidaridad/desarrollo todavía debe definirse y verificarse.</p>
+    <span class="milestone-checks">25/25 PASS: FRM 9 · tesorería 11 · transparencia 5</span>
+    <span class="milestone-evidence-pending">Evidencia pública pendiente de publicación</span>
+  </div>
+</article>
+<article class="milestone-entry" id="syp-lab-005">
+  <div class="milestone-entry-meta">
+    <span class="milestone-date-label">Noviembre de 2026 · día por confirmar</span>
+    <span class="milestone-id">SYP-LAB-005</span>
+    <span class="milestone-scope">Ergo devnet local · consenso heredado, NO red SYPcoin</span>
+  </div>
+  <div class="milestone-entry-body">
+    <span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN SU ENTORNO</span>
+    <h2>Comunicación y sincronización de dos nodos sobre Ergo devnet</h2>
+    <p>En laboratorio local, dos nodos Ergo devnet se comunicaron, intercambiaron bloques y contrastaron su estado.</p>
+    <p class="milestone-details">Utiliza la red y el consenso heredados de Ergo; NO es una prueba de comunicación entre dos nodos SYPcoin nativos reales, ni una testnet pública SYPcoin.</p>
+    <span class="milestone-checks">2 nodos · 1 peer por nodo · sincronización PASS</span>
+    <span class="milestone-evidence-pending">Evidencia pública pendiente de publicación</span>
+  </div>
+</article>
+<article class="milestone-entry" id="syp-lab-001">
+  <div class="milestone-entry-meta">
+    <span class="milestone-date-label">Hasta el 2 de noviembre de 2026</span>
+    <span class="milestone-id">SYP-LAB-001 · H01</span>
+    <span class="milestone-scope">Laboratorio local · componentes experimentales</span>
+  </div>
+  <div class="milestone-entry-body">
+    <span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN SU ENTORNO</span>
+    <h2>Primeras pruebas del núcleo monetario</h2>
+    <p>Contabilidad monetaria y reglas de emisión validadas en laboratorio: v0.3, 9/9 pruebas superadas. La génesis de laboratorio v0.4.2 también obtuvo PASS.</p>
+    <p class="milestone-details">Los resultados corresponden a componentes experimentales. No acreditan la activación del consenso, una génesis pública definitiva ni una moneda SYPcoin ya circulando.</p>
+    <span class="milestone-checks">v0.3: 9/9 PASS · v0.4.2: PASS</span>
+    <span class="milestone-evidence-pending">Evidencia pública pendiente de publicación</span>
+  </div>
+</article>
+<article class="milestone-entry" id="syp-lab-002">
+  <div class="milestone-entry-meta">
+    <span class="milestone-date-label">Hasta el 2 de noviembre de 2026</span>
+    <span class="milestone-id">SYP-LAB-002 · H02</span>
+    <span class="milestone-scope">ErgoTree experimental · sin activación de consenso</span>
+  </div>
+  <div class="milestone-entry-body">
+    <span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN SU ENTORNO</span>
+    <h2>Génesis experimental y contratos de emisión</h2>
+    <p>Construcción experimental de génesis, contrato ErgoTree de emisión v0.5 (5/5) y ejecución con intérprete v0.6 (8/8).</p>
+    <p class="milestone-details">Pruebas locales de contratos y operaciones de emisión. No equivalen a una activación de reglas definitivas ni a una auditoría independiente.</p>
+    <span class="milestone-checks">v0.5: 5/5 PASS · v0.6: 8/8 PASS</span>
+    <span class="milestone-evidence-pending">Evidencia pública pendiente de publicación</span>
+  </div>
+</article>
+<article class="milestone-entry" id="syp-lab-003">
+  <div class="milestone-entry-meta">
+    <span class="milestone-date-label">Hasta el 2 de noviembre de 2026</span>
+    <span class="milestone-id">SYP-LAB-003 · H03</span>
+    <span class="milestone-scope">Laboratorio local · emisión experimental</span>
+  </div>
+  <div class="milestone-entry-body">
+    <span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN SU ENTORNO</span>
+    <h2>Integración de emisión con los bloques</h2>
+    <p>Constructor de transacciones v0.7 (5/5), generador de candidatos v0.8 (5/5) y seguimiento monetario UTXO v0.9 (6/6) superados en laboratorio.</p>
+    <p class="milestone-details">Estos resultados validan componentes de emisión y seguimiento UTXO, no una red nativa SYPcoin con emisión operativa.</p>
+    <span class="milestone-checks">v0.7: 5/5 · v0.8: 5/5 · v0.9: 6/6 PASS</span>
+    <span class="milestone-evidence-pending">Evidencia pública pendiente de publicación</span>
+  </div>
+</article>
     </div>
     <div class="milestone-disclaimer">
-      <p><strong>Alcance de estas pruebas:</strong> el código de consenso definitivo, la política monetaria, el génesis propio, la seguridad de la red y el lanzamiento de una testnet SYPcoin requieren verificaciones adicionales. No hay enlaces inventados a informes locales o repositorios privados.</p>
+      <p><strong>Alcance de estas pruebas:</strong> el código de consenso definitivo, la política monetaria, el génesis propio, la seguridad de la red y el lanzamiento de una testnet SYPcoin requieren verificaciones adicionales. La ejecución de 42/42 pruebas corresponde a CI privada y no constituye una auditoría pública. No publicamos enlaces a informes locales ni repositorios privados.</p>
     </div>
     <p class="accounting-footnote">Archivo estructurado de hitos: <a href="/data/hitos.json">consultar JSON público</a>.</p>
+  </section>
+  <section class="section shell deep-section" id="proximos">
+    <div class="section-heading">
+      <p class="eyebrow">PRÓXIMOS OBJETIVOS · NO CONSEGUIDOS</p>
+      <h2>Lo que todavía <span>debemos demostrar.</span></h2>
+      <p>Estos objetivos están en desarrollo y no deben confundirse con pruebas offline ni con los resultados de Ergo devnet.</p>
+    </div>
+    <div class="milestone-ledger">
+<article class="milestone-entry" id="h11">
+  <div class="milestone-entry-meta">
+    <span class="milestone-date-label">Pendiente · sin fecha confirmada</span>
+    <span class="milestone-id">H11</span>
+    <span class="milestone-scope">Objetivo futuro · red privada SYPcoin nativa</span>
+  </div>
+  <div class="milestone-entry-body">
+    <span class="milestone-state" data-milestone-state="en desarrollo">EN DESARROLLO · PENDIENTE</span>
+    <h2>Dos nodos SYPcoin nativos comunicándose</h2>
+    <p>Objetivo: dos nodos privados SYPcoin reales que intercambien y validen bloques, reinicien y recuperen el estado sin inconsistencias.</p>
+    <p class="milestone-details">Este objetivo no está conseguido. Las pruebas anteriores de dos nodos fueron sobre Ergo devnet y no sustituyen esta validación.</p>
+    <span class="milestone-checks">Pendiente de verificación real</span>
+    <span class="milestone-evidence-pending">Evidencia pública pendiente de publicación</span>
+  </div>
+</article>
+<article class="milestone-entry" id="h12">
+  <div class="milestone-entry-meta">
+    <span class="milestone-date-label">Pendiente · sin fecha confirmada</span>
+    <span class="milestone-id">H12</span>
+    <span class="milestone-scope">Objetivo futuro · minería GPU nativa SYPcoin</span>
+  </div>
+  <div class="milestone-entry-body">
+    <span class="milestone-state" data-milestone-state="en desarrollo">EN DESARROLLO · PENDIENTE</span>
+    <h2>Primer bloque SYPcoin nativo minado por GPU</h2>
+    <p>Objetivo: obtener un bloque posterior al arranque de la GPU, validado por dos nodos nativos y respaldado por evidencia reproducible.</p>
+    <p class="milestone-details">No se ha acreditado minería GPU nativa SYPcoin. El bloque GPU ya conseguido pertenecía a Ergo devnet local.</p>
+    <span class="milestone-checks">Pendiente de verificación real</span>
+    <span class="milestone-evidence-pending">Evidencia pública pendiente de publicación</span>
+  </div>
+</article>
+<article class="milestone-entry" id="h13">
+  <div class="milestone-entry-meta">
+    <span class="milestone-date-label">Pendiente · sin fecha confirmada</span>
+    <span class="milestone-id">H13</span>
+    <span class="milestone-scope">Objetivo futuro · testnet pública</span>
+  </div>
+  <div class="milestone-entry-body">
+    <span class="milestone-state" data-milestone-state="en desarrollo">EN DESARROLLO · PENDIENTE</span>
+    <h2>Testnet pública SYPcoin</h2>
+    <p>Objetivo futuro condicionado a seguridad, consenso, emisión, aislamiento de red, wallet e integración real de nodos.</p>
+    <p class="milestone-details">No hay una testnet pública SYPcoin operativa ni fecha de lanzamiento confirmada.</p>
+    <span class="milestone-checks">Pendiente de validación y lanzamiento</span>
+    <span class="milestone-evidence-pending">Evidencia pública pendiente de publicación</span>
+  </div>
+</article>
+    </div>
   </section>
   <section class="section shell deep-section" id="criterios"><div class="section-heading"><p class="eyebrow">CÓMO LEER LOS HITOS</p><h2>Qué significa <span>cada estado.</span></h2><p>La etiqueta del hito describe un resultado acotado; la etiqueta general del proyecto continúa en rojo mientras no esté listo para una testnet pública.</p></div><div class="deep-grid"><article class="deep-card"><span class="mono deep-tag">EN DESARROLLO</span><h3>Objetivo o implementación incompleta</h3><p>Hay diseño, planificación o código parcial, pero no existe todavía una prueba suficiente para darlo por conseguido.</p></article><article class="deep-card"><span class="mono deep-tag">EN PRUEBAS</span><h3>Validación en curso</h3><p>Se han preparado ensayos y pueden existir resultados parciales; faltan condiciones, cobertura o comprobaciones necesarias.</p></article><article class="deep-card"><span class="mono deep-tag">VERIFICADO</span><h3>Resultado reproducido en su entorno</h3><p>La prueba concreta informada terminó correctamente. Si es de laboratorio, no implica auditoría, consenso final ni una red pública operativa.</p></article></div></section><section class="section shell deep-section" id="evidencia"><div class="section-heading"><p class="eyebrow">CRITERIOS DE PUBLICACIÓN</p><h2>Cómo se documentará <span>una prueba.</span></h2><p>Para cada hito con evidencia pública verificable, queremos ofrecer información suficiente para que terceros evalúen sus límites.</p></div><div class="deep-steps"><article class="deep-step"><div class="mono">01</div><div><h3>Versión probada</h3><p>Referencia al componente, versión y alcance del ensayo, sin revelar rutas privadas ni repositorios no públicos.</p></div></article><article class="deep-step"><div class="mono">02</div><div><h3>Condiciones de ejecución</h3><p>Entorno, procedimiento y criterio de éxito, con los datos técnicos necesarios y sin exponer credenciales.</p></div></article><article class="deep-step"><div class="mono">03</div><div><h3>Resultado y límites</h3><p>Recuento de pruebas, comportamiento observado, fallos conocidos y aquello que la prueba no demuestra.</p></div></article><article class="deep-step"><div class="mono">04</div><div><h3>Enlace comprobado</h3><p>Solo se añade una URL cuando el documento está publicado, accesible y revisado para descartar información privada.</p></div></article><article class="deep-step"><div class="mono">05</div><div><h3>Correcciones</h3><p>Si un resultado se invalida o se repite una prueba defectuosa, se explica el cambio y no se conserva una afirmación engañosa.</p></div></article><article class="deep-step"><div class="mono">06</div><div><h3>Paso siguiente</h3><p>Cada avance se relaciona con los requisitos que aún faltan para demostrar la integración de SYPcoin.</p></div></article></div></section><div class="deep-notice"><strong>Distinción de redes</strong><p>Los ensayos sobre Ergo devnet local acreditan únicamente el comportamiento de los componentes y los nodos en ese entorno. No confirman que exista una testnet pública, un génesis definitivo o un consenso propio SYPcoin ya operativo.</p></div><div class="shell" style="padding-top:18px"><div class="deep-links"><a class="button button-ghost" href="/roadmap/">Criterios del roadmap</a><a class="button button-ghost" href="/red/">Red y nodos</a><a class="button button-ghost" href="/mineria/">Minería GPU</a></div></div>
 <section class="closing">
