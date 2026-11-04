@@ -164,3 +164,7 @@ Spanish/English Mining, Security and Roadmap pages now distinguish real P2P conn
 - Consent is unchecked by default, contains the one-notification purpose, privacy notice, manual unsubscribe contact, controller contact and planned retention.
 - Custom ES/EN submission feedback pages retain the site's brand/design and release stage; site CSS only gained additive form rules.
 - When sending manually, use BCC, honor unsubscribes, preserve consent evidence and delete subscriber records according to the published retention commitment.
+
+## External form outage fallback (2026-11-05)
+
+The optional testnet signup now uses FormSubmit's documented AJAX endpoint, never interpreting HTTP 200 or string `"false"` as success. FormSubmit outages, 522 errors and pending activation are shown inline with explicitly unconfirmed registration. A manual mailto option opens a prepared consent request, which visitors must send from their own email app. No emails are stored on GitHub, and the red development status, logo and original design remain unchanged.
