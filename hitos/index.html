@@ -37,7 +37,7 @@
       </div>
       <h1>Hitos del <span>desarrollo.</span></h1>
       <p>Registro de avances comunicados por el equipo técnico, con fechas y resultados de laboratorio. «Verificado» significa que las pruebas indicadas han terminado correctamente en su entorno de ensayo; no equivale a una auditoría externa ni a un lanzamiento público.</p>
-      <p>Los resultados identificados como <strong>Ergo devnet</strong> pertenecen a una red de laboratorio basada en Ergo, no a una red operativa ni a una testnet propia de SYPcoin. La CI nativa ha superado pruebas offline y simuladas, pero <strong>se ha verificado conexión P2P real entre dos JVM SYPcoin nativas, pero no bloques compartidos, consenso completo ni minería GPU SYPcoin</strong>.</p>
+      <p>Los resultados identificados como <strong>Ergo devnet</strong> pertenecen a una red de laboratorio basada en Ergo, no a una red operativa ni a una testnet propia de SYPcoin. La CI nativa ha superado pruebas offline y simuladas, pero <strong>v41.3 verificó un bloque SYPcoin nativo GPU AMD/Linux, aceptado y persistido por dos nodos privados; no se ha demostrado consenso completo ni bloque 2</strong>.</p>
     </div>
   </section>
 
@@ -48,6 +48,8 @@
       <p>Los estados posibles son «en desarrollo», «en pruebas» y «verificado». Las fechas exactas se publican solo cuando están confirmadas; en los demás casos se indica un período o fecha pendiente. Los objetivos futuros aún no tienen fecha de consecución.</p>
     </div>
     <div class="milestone-ledger">
+<article class="milestone-entry" id="h12"><div class="milestone-entry-meta"><time datetime="2026-11-05">5 de noviembre de 2026</time><span class="milestone-id">H12</span><span class="milestone-scope">v41.3 · AMD RX 7900 XTX · Kubuntu/Linux · dos nodos privados</span></div><div class="milestone-entry-body"><span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN LABORATORIO PRIVADO</span><h2>Primer bloque SYPcoin nativo obtenido con GPU AMD/Linux</h2><p>Una RX 7900 XTX en Kubuntu/Linux encontró una nueva solución Autolykos2 para el bloque nativo SYPcoin de altura 1, aceptada y persistida por dos nodos privados.</p><p class="milestone-details">Prueba puntual de GPU real en laboratorio v41.3. No hay minero público, minería sostenida, bloque 2 validado ni compatibilidad AMD/Windows, NVIDIA o Intel verificada.</p><span class="milestone-checks">Bloque nativo GPU de altura 1 · doble validación privada</span><span class="milestone-evidence-pending">Evidencia pública pendiente de publicación</span></div></article>
+<article class="milestone-entry" id="h11"><div class="milestone-entry-meta"><time datetime="2026-11-05">5 de noviembre de 2026</time><span class="milestone-id">H11</span><span class="milestone-scope">v41.3 · bloque nativo altura 1 · dos JVM privadas · persistencia</span></div><div class="milestone-entry-body"><span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN LABORATORIO PRIVADO</span><h2>Primer bloque SYPcoin nativo aplicado por dos nodos privados</h2><p>En v41.3, el bloque SYPcoin de altura 1 se aplicó en el nodo A, se propagó por P2P al nodo B y permaneció en ambos tras reiniciar, con raíz UTXO coincidente.</p><p class="milestone-details">Una validación acotada en dos JVM privadas; no es certificación de consenso general, una cadena de múltiples bloques, una auditoría ni una testnet pública.</p><span class="milestone-checks">Altura 1 aceptada y persistida por A y B · estado UTXO coincidente</span><span class="milestone-evidence-pending">Evidencia pública pendiente de publicación</span></div></article>
 <article class="milestone-entry" id="h23">
 <div class="milestone-entry-meta"><span class="milestone-date-label">4 de noviembre de 2026</span><span class="milestone-id">H23</span><span class="milestone-scope">Dos JVM SYPcoin reales · P2P privado, sin bloques</span></div>
 <div class="milestone-entry-body"><span class="milestone-state" data-milestone-state="verificado">VERIFICADO EN SU ENTORNO</span><h2>Primera conexión P2P nativa entre dos JVM SYPcoin</h2><p>Dos procesos nativos SYPcoin establecieron una conexión P2P recíproca con el mismo génesis en una red privada local.</p><p class="milestone-details">En el laboratorio se verificaron dos JVM con un par conectado por nodo y 30/30 pruebas focales superadas. La ejecución tuvo cero bloques, sin minería, propagación ni consenso compartido entre los nodos.</p><span class="milestone-checks">Handshake P2P recíproco · 30/30 focales PASS · 0 bloques</span><span class="milestone-evidence-pending">Evidencia pública pendiente de publicación</span></div></article>
@@ -250,42 +252,8 @@
       <p>Estos objetivos están en desarrollo y no deben confundirse con pruebas offline ni con los resultados de Ergo devnet.</p>
     </div>
     <div class="milestone-ledger">
-<article class="milestone-entry" id="h25">
-<div class="milestone-entry-meta"><span class="milestone-date-label">4 de noviembre de 2026</span><span class="milestone-id">H25</span><span class="milestone-scope">Consenso nativo · validaciones parciales, sin bloque PoW válido</span></div>
-<div class="milestone-entry-body"><span class="milestone-state" data-milestone-state="en pruebas">EN PRUEBAS · PARCIAL</span><h2>Validación preliminar del consenso privado</h2><p>Pruebas parciales de PoW, dificultad, AVL+, estado UTXO y fondos, con un candidato SYPcoin nativo todavía sin solución PoW válida.</p><p class="milestone-details">Se consolidaron 23 casos únicos de diferentes ejecuciones focales con correcciones; NO corresponde a una suite única 23/23. Falta obtener un bloque con PoW válido, aceptarlo y demostrar su propagación y persistencia entre dos nodos nativos.</p><span class="milestone-checks">23 casos únicos consolidados, no una sola suite · consenso parcial</span><span class="milestone-evidence-pending">Evidencia pública pendiente de publicación</span></div></article>
-<article class="milestone-entry" id="h27">
-<div class="milestone-entry-meta"><span class="milestone-date-label">Pendiente · sin fecha confirmada</span><span class="milestone-id">H27</span><span class="milestone-scope">Objetivo futuro · minero GPU nativo no implementado</span></div>
-<div class="milestone-entry-body"><span class="milestone-state" data-milestone-state="en desarrollo">EN DESARROLLO · PENDIENTE</span><h2>Puente de minería Autolykos2 para SOAT Vulkan</h2><p>Objetivo: integrar candidatos Autolykos2 SYPcoin con SOAT Vulkan para futuras pruebas manuales de la RX 7900 XTX.</p><p class="milestone-details">El adaptador no está acreditado como implementado, probado ni ejecutado. Falta obtener un bloque SYPcoin nuevo con PoW válido y demostrar su aceptación, propagación y persistencia por dos nodos nativos.</p><span class="milestone-checks">Pendiente · sin GPU nativa SYPcoin acreditada</span><span class="milestone-evidence-pending">Evidencia pública pendiente de publicación</span></div></article>
-<article class="milestone-entry" id="h11">
-  <div class="milestone-entry-meta">
-    <span class="milestone-date-label">Pendiente · sin fecha confirmada</span>
-    <span class="milestone-id">H11</span>
-    <span class="milestone-scope">Objetivo futuro · red privada SYPcoin nativa</span>
-  </div>
-  <div class="milestone-entry-body">
-    <span class="milestone-state" data-milestone-state="en desarrollo">EN DESARROLLO · PENDIENTE</span>
-    <h2>Consenso entre dos nodos SYPcoin nativos</h2>
-    <p>Objetivo: que dos nodos nativos propaguen y apliquen un bloque PoW válido, manteniendo el estado tras reiniciar.</p>
-    <p class="milestone-details">H23 ya verificó la conexión P2P entre dos JVM reales en laboratorio, pero sin ningún bloque. No se ha probado aceptación, sincronización ni persistencia conjunta de la cadena.</p>
-    <span class="milestone-checks">P2P verificado por separado · consenso entre nodos pendiente</span>
-    <span class="milestone-evidence-pending">Evidencia pública pendiente de publicación</span>
-  </div>
-</article>
-<article class="milestone-entry" id="h12">
-  <div class="milestone-entry-meta">
-    <span class="milestone-date-label">Pendiente · sin fecha confirmada</span>
-    <span class="milestone-id">H12</span>
-    <span class="milestone-scope">Objetivo futuro · minería GPU nativa SYPcoin</span>
-  </div>
-  <div class="milestone-entry-body">
-    <span class="milestone-state" data-milestone-state="en desarrollo">EN DESARROLLO · PENDIENTE</span>
-    <h2>Primer bloque SYPcoin nativo minado por GPU</h2>
-    <p>Objetivo: obtener un bloque posterior al arranque de la GPU, validado por dos nodos nativos y respaldado por evidencia reproducible.</p>
-    <p class="milestone-details">No se ha acreditado minería GPU nativa SYPcoin. El bloque GPU ya conseguido pertenecía a Ergo devnet local.</p>
-    <span class="milestone-checks">Pendiente de verificación real</span>
-    <span class="milestone-evidence-pending">Evidencia pública pendiente de publicación</span>
-  </div>
-</article>
+<article class="milestone-entry" id="h25"><div class="milestone-entry-meta"><span class="milestone-date-label">4 de noviembre de 2026</span><span class="milestone-id">H25</span><span class="milestone-scope">v41: pruebas parciales · v41.4: candidato altura 2 preparado, sin minar</span></div><div class="milestone-entry-body"><span class="milestone-state" data-milestone-state="en pruebas">EN PRUEBAS · PARCIAL</span><h2>Validación preliminar del consenso privado</h2><p>La fase inicial v41 validó 23 casos únicos de PoW, dificultad, AVL+, UTXO y fondos; es un resultado histórico de componentes, no una certificación del consenso completo.</p><p class="milestone-details">Los 23 casos provienen de pruebas focales distintas, no de una sola suite. Después, v41.3 validó el bloque 1 (H11/H12). En v41.4-R2 se firmó offline el candidato de altura 2 y R3 pasó 10/10 pruebas focales; el bloque 2 no se ha minado ni aceptado.</p><span class="milestone-checks">23 casos iniciales consolidados · v41.4 R3: 10/10 focales · bloque 2 pendiente</span><span class="milestone-evidence-pending">Evidencia pública pendiente de publicación</span></div></article>
+<article class="milestone-entry" id="h27"><div class="milestone-entry-meta"><span class="milestone-date-label">Pendiente · sin fecha confirmada</span><span class="milestone-id">H27</span><span class="milestone-scope">Objetivo futuro · AMD/NVIDIA, Linux/Windows; Intel posterior</span></div><div class="milestone-entry-body"><span class="milestone-state" data-milestone-state="en desarrollo">EN DESARROLLO · PENDIENTE</span><h2>Minero multiplataforma y compatibilidad GPU</h2><p>El puente experimental ya permitió el bloque SYPcoin de altura 1 con AMD/Linux (H12). Sigue pendiente ofrecer un minero reusable y compatible con otros equipos y sistemas operativos.</p><p class="milestone-details">Falta minar y validar el bloque 2, probar la misma RX 7900 XTX en Windows y después la NVIDIA RTX 3060 en Windows. Se ampliará a NVIDIA/Linux y, posteriormente, a Intel si hay hardware de prueba. No hay minero público ni optimizador distribuido.</p><span class="milestone-checks">Bloque 1 AMD/Linux verificado; compatibilidad general y bloque 2 pendientes</span><span class="milestone-evidence-pending">Evidencia pública pendiente de publicación</span></div></article>
 <article class="milestone-entry" id="h13">
   <div class="milestone-entry-meta">
     <span class="milestone-date-label">Pendiente · sin fecha confirmada</span>
