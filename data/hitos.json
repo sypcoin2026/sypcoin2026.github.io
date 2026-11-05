@@ -84,7 +84,7 @@
       "description": "Una RX 7900 XTX obtuvo un bloque nuevo de prueba, validado por dos nodos en Ergo devnet local.",
       "details": "Esta prueba acredita integración de minería GPU con la base Ergo; no es minería de moneda SYPcoin nativa ni demuestra funcionamiento de su consenso propio.",
       "status": "verificado",
-      "scope": "Ergo devnet local · minería GPU verificada, NO SYP nativa",
+      "scope": "Ergo devnet local · minería GPU verificada, NO SYPC nativa",
       "test_result": "Bloque nuevo · GPU RX 7900 XTX · validación de 2 nodos",
       "public_evidence": []
     },

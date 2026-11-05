@@ -21,7 +21,7 @@ La web refleja el estado real del proyecto: SYPcoin sigue en desarrollo y todav�
 - Sin dependencias externas.
 - Mobile-first / responsive.
 - Sin métricas ficticias.
-- SYPcoin y SYP Solidaria se presentan como conceptos relacionados pero diferenciados.
+- SYPcoin y SYPC Solidaria se presentan como conceptos relacionados pero diferenciados.
 - Preparado para integrar más adelante Explorer, estadísticas de red y documentación técnica real.
 
 ## Publicación
@@ -35,7 +35,7 @@ https://sypcoin2026.github.io
 Los recursos gráficos aprobados para SYPcoin proceden de la lámina oficial validada para la marca y se han exportado para web sin redibujarla ni alterar su composición.
 
 - `assets/brand/logo-principal.webp` — logo original aprobado para portada (exportación web).
-- `assets/brand/moneda.webp` — representación oficial de la moneda SYP.
+- `assets/brand/moneda.webp` — representación oficial de la moneda SYPC.
 - `assets/brand/favicon.webp` — versión cuadrada derivada del icono aprobado.
 
 El diseño principal se preserva y los archivos se sirven desde este repositorio. No se cargan imágenes de terceros.
@@ -136,7 +136,7 @@ No se publican claves, rutas locales, puertos internos, datos bancarios, informe
 
 ## Hitos del desarrollo — actualización editorial 2026-11-04
 
-- Se han integrado los hitos H04–H13 del puente de avances suministrado por el propietario y se han conservado los cinco registros históricos SYP-LAB existentes. H01–H03 se corresponden con SYP-LAB-001/002/003; no se duplican.
+- Se han integrado los hitos H04–H13 del puente de avances suministrado por el propietario y se han conservado los cinco registros históricos SYPC-LAB existentes. H01–H03 se corresponden con SYP-LAB-001/002/003; no se duplican.
 - Se han rectificado fechas históricas no confirmadas: hasta 2026-11-02 en los primeros ensayos, mes sin día confirmado para registros históricos posteriores, intervalo 3–4 de noviembre para minería GPU sobre Ergo devnet.
 - CI experimental privada 42/42 PASS no significa dos nodos SYPcoin nativos reales, minería GPU nativa ni testnet pública. H11–H13 se distinguen como objetivos no conseguidos.
 - Solo se muestran enlaces a evidencias públicas cuando se hayan verificado como públicamente accesibles. No se han añadido enlaces privados.
