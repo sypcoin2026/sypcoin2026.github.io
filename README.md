@@ -172,3 +172,11 @@ The optional testnet signup now uses FormSubmit's documented AJAX endpoint, neve
 ## Web3Forms testnet opt-in — 2026-11-05
 
 The existing Spanish and English testnet alert forms now POST to Web3Forms, using the provider's public client-side form access key and the existing email-only consent. JS uses JSON and accepts only a true boolean success response: a provider acknowledgment is not confirmation of inbox delivery or visitor email ownership. No private subscriber addresses are stored in GitHub. The optional Web3Forms botcheck field replaces the old honeypot. The manual mailto alternative and red development stage remain. FormSubmit is no longer used by the active forms; the project owner must verify a real end-to-end registration in their Proton inbox.
+
+## Editorial sync — 2026-11-05 / bridge revision 15
+
+- Source reviewed privately, with only public-facing summaries committed. No private document, local paths or private verification links published.
+- H11/H12 updated: first native height-1 SYPcoin GPU-mined PoW (AMD RX 7900 XTX/Kubuntu Linux) was accepted, propagated and persisted by two private JVM nodes in v41.3. This is not complete network consensus or public mining.
+- v41.4-R2 signed and verified a height-2 candidate offline; R3 passed 10/10 focused tests. No second block was mined or accepted, and no public miner exists.
+- Mining architecture and planned compatibility now describe vendor-neutral core, separate mining engines, external optional SYP EcoMiner, AMD/Linux lab result, AMD/Windows then NVIDIA/Windows, NVIDIA/Linux later, Intel upon hardware availability. Per-device GPU controls never become core consensus rules.
+- All site identity assets, CSS, navigation, status badge and project red development stage preserved.
