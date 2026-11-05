@@ -168,3 +168,7 @@ Spanish/English Mining, Security and Roadmap pages now distinguish real P2P conn
 ## External form outage fallback (2026-11-05)
 
 The optional testnet signup now uses FormSubmit's documented AJAX endpoint, never interpreting HTTP 200 or string `"false"` as success. FormSubmit outages, 522 errors and pending activation are shown inline with explicitly unconfirmed registration. A manual mailto option opens a prepared consent request, which visitors must send from their own email app. No emails are stored on GitHub, and the red development status, logo and original design remain unchanged.
+
+## Web3Forms testnet opt-in — 2026-11-05
+
+The existing Spanish and English testnet alert forms now POST to Web3Forms, using the provider's public client-side form access key and the existing email-only consent. JS uses JSON and accepts only a true boolean success response: a provider acknowledgment is not confirmation of inbox delivery or visitor email ownership. No private subscriber addresses are stored in GitHub. The optional Web3Forms botcheck field replaces the old honeypot. The manual mailto alternative and red development stage remain. FormSubmit is no longer used by the active forms; the project owner must verify a real end-to-end registration in their Proton inbox.
