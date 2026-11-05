@@ -1,13 +1,13 @@
 # Identidad oficial de SYPcoin
 
-Diseño visual aprobado para SYPcoin.
+Diseño visual oficial aprobado para SYPcoin (SYPC).
 
-- `identidad-oficial.png`: lámina de identidad completa, conservada sin modificaciones.
-- `logo-principal.png`: recorte original del logotipo principal.
-- `moneda.png`: recorte original de la representación de la moneda.
-- `favicon.png`: recorte original del icono.
+- `identidad-oficial.png`: lámina de identidad gráfica.
+- `logo-principal.png`: logotipo principal oficial.
+- `moneda.png`: representación oficial de la moneda con ticker SYPC.
+- `favicon.png`: icono de la web derivado de la moneda.
 - `*.webp`: versiones optimizadas para la web, derivadas de los mismos diseños.
 
-Los PNG son los originales de referencia. No regenerar, recolorear ni reinterpretar el dragón sin aprobación expresa.
+Los PNG son archivos de referencia y los WebP están destinados al uso web.
 
 Los elementos gráficos representan la identidad visual; no implican que mainnet, wallet o minería pública estén operativos.
