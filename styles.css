@@ -1888,3 +1888,19 @@ a:focus-visible,button:focus-visible,summary:focus-visible {outline:2px solid #8
 .waitlist-feedback[data-state="error"]{border-color:rgba(235,168,86,.46);background:rgba(130,76,23,.15);color:#f3d6ad}
 .waitlist-feedback[data-state="success"]{border-color:rgba(113,194,159,.43);background:rgba(26,106,78,.15);color:#c5eada}
 .waitlist-submit:disabled,.waitlist-manual:disabled{opacity:.65;cursor:progress}
+
+/* Public read-only update history. Reuses the approved SYPcoin palette. */
+.newsboard-home{scroll-margin-top:88px;padding-top:clamp(40px,6vw,76px)}
+.newsboard-list{display:grid;gap:18px;margin-top:28px}
+.newsboard-card{min-width:0;padding:clamp(22px,3vw,34px);border:1px solid var(--line-strong);border-radius:var(--radius);background:linear-gradient(145deg,rgba(24,55,84,.34),rgba(12,20,30,.88));box-shadow:0 14px 32px rgba(0,0,0,.12)}
+.newsboard-meta{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:12px;color:#a3bad0;font-size:.8rem;font-weight:700}
+.newsboard-label{border:1px solid rgba(97,172,244,.36);border-radius:999px;padding:3px 10px;color:#a9d7ff;font-size:.73rem}
+.newsboard-title{margin:0 0 10px;color:#eff8ff;line-height:1.25;letter-spacing:-.025em;font-size:clamp(1.2rem,2vw,1.65rem)}
+.newsboard-summary{margin:0 0 12px;color:#c5d4e2;font-size:.94rem;line-height:1.7}
+.newsboard-limits{margin:0 0 18px;color:#9fb0c1;font-size:.86rem;line-height:1.65}
+.newsboard-link{font-size:.88rem;color:#95ccff;font-weight:750;text-decoration:underline;text-underline-offset:4px}
+.newsboard-link:hover,.newsboard-link:focus-visible{color:#d8eeff}
+.newsboard-home .overview-cta{margin-top:20px}
+.newsboard-history{margin-top:30px}
+.newsboard-history .newsboard-card{scroll-margin-top:100px}
+@media(max-width:760px){.newsboard-home{padding-top:30px}.newsboard-card{padding:20px}.newsboard-meta{gap:8px}}

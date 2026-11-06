@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "project": "SYPcoin (SYPC)",
+  "publication": "Public, read-only development updates. Curated and published only through authorized GitHub repository changes.",
+  "items": [
+    {
+      "id": "2026-11-06-h30",
+      "date": "2026-11-06",
+      "milestone": "H30",
+      "title": {
+        "es": "Validado el ciclo Akka de candidatos en laboratorio",
+        "en": "Akka candidate lifecycle verified in a laboratory"
+      },
+      "summary": {
+        "es": "La prueba focal Scala/Akka v0.15.1 superó 1/1 caso: se aplicó un bloque de ensayo Ergo, se rechazó trabajo minero obsoleto y se comprobó un candidato nuevo tras regeneración forzada.",
+        "en": "The focused Scala/Akka v0.15.1 test passed 1/1: a test Ergo block was applied, stale mining work was rejected and a new candidate was checked after forced regeneration."
+      },
+      "limits": {
+        "es": "Ensayo local de Ergo; no acredita actualización automática continua, minería GPU, P2P, emisión autónoma ni testnet pública.",
+        "en": "Local Ergo test only; not proof of continuous automatic refresh, GPU mining, P2P, autonomous issuance or a public testnet."
+      },
+      "link": {
+        "es": "/hitos/#h30",
+        "en": "/en/hitos/#h30"
+      }
+    },
+    {
+      "id": "2026-11-06-h29",
+      "date": "2026-11-06",
+      "milestone": "H29",
+      "title": {
+        "es": "16/16 comprobaciones Scala para trabajos mineros",
+        "en": "16/16 Scala checks for mining-work consistency"
+      },
+      "summary": {
+        "es": "Diez pruebas verificaron la coherencia de punta y estado UTXO y seis la identidad del trabajo Autolykos2, en una sola invocación de laboratorio.",
+        "en": "Ten focused tests checked tip and UTXO-state consistency; six checked Autolykos2 work identity, all in one laboratory invocation."
+      },
+      "limits": {
+        "es": "Pruebas focales con datos sintéticos; sin nodo vivo, GPU ni emisión autónoma.",
+        "en": "Focused tests with synthetic fixtures; no live node, GPU or autonomous issuance."
+      },
+      "link": {
+        "es": "/hitos/#h29",
+        "en": "/en/hitos/#h29"
+      }
+    },
+    {
+      "id": "2026-11-06-h28",
+      "date": "2026-11-06",
+      "milestone": "H28",
+      "title": {
+        "es": "Auditoría matemática de 4.599.000 alturas de emisión",
+        "en": "Mathematical audit of 4,599,000 issuance heights"
+      },
+      "summary": {
+        "es": "Dos algoritmos enteros independientes comprobaron el calendario Base/FRM completo hasta la altura 4.599.000, sin discrepancias matemáticas.",
+        "en": "Two independent integer algorithms checked the full Base/FRM issuance schedule through height 4,599,000 with no mathematical mismatches."
+      },
+      "limits": {
+        "es": "Validación del modelo matemático, no de contratos activos ni de admisión de bloques reales.",
+        "en": "Mathematical-model validation, not proof of active contracts or actual block admission."
+      },
+      "link": {
+        "es": "/hitos/#h28",
+        "en": "/en/hitos/#h28"
+      }
+    }
+  ]
+}
