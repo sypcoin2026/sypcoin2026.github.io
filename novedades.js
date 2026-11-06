@@ -34,7 +34,7 @@
     article.append(element(compact ? 'h3' : 'h2', 'newsboard-title', entry.title[lang]));
     article.append(element('p', 'newsboard-summary', entry.summary[lang]));
     article.append(element('p', 'newsboard-limits', entry.limits[lang]));
-    const detail = element('a', 'newsboard-link', en ? 'Read milestone and limits' : 'Ver hito y sus límites');
+    const detail = element('a', 'newsboard-link', en ? (entry.milestone === 'PLAN' ? 'Read the planned interfaces' : 'Read milestone and limits') : (entry.milestone === 'PLAN' ? 'Ver interfaces previstas' : 'Ver hito y sus límites'));
     detail.href = entry.link[lang];
     article.append(detail);
     return article;
@@ -43,9 +43,9 @@
   const valid = (entry) => entry
     && /^\d{4}-\d{2}-\d{2}$/.test(entry.date || '')
     && /^[A-Za-z0-9-]+$/.test(entry.id || '')
-    && /^H\d+$/.test(entry.milestone || '')
+    && /^(?:H\d+|PLAN)$/.test(entry.milestone || '')
     && ['es','en'].every(code => entry.title?.[code] && entry.summary?.[code] && entry.limits?.[code]
-      && new RegExp('^/(?:en/)?hitos/#h\\d+$').test(entry.link?.[code] || ''));
+      && new RegExp('^/(?:en/)?(?:hitos/#h\\d+|mineria/#interfaces-minero)$').test(entry.link?.[code] || ''));
 
   fetch('/data/novedades.json', {cache: 'no-cache'})
     .then(response => { if (!response.ok) throw new Error('News feed unavailable'); return response.json(); })

@@ -4,6 +4,27 @@
   "publication": "Public, read-only development updates. Curated and published only through authorized GitHub repository changes.",
   "items": [
     {
+      "id": "2026-11-06-miner-interfaces-plan",
+      "date": "2026-11-06",
+      "milestone": "PLAN",
+      "title": {
+        "es": "SYPcoin Miner: dos interfaces previstas, un solo motor",
+        "en": "SYPcoin Miner: two planned interfaces, one engine"
+      },
+      "summary": {
+        "es": "Aprobado el diseño de Terminal PRO y una interfaz gráfica que compartirán un único motor SOAT/Autolykos2. Hay prototipos locales de terminal; la integración y la aplicación gráfica siguen pendientes.",
+        "en": "The design for Terminal PRO and a graphical interface sharing one SOAT/Autolykos2 engine has been approved. Local terminal prototypes exist; integration and a working GUI remain pending."
+      },
+      "limits": {
+        "es": "Decisión de diseño, no lanzamiento ni avance de minería continua. Las imágenes son maquetas con cifras ficticias; no hay minero público disponible.",
+        "en": "Product design decision, not a release or proof of sustained mining. Images are fictional mockups; no public miner is available."
+      },
+      "link": {
+        "es": "/mineria/#interfaces-minero",
+        "en": "/en/mineria/#interfaces-minero"
+      }
+    },
+    {
       "id": "2026-11-06-h30",
       "date": "2026-11-06",
       "milestone": "H30",

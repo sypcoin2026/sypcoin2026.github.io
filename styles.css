@@ -1904,3 +1904,18 @@ a:focus-visible,button:focus-visible,summary:focus-visible {outline:2px solid #8
 .newsboard-history{margin-top:30px}
 .newsboard-history .newsboard-card{scroll-margin-top:100px}
 @media(max-width:760px){.newsboard-home{padding-top:30px}.newsboard-card{padding:20px}.newsboard-meta{gap:8px}}
+
+/* Official miner concept art: original images, explicitly not working software. */
+.miner-concepts{scroll-margin-top:85px}
+.miner-concepts .section-heading p + p{margin-top:14px}
+.miner-concept-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:32px}
+.miner-concept-figure{margin:0;min-width:0;overflow:hidden;border:1px solid var(--line-strong);border-radius:var(--radius);background:linear-gradient(145deg,rgba(22,37,56,.86),rgba(10,18,28,.92))}
+.miner-concept-frame{background:#050a10;overflow:hidden}
+.miner-concept-frame img{display:block;width:100%;height:auto;aspect-ratio:1672/941;object-fit:contain}
+.miner-concept-figure figcaption{padding:clamp(18px,3vw,26px)}
+.miner-concept-label{display:inline-block;font-size:.7rem;color:#a8d5fb;letter-spacing:.065em}
+.miner-concept-figure h3{margin:12px 0 10px;font-size:1.23rem}
+.miner-concept-figure p{margin:0 0 12px;color:#aabccc;font-size:.87rem;line-height:1.65}
+.miner-concept-figure .miner-concept-warning{border-top:1px solid var(--line);padding-top:12px;color:#e0c8a4}
+.miner-concept-caution{margin-top:26px}
+@media(max-width:760px){.miner-concept-grid{grid-template-columns:1fr}.miner-concepts{scroll-margin-top:70px}}
