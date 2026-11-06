@@ -3,7 +3,7 @@
   "project": "SYPcoin",
   "register": "development_milestones",
   "current_project_stage": "development",
-  "disclaimer": "v41.3 acreditó en laboratorio un bloque nativo SYPcoin de altura 1 obtenido con GPU AMD RX 7900 XTX en Linux, aplicado y persistido por dos JVM privadas. No acredita consenso general, minería pública, bloque 2 ni Windows/NVIDIA/Intel. v41.4 firmó y verificó offline el candidato de altura 2 y pasó pruebas focales sin minarlo. Core, minero y optimizador externo opcional tienen funciones separadas.",
+  "disclaimer": "SYPcoin continúa en desarrollo. v41.3 acreditó en un laboratorio privado el bloque nativo de altura 1 minado con una GPU AMD RX 7900 XTX en Linux y aceptado por dos nodos; no demuestra una red pública ni consenso general. La auditoría matemática de 4.599.000 alturas (H28) y las 16/16 pruebas focales Scala sobre trabajos mineros (H29) tienen alcances independientes y no acreditan emisión autónoma ni minería sostenida. La integración Akka (H30) todavía no dispone de una ejecución de pruebas válida. Core, minero y optimizador externo opcional son componentes separados.",
   "milestones": [
     {
       "id": "SYP-LAB-001",
@@ -283,7 +283,46 @@
       "scope": "Objetivo futuro · AMD/NVIDIA, Linux/Windows; Intel posterior",
       "test_result": "Bloque 1 AMD/Linux verificado; compatibilidad general y bloque 2 pendientes",
       "public_evidence": []
+    },
+    {
+      "id": "H28",
+      "achieved_date": "2026-11-06",
+      "date_label": "6 de noviembre de 2026",
+      "date_precision": "day",
+      "title": "Auditoría matemática de la emisión Base y FRM",
+      "description": "Dos algoritmos enteros independientes comprobaron las 4.599.000 alturas de emisión previstas sin descuadres. Base y FRM se agotan exactamente en la altura 4.599.000.",
+      "details": "El primer pago FRM del modelo corresponde a la altura 1.051.201 (642 nanoSYPC). La validación es matemática: no acredita la construcción de emisión autónoma en Scala, el consenso nativo ni la admisión de bloques posteriores al fin de emisión.",
+      "status": "verificado",
+      "scope": "Modelo económico independiente · sin activación de consenso",
+      "test_result": "4.599.000 transiciones · 0 discrepancias matemáticas",
+      "public_evidence": []
+    },
+    {
+      "id": "H29",
+      "achieved_date": "2026-11-06",
+      "date_label": "6 de noviembre de 2026",
+      "date_precision": "day",
+      "title": "Frescura de punta e identidad de trabajo minero validadas en Scala",
+      "description": "La v0.14 superó 16/16 pruebas focales sobre tipos nativos de Ergo: 10 de coherencia de punta y estado UTXO, y 6 de identidad del trabajo Autolykos2.",
+      "details": "Una única invocación con Scala 2.12.20, Java 11 y sbt 1.11.1, sin correcciones ni reintentos. Son fixtures de prueba; no se abrió un nodo vivo, no se ejecutó minería GPU ni se validó la emisión autónoma. Evidencias originales privadas, pendientes de preparación para difusión.",
+      "status": "verificado",
+      "scope": "Scala nativo · pruebas focales offline · sin nodo vivo",
+      "test_result": "v0.14: 16/16 PASS (punta 10/10; trabajo 6/6)",
+      "public_evidence": []
+    },
+    {
+      "id": "H30",
+      "achieved_date": null,
+      "date_label": "6 de noviembre de 2026 · validación pendiente",
+      "date_precision": "pending",
+      "title": "Ciclo Akka de candidatos y actualización de trabajos GPU",
+      "description": "Está en validación una prueba de integración de ErgoNodeViewHolder y CandidateGenerator para comprobar la caducidad y renovación de trabajos cuando cambia la cadena.",
+      "details": "El primer intento de la suite v0.15 quedó bloqueado por un error de compilación en la propia prueba (faltaba un ActorSystem implícito); se ejecutaron 0 casos. La corrección v0.15.1 está preparada y su ejecución sigue pendiente. No se ha demostrado aún el ciclo real de actores ni la conexión con SOAT.",
+      "status": "en pruebas",
+      "scope": "Integración Akka experimental · pendiente de ejecución",
+      "test_result": "v0.15: compilación bloqueada · 0 casos ejecutados; v0.15.1 pendiente",
+      "public_evidence": []
     }
   ],
-  "updated_at": "2026-11-05"
+  "updated_at": "2026-11-06"
 }
