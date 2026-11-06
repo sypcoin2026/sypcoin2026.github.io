@@ -3,7 +3,7 @@
   "project": "SYPcoin",
   "register": "development_milestones",
   "current_project_stage": "development",
-  "disclaimer": "SYPcoin continúa en desarrollo. v41.3 acreditó en un laboratorio privado el bloque nativo de altura 1 minado con una GPU AMD RX 7900 XTX en Linux y aceptado por dos nodos; no demuestra una red pública ni consenso general. La auditoría matemática de 4.599.000 alturas (H28) y las 16/16 pruebas focales Scala sobre trabajos mineros (H29) tienen alcances independientes y no acreditan emisión autónoma ni minería sostenida. La integración Akka (H30) completó 1/1 prueba focal en laboratorio Ergo, con regeneración forzada; no acredita refresco automático sostenido ni emisión autónoma SYPC. Core, minero y optimizador externo opcional son componentes separados.",
+  "disclaimer": "SYPcoin continúa en desarrollo. v41.3 acreditó en un laboratorio privado el bloque nativo de altura 1 minado con una GPU AMD RX 7900 XTX en Linux y aceptado por dos nodos; no demuestra una red pública ni consenso general. La auditoría matemática de 4.599.000 alturas (H28) y las 16/16 pruebas focales Scala sobre trabajos mineros (H29) tienen alcances independientes y no acreditan emisión autónoma ni minería sostenida. La integración Akka (H30) todavía no dispone de una ejecución de pruebas válida. Core, minero y optimizador externo opcional son componentes separados.",
   "milestones": [
     {
       "id": "SYP-LAB-001",
@@ -312,15 +312,15 @@
     },
     {
       "id": "H30",
-      "achieved_date": "2026-11-06",
-      "date_label": "6 de noviembre de 2026",
-      "date_precision": "day",
-      "title": "Ciclo de candidatos Akka contrastado en laboratorio",
-      "description": "La suite v0.15.1 superó 1/1 prueba focal con ErgoNodeViewHolder y CandidateGenerator reales. Tras aplicar un bloque local de ensayo, se rechazó el trabajo anterior y se comprobó el nuevo candidato regenerado.",
-      "details": "Una primera compilación v0.15 quedó bloqueada por un error de tipo en la prueba (0 casos); corregido únicamente el fixture, la ejecución focal v0.15.1 pasó sin reintentos. Laboratorio Ergo desechable: regeneración forzada, no refresco automático sostenido. No se ejecutó GPU, SOAT ni P2P ni se verificó emisión autónoma SYPC.",
-      "status": "verificado",
-      "scope": "Ergo local · actores Akka reales · trabajo regenerado de forma forzada",
-      "test_result": "v0.15.1: 1/1 PASS · sin GPU, SOAT ni emisión autónoma",
+      "achieved_date": null,
+      "date_label": "6 de noviembre de 2026 · validación pendiente",
+      "date_precision": "pending",
+      "title": "Ciclo Akka de candidatos y actualización de trabajos GPU",
+      "description": "Está en validación una prueba de integración de ErgoNodeViewHolder y CandidateGenerator para comprobar la caducidad y renovación de trabajos cuando cambia la cadena.",
+      "details": "El primer intento de la suite v0.15 quedó bloqueado por un error de compilación en la propia prueba (faltaba un ActorSystem implícito); se ejecutaron 0 casos. La corrección v0.15.1 está preparada y su ejecución sigue pendiente. No se ha demostrado aún el ciclo real de actores ni la conexión con SOAT.",
+      "status": "en pruebas",
+      "scope": "Integración Akka experimental · pendiente de ejecución",
+      "test_result": "v0.15: compilación bloqueada · 0 casos ejecutados; v0.15.1 pendiente",
       "public_evidence": []
     }
   ],
