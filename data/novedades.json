@@ -4,6 +4,48 @@
   "publication": "Public, read-only development updates. Curated and published only through authorized GitHub repository changes.",
   "items": [
     {
+      "id": "2026-11-08-p0-async-h3-restart",
+      "date": "2026-11-08",
+      "milestone": "H32",
+      "title": {
+        "es": "La testnet privada avanza: minería asíncrona y recuperación de bloques",
+        "en": "Private testnet progress: asynchronous mining and block recovery"
+      },
+      "summary": {
+        "es": "SYPcoin (SYPC) minó los bloques H2 y H3 con SOAT Async V2 en una red privada. Dos nodos los aceptaron y verificaron su estado; H3 se recuperó tras reiniciar ambos nodos. En H2, una RX 7900 XTX registró 183,32 MH/s de media durante 320 segundos.",
+        "en": "SYPcoin (SYPC) mined blocks H2 and H3 with SOAT Async V2 on a private chain. Two nodes accepted them and verified their state; H3 was recovered after both nodes restarted. During H2, an RX 7900 XTX averaged 183.32 MH/s for 320 seconds."
+      },
+      "limits": {
+        "es": "Prueba privada y acotada, no rendimiento prolongado ni red pública. H4–H10, SYPminer y el guardián en hardware siguen sin validar; no hay minero descargable.",
+        "en": "Limited private demonstration, not sustained performance or a public network. H4–H10, SYPminer and physical guardian testing are not verified; no downloadable miner exists."
+      },
+      "link": {
+        "es": "/hitos/#h32",
+        "en": "/en/hitos/#h32"
+      }
+    },
+    {
+      "id": "2026-11-07-p0-first-block-restart",
+      "date": "2026-11-07",
+      "milestone": "H31",
+      "title": {
+        "es": "Primer bloque real de la nueva testnet privada P0",
+        "en": "First live block on the new P0 private testnet"
+      },
+      "summary": {
+        "es": "Una RX 7900 XTX en Linux minó el bloque H1 de una nueva cadena privada P0 de SYPcoin (SYPC). Dos nodos lo aceptaron y recuperaron el mismo bloque y estado tras reiniciar.",
+        "en": "An RX 7900 XTX running Linux mined H1 on a new SYPcoin (SYPC) private P0 chain. Two nodes accepted it and recovered the same block and state after restarting."
+      },
+      "limits": {
+        "es": "Primer bloque de esta instancia privada; no es testnet pública ni minería prolongada. Los siguientes bloques y ASERT aún debían ensayarse en esa fecha.",
+        "en": "First block of this private instance, not a public testnet or proof of sustained mining. Later blocks and ASERT remained untested at that date."
+      },
+      "link": {
+        "es": "/hitos/#h31",
+        "en": "/en/hitos/#h31"
+      }
+    },
+    {
       "id": "2026-11-06-miner-interfaces-plan",
       "date": "2026-11-06",
       "milestone": "PLAN",

@@ -3,7 +3,7 @@
   "project": "SYPcoin",
   "register": "development_milestones",
   "current_project_stage": "development",
-  "disclaimer": "SYPcoin continúa en desarrollo. v41.3 acreditó en un laboratorio privado el bloque nativo de altura 1 minado con una GPU AMD RX 7900 XTX en Linux y aceptado por dos nodos; no demuestra una red pública ni consenso general. La auditoría matemática de 4.599.000 alturas (H28) y las 16/16 pruebas focales Scala sobre trabajos mineros (H29) tienen alcances independientes y no acreditan emisión autónoma ni minería sostenida. La prueba focal Scala/Akka de H30 (v0.15.1, 1/1 PASS) validó en laboratorio Ergo el descarte de trabajo obsoleto y un candidato regenerado de forma forzada; no demuestra actualización automática continua ni minería autónoma. Core, minero y optimizador externo opcional son componentes separados.",
+  "disclaimer": "SYPcoin continúa en desarrollo. En la red privada experimental P0 se minaron los bloques H1, H2 y H3 con GPU AMD/Linux; dos nodos aceptaron H2/H3 y recuperaron H3 tras auditoría fría y reinicio. Son ensayos privados acotados, no minería continua, testnet pública ni consenso completo. v41.3 acreditó en un laboratorio privado el bloque nativo de altura 1 minado con una GPU AMD RX 7900 XTX en Linux y aceptado por dos nodos; no demuestra una red pública ni consenso general. La auditoría matemática de 4.599.000 alturas (H28) y las 16/16 pruebas focales Scala sobre trabajos mineros (H29) tienen alcances independientes y no acreditan emisión autónoma ni minería sostenida. La prueba focal Scala/Akka de H30 (v0.15.1, 1/1 PASS) validó en laboratorio Ergo el descarte de trabajo obsoleto y un candidato regenerado de forma forzada; no demuestra actualización automática continua ni minería autónoma. Core, minero y optimizador externo opcional son componentes separados.",
   "milestones": [
     {
       "id": "SYP-LAB-001",
@@ -252,10 +252,10 @@
       "date_precision": "day",
       "title": "Validación preliminar del consenso privado",
       "description": "La fase inicial v41 validó 23 casos únicos de PoW, dificultad, AVL+, UTXO y fondos; es un resultado histórico de componentes, no una certificación del consenso completo.",
-      "details": "Los 23 casos provienen de pruebas focales distintas, no de una sola suite. Después, v41.3 validó el bloque 1 (H11/H12). En v41.4-R2 se firmó offline el candidato de altura 2 y R3 pasó 10/10 pruebas focales; el bloque 2 no se ha minado ni aceptado.",
+      "details": "Los 23 casos provienen de pruebas focales distintas, no de una sola suite. Después, v41.3 validó el bloque 1 (H11/H12). En v41.4-R2 se firmó offline el candidato de altura 2 y R3 pasó 10/10 pruebas focales; en aquella etapa el bloque 2 aún estaba pendiente. Posteriormente v41.4-R4 acreditó su aceptación en dos nodos privados; los resultados P0 son ensayos distintos.",
       "status": "en pruebas",
       "scope": "v41: pruebas parciales · v41.4: candidato altura 2 preparado, sin minar",
-      "test_result": "23 casos iniciales consolidados · v41.4 R3: 10/10 focales · bloque 2 pendiente",
+      "test_result": "23 casos iniciales consolidados · v41.4 R3: 10/10 focales · bloque 2 aceptado en fase posterior R4",
       "public_evidence": []
     },
     {
@@ -278,10 +278,10 @@
       "date_precision": "pending",
       "title": "Minero multiplataforma y compatibilidad GPU",
       "description": "El puente experimental ya permitió el bloque SYPcoin de altura 1 con AMD/Linux (H12). Sigue pendiente ofrecer un minero reusable y compatible con otros equipos y sistemas operativos.",
-      "details": "Falta minar y validar el bloque 2, probar la misma RX 7900 XTX en Windows y después la NVIDIA RTX 3060 en Windows. Se ampliará a NVIDIA/Linux y, posteriormente, a Intel si hay hardware de prueba. No hay minero público ni optimizador distribuido.",
+      "details": "La cadena privada P0 ya ha demostrado H1–H3 con AMD/Linux; sigue pendiente probar la RX 7900 XTX en Windows y después la NVIDIA RTX 3060 en Windows. Se ampliará a NVIDIA/Linux y, posteriormente, a Intel si hay hardware de prueba. No hay minero público ni optimizador distribuido.",
       "status": "en desarrollo",
       "scope": "Objetivo futuro · AMD/NVIDIA, Linux/Windows; Intel posterior",
-      "test_result": "Bloque 1 AMD/Linux verificado; compatibilidad general y bloque 2 pendientes",
+      "test_result": "GPU AMD/Linux y cadena privada P0 H1–H3; compatibilidad general pendiente",
       "public_evidence": []
     },
     {
@@ -322,7 +322,46 @@
       "scope": "Ensayo Ergo local con actores Akka reales · sin GPU ni P2P",
       "test_result": "v0.15.1: 1/1 Scala/Akka PASS · regeneración forzada",
       "public_evidence": []
+    },
+    {
+      "id": "H31",
+      "achieved_date": "2026-11-07",
+      "date_label": "7 de noviembre de 2026",
+      "date_precision": "day",
+      "title": "Primer bloque de la nueva red privada P0 minado con GPU",
+      "description": "Una AMD Radeon RX 7900 XTX con Linux y motor Vulkan/Autolykos2 minó el bloque de altura 1 de una nueva cadena privada P0 de SYPcoin. Dos nodos lo aceptaron y recuperaron el mismo bloque y estado después del reinicio.",
+      "details": "Primera altura de esta génesis P0, distinta de los ensayos históricos v41.3/v41.4. El reinicio reutilizó bases de datos existentes y no implicó nueva minería. La red es local y aislada; no constituye testnet pública, consenso general ni operación continuada. La aceptación inicial fue anterior a las pruebas posteriores de H2/H3.",
+      "status": "verificado",
+      "scope": "P0 local privada · GPU AMD/Linux · altura 1 · aceptación y reinicio de dos nodos",
+      "test_result": "V51 P0: H1 PoW válido y aceptado · reinicio H1 PASS",
+      "public_evidence": []
+    },
+    {
+      "id": "H32",
+      "achieved_date": "2026-11-08",
+      "date_label": "8 de noviembre de 2026",
+      "date_precision": "day",
+      "title": "Minería real de H2 y H3 en la P0 privada con SOAT Async V2",
+      "description": "SOAT Vulkan/Autolykos2 Async V2 minó realmente los bloques 2 y 3 de la misma cadena privada P0. Dos nodos nativos independientes aceptaron ambas soluciones y aplicaron los mismos bloques y raíces UTXO.",
+      "details": "En el ensayo integrado de H2 se registró una media de 183,32 MH/s durante 320 segundos en una RX 7900 XTX/Linux y un pico instantáneo de 188,80 MH/s. H3 registró 158,74 MH/s solo durante 10 segundos, no una medida sostenida. El ajuste ASERT en H3 quedó ejercitado en esta configuración P0 concreta; no certifica todos los casos ni fija parámetros para mainnet. No existe minero público ni prueba de funcionamiento durante horas.",
+      "status": "verificado",
+      "scope": "P0 local privada · SOAT Async V2 experimental · H2/H3 · dos nodos",
+      "test_result": "V52/R5: H2 y H3 aceptados · H2 183,32 MH/s de media durante 320 s",
+      "public_evidence": []
+    },
+    {
+      "id": "H33",
+      "achieved_date": "2026-11-08",
+      "date_label": "8 de noviembre de 2026",
+      "date_precision": "day",
+      "title": "Auditoría fría y recuperación de H3 tras reiniciar ambos nodos",
+      "description": "Dos copias verificadas recuperaron en frío el bloque H3, su padre H2 y la misma raíz UTXO. Productor y receptor también reiniciaron desde una copia aislada del estado H3 y recuperaron altura 3, bloque y raíz coincidentes.",
+      "details": "Ambos nodos recuperaron un peer privado y cerraron de forma ordenada tras las verificaciones. La auditoría fría y el reinicio no ejecutaron nueva minería. Este PASS acredita persistencia en el entorno y la copia ensayados, no recuperaciones universales ni operación desatendida 24/7. La continuidad de H4 a H10 sigue siendo un plan, no un resultado.",
+      "status": "verificado",
+      "scope": "P0 local privada · auditoría de estado y reinicio H3 · sin minería nueva",
+      "test_result": "H3: auditoría fría PASS · reinicio real de dos nodos PASS",
+      "public_evidence": []
     }
   ],
-  "updated_at": "2026-11-06"
+  "updated_at": "2026-11-08"
 }
