@@ -4,6 +4,27 @@
   "publication": "Public, read-only development updates. Curated and published only through authorized GitHub repository changes.",
   "items": [
     {
+      "id": "2026-11-09-v60-local-46",
+      "date": "2026-11-09",
+      "milestone": "H34",
+      "title": {
+        "es": "La minería privada de SYPC avanza: 46 bloques aceptados en un nodo de laboratorio",
+        "en": "Private SYPC mining advances: 46 blocks accepted by a laboratory node"
+      },
+      "summary": {
+        "es": "SYPcoin (SYPC) ha probado una sesión GPU en un entorno privado. El nodo productor aceptó localmente 46 bloques consecutivos, de H301 a H346, utilizando SOAT Async V2. También se verificó la restauración de los ajustes originales de GPU al detenerse.",
+        "en": "SYPcoin (SYPC) tested GPU mining in a private development environment. The producer node locally accepted 46 consecutive blocks, H301 through H346, using SOAT Async V2. Restoration of original GPU settings was also verified on shutdown."
+      },
+      "limits": {
+        "es": "Validación independiente del segundo equipo pendiente; la restauración final no garantiza seguridad energética durante toda la sesión. Saldo minero, operación 24/7, testnet pública y minero descargable no están confirmados.",
+        "en": "Independent validation by the second computer is pending; shutdown restoration does not guarantee energy safety throughout the run. Miner balance, 24/7 operation, a public testnet and a downloadable miner are not confirmed."
+      },
+      "link": {
+        "es": "/hitos/#h34",
+        "en": "/en/hitos/#h34"
+      }
+    },
+    {
       "id": "2026-11-08-p0-async-h3-restart",
       "date": "2026-11-08",
       "milestone": "H32",

@@ -3,7 +3,7 @@
   "project": "SYPcoin",
   "register": "development_milestones",
   "current_project_stage": "development",
-  "disclaimer": "SYPcoin continúa en desarrollo. En la red privada experimental P0 se minaron los bloques H1, H2 y H3 con GPU AMD/Linux; dos nodos aceptaron H2/H3 y recuperaron H3 tras auditoría fría y reinicio. Son ensayos privados acotados, no minería continua, testnet pública ni consenso completo. v41.3 acreditó en un laboratorio privado el bloque nativo de altura 1 minado con una GPU AMD RX 7900 XTX en Linux y aceptado por dos nodos; no demuestra una red pública ni consenso general. La auditoría matemática de 4.599.000 alturas (H28) y las 16/16 pruebas focales Scala sobre trabajos mineros (H29) tienen alcances independientes y no acreditan emisión autónoma ni minería sostenida. La prueba focal Scala/Akka de H30 (v0.15.1, 1/1 PASS) validó en laboratorio Ergo el descarte de trabajo obsoleto y un candidato regenerado de forma forzada; no demuestra actualización automática continua ni minería autónoma. Core, minero y optimizador externo opcional son componentes separados.",
+  "disclaimer": "SYPcoin continúa en desarrollo. En un ensayo V60 posterior y separado de P0 H1–H3, un único nodo productor aplicó localmente 46 bloques H301–H346, y se comprobó la restauración final de ajustes GPU. No está acreditada la validación de esos bloques por el portátil, la seguridad energética integral, la continuidad 24/7 ni el saldo de la cartera minera. En la red privada experimental P0 se minaron los bloques H1, H2 y H3 con GPU AMD/Linux; dos nodos aceptaron H2/H3 y recuperaron H3 tras auditoría fría y reinicio. Son ensayos privados acotados, no minería continua, testnet pública ni consenso completo. v41.3 acreditó en un laboratorio privado el bloque nativo de altura 1 minado con una GPU AMD RX 7900 XTX en Linux y aceptado por dos nodos; no demuestra una red pública ni consenso general. La auditoría matemática de 4.599.000 alturas (H28) y las 16/16 pruebas focales Scala sobre trabajos mineros (H29) tienen alcances independientes y no acreditan emisión autónoma ni minería sostenida. La prueba focal Scala/Akka de H30 (v0.15.1, 1/1 PASS) validó en laboratorio Ergo el descarte de trabajo obsoleto y un candidato regenerado de forma forzada; no demuestra actualización automática continua ni minería autónoma. Core, minero y optimizador externo opcional son componentes separados.",
   "milestones": [
     {
       "id": "SYP-LAB-001",
@@ -361,7 +361,20 @@
       "scope": "P0 local privada · auditoría de estado y reinicio H3 · sin minería nueva",
       "test_result": "H3: auditoría fría PASS · reinicio real de dos nodos PASS",
       "public_evidence": []
+    },
+    {
+      "id": "H34",
+      "achieved_date": "2026-11-09",
+      "date_label": "9 de noviembre de 2026",
+      "date_precision": "day",
+      "title": "V60: 46 bloques minados y aceptados localmente por un nodo productor",
+      "description": "En una sesión privada V60, una RX 7900 XTX/Linux con SOAT Async V2 obtuvo 46 soluciones reportadas como aceptadas, sin rechazos reportados. El nodo productor aplicó consecutivamente las alturas H301–H346 a su cadena local.",
+      "details": "La prueba comenzó desde un estado experimental H300, distinto de los hitos históricos de la P0 H1–H3. Se verificó en el cierre la restauración de los ajustes previos de GPU. La conexión P2P con otro equipo no acredita que el receptor haya validado esos bloques. La restauración final no certifica límites térmicos/eléctricos durante toda la sesión. Una corrección del controlador superó 12/12 pruebas focales offline, aún sin validación posterior en minería real. No hay balances mineros confirmados, seguridad 24/7, consenso general ni testnet pública.",
+      "status": "verificado",
+      "scope": "V60 privado · una GPU AMD/Linux · aceptación local de un nodo productor",
+      "test_result": "46/46 soluciones aceptadas según SOAT · H301–H346 aplicados localmente · restauración GPU PASS",
+      "public_evidence": []
     }
   ],
-  "updated_at": "2026-11-08"
+  "updated_at": "2026-11-09"
 }
