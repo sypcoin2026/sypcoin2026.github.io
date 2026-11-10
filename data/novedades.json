@@ -4,6 +4,27 @@
   "publication": "Public, read-only development updates. Curated and published only through authorized GitHub repository changes.",
   "items": [
     {
+      "id": "2026-11-10-p2p-full-sync-h350",
+      "date": "2026-11-10",
+      "milestone": "H35",
+      "title": {
+        "es": "Dos nodos privados de SYPC completan la sincronización de bloques hasta H350",
+        "en": "Two private SYPC nodes complete full-block synchronization through H350"
+      },
+      "summary": {
+        "es": "SYPcoin (SYPC) ha completado una prueba de sincronización entre dos ordenadores en su red privada de desarrollo. El segundo nodo descargó y validó por P2P los 50 bloques H301–H350, y ambos terminaron con la misma altura, bloque y raíz de estado. Una corrección acotada permitió reanudar la descarga cuando la cadena permanecía detenida. No hubo nueva minería.",
+        "en": "SYPcoin (SYPC) completed a synchronization test between two computers on its private development network. The second node downloaded and validated all 50 blocks H301–H350 over P2P, and both finished with the same height, block and state root. A narrowly scoped fix allowed downloads to resume on a stopped chain. No new mining took place."
+      },
+      "limits": {
+        "es": "Prueba privada de dos nodos; no se ha acreditado reinicio desde H350, funcionamiento 24/7, red pública ni saldo minero. Los 46 bloques minados localmente del 09/11 son un resultado distinto.",
+        "en": "Private two-node test; no restart from H350, 24/7 operation, public network or miner balance has been verified. The 46 locally mined blocks reported on 9 November are a separate result."
+      },
+      "link": {
+        "es": "/hitos/#h35",
+        "en": "/en/hitos/#h35"
+      }
+    },
+    {
       "id": "2026-11-09-v60-local-46",
       "date": "2026-11-09",
       "milestone": "H34",

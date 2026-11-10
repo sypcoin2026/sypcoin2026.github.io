@@ -3,7 +3,7 @@
   "project": "SYPcoin",
   "register": "development_milestones",
   "current_project_stage": "development",
-  "disclaimer": "SYPcoin continúa en desarrollo. En un ensayo V60 posterior y separado de P0 H1–H3, un único nodo productor aplicó localmente 46 bloques H301–H346, y se comprobó la restauración final de ajustes GPU. No está acreditada la validación de esos bloques por el portátil, la seguridad energética integral, la continuidad 24/7 ni el saldo de la cartera minera. En la red privada experimental P0 se minaron los bloques H1, H2 y H3 con GPU AMD/Linux; dos nodos aceptaron H2/H3 y recuperaron H3 tras auditoría fría y reinicio. Son ensayos privados acotados, no minería continua, testnet pública ni consenso completo. v41.3 acreditó en un laboratorio privado el bloque nativo de altura 1 minado con una GPU AMD RX 7900 XTX en Linux y aceptado por dos nodos; no demuestra una red pública ni consenso general. La auditoría matemática de 4.599.000 alturas (H28) y las 16/16 pruebas focales Scala sobre trabajos mineros (H29) tienen alcances independientes y no acreditan emisión autónoma ni minería sostenida. La prueba focal Scala/Akka de H30 (v0.15.1, 1/1 PASS) validó en laboratorio Ergo el descarte de trabajo obsoleto y un candidato regenerado de forma forzada; no demuestra actualización automática continua ni minería autónoma. Core, minero y optimizador externo opcional son componentes separados.",
+  "disclaimer": "SYPcoin continúa en desarrollo. En un ensayo V60 posterior y separado de P0 H1–H3, un único nodo productor aplicó localmente 46 bloques H301–H346, y se comprobó la restauración final de ajustes GPU. La prueba posterior H35 acreditó que un segundo equipo descargó y aplicó por P2P los 50 bloques completos H301–H350, y ambos terminaron con altura, bloque y raíz UTXO coincidentes, sin nueva minería. Solo H301–H346 constan como 46 bloques minados localmente en V60/H34. No se ha probado reinicio desde H350, seguridad energética integral, continuidad 24/7, saldo minero ni red pública. En la red privada experimental P0 se minaron los bloques H1, H2 y H3 con GPU AMD/Linux; dos nodos aceptaron H2/H3 y recuperaron H3 tras auditoría fría y reinicio. Son ensayos privados acotados, no minería continua, testnet pública ni consenso completo. v41.3 acreditó en un laboratorio privado el bloque nativo de altura 1 minado con una GPU AMD RX 7900 XTX en Linux y aceptado por dos nodos; no demuestra una red pública ni consenso general. La auditoría matemática de 4.599.000 alturas (H28) y las 16/16 pruebas focales Scala sobre trabajos mineros (H29) tienen alcances independientes y no acreditan emisión autónoma ni minería sostenida. La prueba focal Scala/Akka de H30 (v0.15.1, 1/1 PASS) validó en laboratorio Ergo el descarte de trabajo obsoleto y un candidato regenerado de forma forzada; no demuestra actualización automática continua ni minería autónoma. Core, minero y optimizador externo opcional son componentes separados.",
   "milestones": [
     {
       "id": "SYP-LAB-001",
@@ -374,7 +374,20 @@
       "scope": "V60 privado · una GPU AMD/Linux · aceptación local de un nodo productor",
       "test_result": "46/46 soluciones aceptadas según SOAT · H301–H346 aplicados localmente · restauración GPU PASS",
       "public_evidence": []
+    },
+    {
+      "id": "H35",
+      "achieved_date": "2026-11-10",
+      "date_label": "10 de noviembre de 2026",
+      "date_precision": "day",
+      "title": "Dos nodos privados sincronizan y validan bloques completos H301–H350 por P2P",
+      "description": "En dos equipos físicos independientes, el nodo receptor descargó y aplicó mediante P2P los 50 bloques completos H301–H350. Ambos nodos finalizaron en altura completa 350 con el mismo bloque de punta y la misma raíz de estado UTXO.",
+      "details": "Se transfirieron bloques completos y sus secciones, sin copiar la base de datos entre equipos ni desactivar validadores. Una reparación limitada permitió reanudar la descarga ordinaria en una cadena privada detenida. La comprobación no requirió minería nueva: solo 46 soluciones H301–H346 tienen atribución minera local documentada en V60/H34. No se ha probado un nuevo reinicio en H350, operación 24/7, integración permanente de la corrección, saldo de cartera minera ni disponibilidad pública.",
+      "status": "verificado",
+      "scope": "Red privada · sincronización real P2P · dos nodos completos · no minería nueva",
+      "test_result": "50 bloques H301–H350 transferidos y aplicados · fullHeight 350 en ambos · raíz UTXO coincidente",
+      "public_evidence": []
     }
   ],
-  "updated_at": "2026-11-09"
+  "updated_at": "2026-11-10"
 }
